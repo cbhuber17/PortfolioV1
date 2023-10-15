@@ -4,7 +4,8 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = () => {
+/* eslint react/prop-types: 0 */
+const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
   return (
     <mesh>
@@ -22,8 +23,8 @@ const Computers = () => {
       {/* Computer position, smooth rotation */}
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.25, -1.5]}
+        scale={isMobile ? 0.7 : 0.75}
+        position={isMobile ? [0, -3, -2.2] : [0, -3, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -31,6 +32,27 @@ const Computers = () => {
 };
 
 const ComputerCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Keep state of isMobile with the useEffect hook below
+  useEffect(() => {
+    // Add a listener for changes to scren size
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    setIsMobile(mediaQuery.matches);
+
+    // Callback to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Listen for changes
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Cleanup
+    return () =>
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
   return (
     <Canvas
       frameloop="demand"
@@ -45,7 +67,7 @@ const ComputerCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers />
+        <Computers isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
