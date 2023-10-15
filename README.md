@@ -9,3 +9,4 @@ Welcome! This project is currently under construction.
 - Change loading font size to be larger, add "Loading" text
 - About section/component: describe myself
 - Change constants in constants\index.js to describe myself
+- Randomize tech balls and service cards
