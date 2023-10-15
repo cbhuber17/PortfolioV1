@@ -8,3 +8,4 @@ Welcome! This project is currently under construction.
 - Play with PC size on mobile screens
 - About section/component: describe myself
 - Change constants in constants\index.js to describe myself
+- Fix eslint errors in About.jsx
