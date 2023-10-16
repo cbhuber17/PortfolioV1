@@ -5,6 +5,7 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
+import ParagraphHeader from "./ParagraphHeader";
 import FeedbackCard from "./FeedbackCard";
 
 const Feedbacks = () => {
@@ -14,8 +15,11 @@ const Feedbacks = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <ParagraphHeader
+            pText="What others say"
+            hText="Testimonials."
+            style=""
+          />
         </motion.div>
       </div>
       {/* Negative margin to push the cards onto the testimonials div */}

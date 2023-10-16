@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import ParagraphHeader from "./ParagraphHeader";
 import ServiceCard from "./ServiceCard";
 import SectionWrapper from "../hoc/SectionWrapper";
 
@@ -10,8 +10,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <ParagraphHeader pText="Introduction" hText="Overview." style="" />
       </motion.div>
 
       {/* Direction, type, delay(s), duration(s) */}
