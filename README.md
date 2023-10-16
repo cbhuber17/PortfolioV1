@@ -11,4 +11,4 @@ Welcome! This project is currently under construction.
 - About section/component: describe myself
 - Change constants in constants\index.js to describe myself
 - Randomize tech balls and service cards
-- Works.jsx: add actual link to project by adding a `<div>` in the project card, next to github link
+- ProjectCard.jsx: add actual link to project by adding a `<div>` in the project card, next to github link
