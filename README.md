@@ -14,4 +14,4 @@ Welcome! This project is currently under construction.
 - ProjectCard.jsx: add actual link to project by adding a `<div>` in the project card, next to github link
 - Put the `<p>` and `<h3>` (from each section) in a separate utils function
 - Contact form send button on:hover styling
-- Implement email handleChange() & handleSubmit()
+- Sign up emailjs & hostdinger
