@@ -12,3 +12,6 @@ Welcome! This project is currently under construction.
 - Change constants in constants\index.js to describe myself
 - Randomize tech balls and service cards
 - ProjectCard.jsx: add actual link to project by adding a `<div>` in the project card, next to github link
+- Put the `<p>` and `<h3>` (from each section) in a separate utils function
+- Contact form send button on:hover styling
+- Implement email handleChange() & handleSubmit()
