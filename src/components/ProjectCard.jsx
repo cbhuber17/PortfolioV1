@@ -36,11 +36,20 @@ const ProjectCard = ({
             >
               <img
                 src={github}
-                alt="source code"
+                alt="Source code"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-            {/* TODO: Another div here for the actual link to the project */}
+            {/* <div
+              onClick={() => window.open(project_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={github}
+                alt="Project link"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div> */}
           </div>
         </div>
 
