@@ -1,6 +1,7 @@
 import { Html, useProgress } from "@react-three/drei";
 
-const Loader = () => {
+/* eslint react/prop-types: 0 */
+const Loader = ({ isSmall }) => {
   const { progress } = useProgress();
 
   return (
@@ -8,12 +9,13 @@ const Loader = () => {
       <span className="canvas-load"></span>
       <p
         style={{
-          fontSize: 14,
+          fontSize: isSmall ? 14 : 20,
           color: "#F1F1F1",
           fontWeight: 800,
-          marginTop: 40,
+          marginTop: isSmall ? 40 : 10,
         }}
       >
+        {isSmall ? "" : "Loading:"}&nbsp;
         {progress.toFixed(2)}%
       </p>
     </Html>

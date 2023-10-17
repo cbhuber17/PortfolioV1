@@ -60,7 +60,7 @@ const ComputerCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader isSmall={false} />}>
         {/* Allow computer movement, disable zoom, only rotate on y axis */}
         <OrbitControls
           enableZoom={false}
