@@ -6,7 +6,6 @@ Welcome! This project is currently under construction.
 
 - Three different domains: GNSS, Web Dev, Personal:Trip photos, volunteering, nieces, personal accomplishments
 - Browse [https://sketchfab.com/](https://sketchfab.com/) for 3D models
-- Update personal logo, add transparency, perhaps make diamond or circular
 - Center position of loading text on PC desktop and Earth Globe on large and small viewports
 - About section/component: describe myself
 - Change constants in constants\index.js to describe myself
