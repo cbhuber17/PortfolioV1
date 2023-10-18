@@ -5,8 +5,10 @@ import { fadeIn, textVariant } from "../utils/motion";
 import ParagraphHeader from "./ParagraphHeader";
 import ServiceCard from "./ServiceCard";
 import SectionWrapper from "../hoc/SectionWrapper";
+import { shuffle } from "../utils/shuffle";
 
 const About = () => {
+  shuffle(services);
   return (
     <>
       <motion.div variants={textVariant()}>
