@@ -5,8 +5,14 @@ import emailjs from "@emailjs/browser";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import toast, { Toaster } from "react-hot-toast";
 
 import ParagraphHeader from "./ParagraphHeader";
+
+function validateEmail(email) {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
 
 const Contact = () => {
   const formRef = useRef();
@@ -32,6 +38,24 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    if (!form.name) {
+      toast.error("Please enter your name.");
+      return;
+    }
+
+    if (!form.email) {
+      toast.error("Please provide an email address.");
+    }
+
+    if (!validateEmail(form.email)) {
+      toast.error("Please provide a valid email address.");
+    }
+
+    if (!form.message) {
+      toast.error("Please enter a message");
+      return;
+    }
+
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -49,6 +73,7 @@ const Contact = () => {
         () => {
           setLoading(false);
           alert("Many thanks! I will get back to you ASAP :)");
+          toast.success("Many thanks! I will get back to you ASAP :)");
 
           setForm({
             name: "",
@@ -61,6 +86,7 @@ const Contact = () => {
           console.error(error);
 
           alert("Something went wrong. Kindly try again.");
+          toast.error("Something went wrong. Kindly try again.");
         }
       );
   };
@@ -130,6 +156,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+      <Toaster />
     </div>
   );
 };
