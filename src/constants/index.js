@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -25,6 +21,8 @@ import {
   threejs,
 } from "../assets";
 
+import { full_stack, gnss, cloud, tutor } from "../assets/service_icons";
+
 export const navLinks = [
   {
     id: "about",
@@ -42,20 +40,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Full Stack Web Developer",
+    icon: full_stack,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "GNSS Software Testing",
+    icon: gnss,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Cloud Solutions",
+    icon: cloud,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Tutoring",
+    icon: tutor,
   },
 ];
 
