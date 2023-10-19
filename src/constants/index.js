@@ -9,14 +9,12 @@ import {
   nodejs,
   mongodb,
   supabase,
-  neon,
+  // neon,
   // pocketbase,
   git,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  hexagon,
+  elections,
   carrent,
   jobit,
   tripguide,
@@ -59,7 +57,7 @@ const services = [
   },
 ];
 
-// Looks like max 14 can be loaded
+// Looks like max 13 can be loaded
 const technologies = [
   {
     name: "HTML 5",
@@ -101,10 +99,10 @@ const technologies = [
     name: "Supabase",
     icon: supabase,
   },
-  {
-    name: "Neon",
-    icon: neon,
-  },
+  // {
+  //   name: "Neon",
+  //   icon: neon,
+  // },
   // {
   //   name: "Pocketbase",
   //   icon: pocketbase,
@@ -125,55 +123,53 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Information & Registration Officer and Record Clerk",
+    company_name: "Elections Alberta",
+    icon: elections,
+    iconBg: "#F1B51F",
+    date: "May 2023 - May 2023",
+    points: [
+      "Determines an elector's voting area, then directs electors to the appropriate voting or registration station.",
+      "Helps maintain flow of electors through the voting place.",
+      "Administers necessary declarations and oaths.",
+      "Sorts, tallys and documents all votes at the end of the day.",
+    ],
+  },
+  {
+    title: "Safety Critical Verification Engineer",
+    company_name: "Hexagon",
+    icon: hexagon,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "January 2012 - April 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Architected and executed manual/automated tests using python and C++, following aviation standards (DO-178B) and ISTQB best practices.",
+      "Lead a team and mentored new members; performed detailed peer reviews.",
+      "Improved quality of the product by raising 25 defects",
+      "Designed efficient test setups that reduced engineering costs to the project (up to 10%).",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Ground Reference Receivers Application Engineer",
+    company_name: "Hexagon",
+    icon: hexagon,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 2010 - January 2012",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Provided world-class customer support for reference GNSS systems worldwide",
+      "Actively listened, gathered facts, and engaged the customer",
+      "Built relationships and resolved customer inquiries in a timely manner",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "GPS Software Engineer",
+    company_name: "Hexagon",
+    icon: hexagon,
+    iconBg: "#383E56",
+    date: "September 2005 - June 2010",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Supported embedded development, requirements management, tracing and testing of ground reference receivers (WAAS, GUS) for the aviation industry",
+      "UML modeling and requirements management to build product to customer specifications",
+      "Developer testing utilizing unit testing harnesses and GNSS simulators.",
     ],
   },
 ];

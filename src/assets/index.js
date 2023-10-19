@@ -19,10 +19,8 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import hexagon from "./company/hexagon.png";
+import elections from "./company/elections.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -48,10 +46,8 @@ export {
   tailwind,
   typescript,
   cplusplus,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  hexagon,
+  elections,
   carrent,
   jobit,
   tripguide,
