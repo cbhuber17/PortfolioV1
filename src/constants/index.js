@@ -1,15 +1,17 @@
 import {
-  javascript,
+  python,
   typescript,
   html,
   css,
+  sass,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
+  supabase,
+  neon,
+  // pocketbase,
   git,
-  figma,
   docker,
   meta,
   starbucks,
@@ -18,7 +20,7 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  cplusplus,
 } from "../assets";
 
 import { full_stack, gnss, cloud, tutor } from "../assets/service_icons";
@@ -57,6 +59,7 @@ const services = [
   },
 ];
 
+// Looks like max 14 can be loaded
 const technologies = [
   {
     name: "HTML 5",
@@ -67,8 +70,12 @@ const technologies = [
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Sass",
+    icon: sass,
+  },
+  {
+    name: "C++",
+    icon: cplusplus,
   },
   {
     name: "TypeScript",
@@ -77,10 +84,6 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -95,16 +98,24 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Supabase",
+    icon: supabase,
   },
+  {
+    name: "Neon",
+    icon: neon,
+  },
+  // {
+  //   name: "Pocketbase",
+  //   icon: pocketbase,
+  // },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "python",
+    icon: python,
   },
   {
     name: "docker",

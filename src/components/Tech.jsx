@@ -5,6 +5,7 @@ import { shuffle } from "../utils/shuffle";
 
 const Tech = () => {
   shuffle(technologies);
+  // TODO: Check for maximum of 14 techs allowed
 
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
