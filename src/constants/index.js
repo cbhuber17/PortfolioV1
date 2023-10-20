@@ -18,6 +18,12 @@ import {
   wildoasis,
   traveljournal,
   videogame,
+  defectrecord,
+  natours,
+  forkify,
+  nextnotes,
+  rpgai,
+  fastpizza,
   cplusplus,
 } from "../assets";
 
@@ -205,7 +211,7 @@ const projects = [
   {
     name: "The Wild Oasis",
     description:
-      "Internal hotel/cabin rental portal to manage dashboard, users, cabins, bookings & settings.",
+      "Internal hotel/cabin rental portal to manage dashboard, users, cabins, bookings & settings. (Use the contact form below if you would like to try the app ✌️)",
     tags: [
       {
         name: "react",
@@ -283,6 +289,179 @@ const projects = [
     image: videogame,
     project_link: "https://video-game-archive.vercel.app/",
     source_code_link: "https://video-game-archive.vercel.app/",
+  },
+  {
+    name: "Bugz Defect Record",
+    description:
+      "Similar to JIRA, a simple defect record database.  Currently under construction! 👷‍♂️",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "neon",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "sentry",
+        color: "red-text-gradient",
+      },
+    ],
+    image: defectrecord,
+    project_link: "",
+    source_code_link: "https://github.com/cbhuber17/bugz-defect-record",
+  },
+  {
+    name: "Natours Tour Booking",
+    description:
+      "A tour booking website, complete with user accounts and credit card payments via stipe.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongo",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "pug",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "red-text-gradient",
+      },
+    ],
+    image: natours,
+    project_link: "https://natours-ewub.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/natours-api",
+  },
+  {
+    name: "Forkify",
+    description: "A recipe searching and preview app.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "green-text-gradient",
+      },
+      {
+        name: "api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "parcel",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "red-text-gradient",
+      },
+    ],
+    image: forkify,
+    project_link: "https://forkify-bys9.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/Forkify",
+  },
+  {
+    name: "NextJS Notes",
+    description: "A medieval theme note taking app.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pocketbase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "red-text-gradient",
+      },
+    ],
+    image: nextnotes,
+    project_link: "https://nextjs-notes-navy.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/nextjs-notes",
+  },
+  {
+    name: "RPG Text Adventure AI",
+    description:
+      "A mock Dungeons & Dragons theme app to chat with GPT regarding your situation in a dungeon 🐉.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcscs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "convex",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "red-text-gradient",
+      },
+    ],
+    image: rpgai,
+    project_link: "https://rpg-text-adventure-oco0dha61-cbhuber17.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/rpg-text-adventure-ai",
+  },
+  {
+    name: "Fast React Pizza Co.",
+    description: "Pizza ordering app!  🍕.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcscs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: fastpizza,
+    project_link: "https://cbhuber17.github.io/fast-react-pizza-co/",
+    source_code_link: "https://github.com/cbhuber17/fast-react-pizza-co",
   },
 ];
 

@@ -26,6 +26,12 @@ import elections from "./company/elections.png";
 import wildoasis from "./projects/wildoasis.png";
 import traveljournal from "./projects/traveljournal.png";
 import videogame from "./projects/videogame.png";
+import defectrecord from "./projects/defectrecord.png";
+import natours from "./projects/natours.png";
+import forkify from "./projects/forkify.png";
+import nextnotes from "./projects/nextnotes.png";
+import rpgai from "./projects/rpgai.png";
+import fastpizza from "./projects/fastpizza.png";
 
 export {
   logo,
@@ -53,4 +59,10 @@ export {
   wildoasis,
   traveljournal,
   videogame,
+  defectrecord,
+  natours,
+  forkify,
+  nextnotes,
+  rpgai,
+  fastpizza,
 };
