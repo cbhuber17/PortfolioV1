@@ -32,6 +32,12 @@ import forkify from "./projects/forkify.png";
 import nextnotes from "./projects/nextnotes.png";
 import rpgai from "./projects/rpgai.png";
 import fastpizza from "./projects/fastpizza.png";
+import gnssquiz from "./projects/gnssquiz.png";
+import usepopcorn from "./projects/usepopcorn.png";
+import collatz from "./projects/collatz.png";
+import aberwait from "./projects/aberwait.png";
+import bingosim from "./projects/bingosim.png";
+import web2004 from "./projects/web2004.png";
 
 export {
   logo,
@@ -65,4 +71,10 @@ export {
   nextnotes,
   rpgai,
   fastpizza,
+  gnssquiz,
+  usepopcorn,
+  collatz,
+  aberwait,
+  bingosim,
+  web2004,
 };

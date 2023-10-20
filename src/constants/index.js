@@ -24,6 +24,12 @@ import {
   nextnotes,
   rpgai,
   fastpizza,
+  gnssquiz,
+  usepopcorn,
+  collatz,
+  aberwait,
+  bingosim,
+  web2004,
   cplusplus,
 } from "../assets";
 
@@ -462,6 +468,132 @@ const projects = [
     image: fastpizza,
     project_link: "https://cbhuber17.github.io/fast-react-pizza-co/",
     source_code_link: "https://github.com/cbhuber17/fast-react-pizza-co",
+  },
+  {
+    name: "The GNSS Quiz",
+    description: "Test your knowledge on GNSS!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: gnssquiz,
+    project_link: "https://cbhuber17.github.io/react-quiz/",
+    source_code_link: "https://github.com/cbhuber17/react-quiz",
+  },
+  {
+    name: "Use Popcorn",
+    description:
+      "A movie searching app to keep track of your favorite movies plus your choice of ratings!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "green-text-gradient",
+      },
+      {
+        name: "api",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: usepopcorn,
+    project_link: "https://cbhuber17.github.io/use-popcorn/",
+    source_code_link: "https://cbhuber17.github.io/use-popcorn/",
+  },
+  {
+    name: "Collatz Conjecture",
+    description: "Visualization of the 3n+1 problem.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "plotly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dash",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: collatz,
+    project_link: "https://collatz-conjecture-1wmr.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
+  },
+  {
+    name: "Alberta ER Wait Times",
+    description:
+      "Visualization the wait times at various Calgary and Edmonton hospitals.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "plotly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dash",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "mongo",
+        color: "red-text-gradient",
+      },
+    ],
+    image: aberwait,
+    project_link: "https://alberta-er-wait-times.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/ERWaitTimes",
+  },
+  {
+    name: "Bingo Run Simulator",
+    description:
+      "Visualization of the results when playing BINGO 10 million times!",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "plotly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dash",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: bingosim,
+    project_link: "https://bingo-simulator.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/BingoSimulator",
+  },
+  {
+    name: "Personal Website 2004",
+    description: "Retro website that I made back in my university days!",
+    tags: [
+      {
+        name: "html4",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css2",
+        color: "green-text-gradient",
+      },
+    ],
+    image: web2004,
+    project_link:
+      "https://cbhuber17.github.io/website2004/public_html/html/main.html",
+    source_code_link: "https://github.com/cbhuber17/website2004",
   },
 ];
 
