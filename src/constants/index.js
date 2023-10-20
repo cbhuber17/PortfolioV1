@@ -15,9 +15,9 @@ import {
   docker,
   hexagon,
   elections,
-  carrent,
-  jobit,
-  tripguide,
+  wildoasis,
+  traveljournal,
+  videogame,
   cplusplus,
 } from "../assets";
 
@@ -203,54 +203,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "The Wild Oasis",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Internal hotel/cabin rental portal to manage dashboard, users, cabins, bookings & settings.",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -258,12 +216,73 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "styledcomponents",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "recharts",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "red-text-gradient",
+      },
+    ],
+    image: wildoasis,
+    project_link: "https://cbhuber17.github.io/the-wild-oasis/",
+    source_code_link: "https://github.com/cbhuber17/the-wild-oasis",
+  },
+  {
+    name: "WorldWise Travel Journal",
+    description:
+      "An app to select a location on a map and create a journal entry of the visited location!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pocketbase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "leaflet",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "red-text-gradient",
+      },
+    ],
+    image: traveljournal,
+    project_link: "https://cbhuber17.github.io/WorldWise/",
+    source_code_link: "https://github.com/cbhuber17/WorldWise",
+  },
+  {
+    name: "Video Game Archive",
+    description:
+      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: videogame,
+    project_link: "https://video-game-archive.vercel.app/",
+    source_code_link: "https://video-game-archive.vercel.app/",
   },
 ];
 
