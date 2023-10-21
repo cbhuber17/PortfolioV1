@@ -36,7 +36,7 @@ const ComputerCanvas = () => {
 
   // Keep state of isMobile with the useEffect hook below
   useEffect(() => {
-    // Add a listener for changes to scren size
+    // Add a listener for changes to screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
 

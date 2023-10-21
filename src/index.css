@@ -158,9 +158,9 @@
 
 /* canvas- styles */
 .canvas-loader {
-  font-size: 10px;
-  width: 1em;
-  height: 1em;
+  font-size: 15px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   position: relative;
   text-indent: -9999em;
