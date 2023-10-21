@@ -186,30 +186,161 @@ const experiences = [
   },
 ];
 
+const titles = [
+  "Marketing Specialist",
+  "Marketing Manager",
+  "Marketing Director",
+  "Graphic Designer",
+  "Marketing Research Analyst",
+  "Marketing Communications Manager",
+  "Marketing Consultant",
+  "Product Manager",
+  "Public Relations",
+  "Social Media Assistant",
+  "Brand Manager",
+  "SEO Manager",
+  "Content Marketing Manager",
+  "Digital Marketing Manager",
+  "eCommerce Marketing Specialist",
+  "Brand Strategist",
+  "Vice President of Marketing",
+  "Media Relations Coordinator",
+  "CEO",
+  "COO",
+  "CFO",
+  "CIO",
+  "CTO",
+  "CMO",
+  "CHR",
+  "CDO",
+  "CPO",
+  "CCO",
+  "Computer Scientist",
+  "UX Designer & UI Developer",
+  "SQL Developer",
+  "Software Engineer",
+  "DevOps Engineer",
+  "Information Security Analyst",
+  "Artificial Intelligence Engineer",
+  "Cloud Architect",
+  "IT Manager",
+  "Technical Specialist",
+  "Application Developer",
+  "Customer Service Manager",
+  "Technical Support Specialist",
+  "Account Representative",
+  "Client Service Specialist",
+  "Customer Care Associate",
+  "Operations Manager",
+  "Operations Assistant",
+  "Operations Coordinator",
+  "Operations Analyst",
+  "Operations Director",
+  "Vice President of Operations",
+  "Operations Professional",
+  "Scrum Master",
+  "Continuous Improvement Lead",
+  "Researcher",
+  "Research Assistant",
+  "Data Analyst",
+  "Business Analyst",
+  "Financial Analyst",
+  "Biostatistician",
+  "Title Researcher",
+  "Market Researcher",
+  "Title Analyst",
+  "Medical Researcher",
+  "Technical Writer",
+  "Columnist",
+  "Public Relations Specialist",
+];
+
+const sampleTestimonials = [
+  "Working with this team was a fantastic experience. They developed a sleek and responsive website that exceeded our expectations.",
+  "The web developers on this project were incredibly talented. They turned our vision into a beautiful, user-friendly website.",
+  "I'm impressed by the skills of the web development team. They delivered a website that not only looks great but also performs flawlessly.",
+  "The software testing team was instrumental in ensuring the reliability of our application. Their thorough testing process saved us from potential disasters.",
+  "I can't thank the software testing team enough for their dedication. They identified critical bugs that we would have missed on our own.",
+  "The software testers demonstrated exceptional attention to detail, ensuring our software was bug-free and ready for release.",
+  "These web developers are true professionals. They took our concept and transformed it into a dynamic website that our users love.",
+  "The software testing team went above and beyond to guarantee our software met the highest quality standards. They are our QA heroes!",
+  "Our web development project was in great hands with this team. They delivered a product that is visually stunning and functions seamlessly.",
+  "The software testers provided an essential safety net for our software. They caught issues early, saving us time and money.",
+  "Volunteering with this organization has been a deeply rewarding experience. I've had the opportunity to make a positive impact in my community.",
+  "I'm grateful for the chance to volunteer with this group. It's given me a sense of purpose and a chance to give back.",
+  "The volunteering opportunities here are diverse and fulfilling. I've met amazing people and learned valuable skills along the way.",
+  "Volunteering with this nonprofit has been a life-changing experience. It's shown me the power of collective effort in making a difference.",
+  "I've found true fulfillment in volunteering with this organization. It's a wonderful way to connect with others and contribute to a meaningful cause.",
+];
+
+const companyNames = [
+  "ParagonSat",
+  "NextNavTech",
+  "AGNSS",
+  "AutopilotSat",
+  "GemNav",
+  "GEO360",
+  "Datatrix",
+  "KiwiCoder",
+  "Werqly",
+  "NovaSoft",
+  "Keysight",
+  "Codescapes",
+  "WEBO",
+];
+
+function randomElement(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+async function createUser() {
+  const data = await fetch("https://randomuser.me/api/").then((res) =>
+    res.json()
+  );
+
+  const user = {
+    firstName: data.results[0].name.first,
+    lastName: data.results[0].name.last,
+    thumbnail: data.results[0].picture.thumbnail,
+    jobTitle: randomElement(titles),
+    companyName: randomElement(companyNames),
+    testimonial: randomElement(sampleTestimonials),
+  };
+
+  return user;
+}
+
+const user1 = await createUser();
+const user2 = await createUser();
+const user3 = await createUser();
+
 const testimonials = [
   {
     testimonial:
+      user1.testimonial ||
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: `${user1.firstName} ${user1.lastName}` || "Sara Lee",
+    designation: user1.jobTitle || "CFO",
+    company: user1.companyName || "Acme Co",
+    image: user1.thumbnail || "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
+      user2.testimonial ||
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: `${user2.firstName} ${user2.lastName}` || "Chris Brown",
+    designation: user2.jobTitle || "COO",
+    company: user2.companyName || "DEF Corp",
+    image: user2.thumbnail || "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
+      user3.testimonial ||
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: `${user3.firstName} ${user3.lastName}` || "Lisa Wang",
+    designation: user3.jobTitle || "CTO",
+    company: user3.companyName || "456 Enterprises",
+    image: user3.thumbnail || "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -375,10 +506,6 @@ const projects = [
       {
         name: "parcel",
         color: "orange-text-gradient",
-      },
-      {
-        name: "sass",
-        color: "red-text-gradient",
       },
     ],
     image: forkify,
