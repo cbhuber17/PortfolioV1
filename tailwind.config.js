@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#00170F",
+        primary: "#0A073C",
         secondary: "#aaa6c3",
-        tertiary: "#00423E",
+        tertiary: "#00135D",
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
@@ -19,7 +19,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/greenbg.png')",
+        "hero-pattern": "url('/src/assets/bluebg.png')",
       },
     },
   },

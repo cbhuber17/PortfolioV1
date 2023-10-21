@@ -10,7 +10,7 @@ import FeedbackCard from "./FeedbackCard";
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-emerald-900 rounded-[20px]`}>
+    <div className={`mt-12 bg-sky-900 rounded-[20px]`}>
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
