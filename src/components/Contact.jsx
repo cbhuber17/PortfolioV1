@@ -36,25 +36,32 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
+
+    const toastStyle = { fontSize: "20px" };
 
     if (!form.name) {
-      toast.error("Please enter your name.");
+      toast.error("Please enter your name.", { style: toastStyle });
       return;
     }
 
     if (!form.email) {
-      toast.error("Please provide an email address.");
+      toast.error("Please provide an email address.", { style: toastStyle });
+      return;
     }
 
     if (!validateEmail(form.email)) {
-      toast.error("Please provide a valid email address.");
+      toast.error("Please provide a valid email address.", {
+        style: toastStyle,
+      });
+      return;
     }
 
     if (!form.message) {
-      toast.error("Please enter a message");
+      toast.error("Please enter a message", { style: toastStyle });
       return;
     }
+
+    setLoading(true);
 
     emailjs
       .send(
@@ -156,7 +163,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
-      <Toaster />
+      <Toaster position="bottom-center" />
     </div>
   );
 };
