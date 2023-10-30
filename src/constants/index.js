@@ -294,20 +294,24 @@ function randomElement(array) {
 }
 
 async function createUser() {
-  const data = await fetch("https://randomuser.me/api/").then((res) =>
-    res.json()
-  );
+  try {
+    const data = await fetch("https://randomuser.me/api/").then((res) =>
+      res.json()
+    );
 
-  const user = {
-    firstName: data.results[0].name.first,
-    lastName: data.results[0].name.last,
-    thumbnail: data.results[0].picture.thumbnail,
-    jobTitle: randomElement(titles),
-    companyName: randomElement(companyNames),
-    testimonial: randomElement(sampleTestimonials),
-  };
+    const user = {
+      firstName: data.results[0].name.first,
+      lastName: data.results[0].name.last,
+      thumbnail: data.results[0].picture.thumbnail,
+      jobTitle: randomElement(titles),
+      companyName: randomElement(companyNames),
+      testimonial: randomElement(sampleTestimonials),
+    };
 
-  return user;
+    return user;
+  } catch (error) {
+    return null;
+  }
 }
 
 const user1 = await createUser();
@@ -317,30 +321,38 @@ const user3 = await createUser();
 const testimonials = [
   {
     testimonial:
-      user1.testimonial ||
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: `${user1.firstName} ${user1.lastName}` || "Sara Lee",
-    designation: user1.jobTitle || "CFO",
-    company: user1.companyName || "Acme Co",
-    image: user1.thumbnail || "https://randomuser.me/api/portraits/women/4.jpg",
+      user1?.testimonial ||
+      "I thought it was impossible to make a website as beautiful as our product, but Colin proved me wrong.",
+    name: user1?.firstName
+      ? `${user1?.firstName} ${user1?.lastName}`
+      : "Sara Lee",
+    designation: user1?.jobTitle || "CFO",
+    company: user1?.companyName || "Acme Co",
+    image:
+      user1?.thumbnail || "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      user2.testimonial ||
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: `${user2.firstName} ${user2.lastName}` || "Chris Brown",
-    designation: user2.jobTitle || "COO",
-    company: user2.companyName || "DEF Corp",
-    image: user2.thumbnail || "https://randomuser.me/api/portraits/men/5.jpg",
+      user2?.testimonial ||
+      "I've never met a web developer who truly cares about their clients' success like Colin does.",
+    name: user2?.firstName
+      ? `${user2?.firstName} ${user2?.lastName}`
+      : "Chris Brown",
+    designation: user2?.jobTitle || "COO",
+    company: user2?.companyName || "DEF Corp",
+    image: user2?.thumbnail || "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      user3.testimonial ||
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: `${user3.firstName} ${user3.lastName}` || "Lisa Wang",
-    designation: user3.jobTitle || "CTO",
-    company: user3.companyName || "456 Enterprises",
-    image: user3.thumbnail || "https://randomuser.me/api/portraits/women/6.jpg",
+      user3?.testimonial ||
+      "After Colin optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: user3?.firstName
+      ? `${user3?.firstName} ${user3?.lastName}`
+      : "Lisa Wang",
+    designation: user3?.jobTitle || "CTO",
+    company: user3?.companyName || "456 Enterprises",
+    image:
+      user3?.thumbnail || "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -376,7 +388,7 @@ const projects = [
     source_code_link: "https://github.com/cbhuber17/the-wild-oasis",
   },
   {
-    name: "WorldWise Travel Journal",
+    name: "GeoNotes Travel Journal",
     description:
       "An app to select a location on a map and create a journal entry of the visited location!",
     tags: [
@@ -397,7 +409,7 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "sass",
+        name: "aws_amplify",
         color: "red-text-gradient",
       },
     ],
