@@ -738,52 +738,53 @@ const projects = [
 
 const certificates = [
   {
-    img: "ucalgary.png",
-    credential: "BSc. Geomatics Engineering",
-    issued: new Date(),
+    img: "aws.png",
+    credential: "Certified Cloud Practitioner",
+    issued: new Date(2023, 7, 9),
     summary:
-      "Geomatics Engineering deals with the acquisition, modelling and management of spatially referenced data.",
-    link: "https://schulich.ucalgary.ca/geomatics",
-  },
-  {
-    img: "apega.png",
-    credential: "P. Eng, Professional Engineer",
-    issued: new Date(),
-    summary:
-      "APEGA regulates the practices of engineering and geoscience in Alberta.",
-    link: "https://www.apega.ca/",
-  },
-  {
-    img: "istqb.png",
-    credential: "CTFL, Certified Tester Foundation Level",
-    issued: new Date(),
-    summary:
-      "ISTQB® is the leading global certification program in the field of software testing.",
-    link: "https://cstb.ca/certified-testers?certlevelid=1&search=huber",
-  },
-  {
-    img: "udacity.png",
-    credential: "Front End Web Developer Nanodegree",
-    issued: new Date(),
-    summary:
-      "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
-    link: "https://confirm.udacity.com/DZJTQCXD",
+      "Amazon Web Services offers a broad set of global cloud-based products.",
+    link: "https://www.credly.com/badges/e8390a7a-b771-4ced-8b03-d120ee586d1c",
   },
   {
     img: "udacity.png",
     credential: "Full-Stack Developer Nanodegree",
-    issued: new Date(),
+    issued: new Date(2020, 11, 14),
     summary:
       "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
     link: "https://confirm.udacity.com/LNUKASGH",
   },
   {
-    img: "aws.png",
-    credential: "Certified Cloud Practitioner",
-    issued: new Date(),
+    img: "udacity.png",
+    credential: "Front-End Develpoer Nanodegree",
+    issued: new Date(2020, 10, 7),
     summary:
-      "Amazon Web Services offers a broad set of global cloud-based products.",
-    link: "https://www.credly.com/badges/e8390a7a-b771-4ced-8b03-d120ee586d1c",
+      "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
+    link: "https://confirm.udacity.com/DZJTQCXD",
+  },
+  {
+    img: "istqb.png",
+    credential: "Certified Tester Foundation Level",
+    issued: new Date(2015, 5, 22),
+    summary:
+      "ISTQB® is the leading global certification program in the field of software testing.",
+    link: "https://cstb.ca/certified-testers?certlevelid=1&search=huber",
+  },
+
+  {
+    img: "apega.png",
+    credential: "P. Eng, Professional Engineer",
+    issued: new Date(2010, 5, 12),
+    summary:
+      "APEGA regulates the practices of engineering and geoscience in Alberta.",
+    link: "https://www.apega.ca/",
+  },
+  {
+    img: "ucalgary.png",
+    credential: "BSc. Geomatics Engineering",
+    issued: new Date(2005, 5, 10),
+    summary:
+      "Geomatics Engineering deals with the acquisition, modelling and management of spatially referenced data.",
+    link: "https://schulich.ucalgary.ca/geomatics",
   },
   // UDEMY & CODE WITH MOSH
 ];
