@@ -1,19 +1,20 @@
 import certificateStyles from "./Certificates.module.css";
 
 /* eslint react/prop-types: 0 */
-const Certificate = ({ icon, iconText, summary }) => {
+const Certificate = ({ img, summary, link }) => {
   return (
     <div className={certificateStyles.card}>
       <div className={`${certificateStyles.face} ${certificateStyles.face1}`}>
         <div className={certificateStyles.content}>
-          {icon}
-          <h3>{iconText}</h3>
+          <img src={`certificates/${img}`} alt="img" />
         </div>
       </div>
       <div className={`${certificateStyles.face} ${certificateStyles.face2}`}>
         <div className={certificateStyles.content}>
           <p>{summary}</p>
-          <a href="#">Read More</a>
+          <a href={link} rel="noopener noreferrer" target="_blank">
+            Read More
+          </a>
         </div>
       </div>
     </div>
