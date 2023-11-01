@@ -6,19 +6,13 @@ Welcome! This project is currently under construction.
 
 - Three different domains (perhaps as tabs at the top of the page): GNSS, Web Dev, Personal:Trip photos, volunteering, nieces, personal accomplishments
 - Browse [https://sketchfab.com/](https://sketchfab.com/) for 3D models
-- Certificates
+- Certificates - add issue date and udemy and code with mosh grid
 - Change balls to periodic table
 - Sign up emailjs & hostdinger
-- Linkedin, Facebook, Github Profile link
+- Footer responsiveness
 - Separate page for projects
-- Projects not loading sometimes
-- Change default font
+- Footer CSS sass
 
 Features:
 
-- Blur cards
-- Departure board as header titles/tiles
-- Energy button
-- Glass icons for linkedin, facebook etc.
-- Glow card hover for certificates
 - Random blue quotes
