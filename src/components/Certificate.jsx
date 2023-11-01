@@ -15,7 +15,7 @@ const Certificate = ({ img, credential, issued, summary, link }) => {
             {credential}
           </p>
           <p style={{ marginBottom: "10px" }}>
-            <span>Issued:</span>
+            <span>Issued:&nbsp;</span>
             {issued.toDateString().split(" ").slice(1).join(" ")}
           </p>
           <p>{summary}</p>
