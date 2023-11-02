@@ -8,6 +8,32 @@ import IconLinkedIn from "./icons/IconLinkedIn";
 import IconDiscord from "./icons/IconDiscord";
 import IconYoutube from "./icons/IconYoutube";
 
+/* eslint react/prop-types: 0 */
+const Icon = ({ icon, href }) => {
+  return (
+    <li>
+      <a href={href}>{icon}</a>
+    </li>
+  );
+};
+
+const footerIcons = [
+  { icon: <IconFacebook />, href: "https://www.facebook.com/cbhuber/" },
+  { icon: <IconGithub />, href: "https://github.com/cbhuber17" },
+  { icon: <IconLinkedIn />, href: "https://www.linkedin.com/in/cbhuber/" },
+  {
+    icon: <IconDiscord />,
+    href: "https://www.discordapp.com/users/1017575401406611526",
+  },
+  { icon: <IconYoutube />, href: "https://www.youtube.com/@cbhuber" },
+];
+
+let numIcons = footerIcons.length;
+
+if (window.innerWidth < 500) {
+  numIcons = 4;
+}
+
 const Footer = () => {
   return (
     <>
@@ -16,31 +42,9 @@ const Footer = () => {
       </div>
       <footer style={footerStyles.footer}>
         <ul>
-          <li>
-            <a href="https://www.facebook.com/cbhuber/">
-              <IconFacebook />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/cbhuber17">
-              <IconGithub />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/cbhuber/">
-              <IconLinkedIn />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.discordapp.com/users/1017575401406611526">
-              <IconDiscord />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@cbhuber">
-              <IconYoutube />
-            </a>
-          </li>
+          {footerIcons.map((footerIcon, index) =>
+            index < numIcons ? <Icon key={index} {...footerIcon} /> : ""
+          )}
         </ul>
       </footer>
     </>
