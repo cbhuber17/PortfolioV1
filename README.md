@@ -8,8 +8,9 @@ Welcome! This project is currently under construction.
 - Browse [https://sketchfab.com/](https://sketchfab.com/) for 3D models
 - Change balls to periodic table
 - Sign up emailjs & hostdinger
-- Footer/Certificates responsiveness
+- Check overall responsiveness
 - Separate page for projects, udemy & code /w mosh certificates
+- Projects not rendering on small viewports
 
 Features:
 
