@@ -10,6 +10,8 @@ Welcome! This project is currently under construction.
 - Sign up emailjs & hostdinger
 - Check overall responsiveness
 - Separate page for projects, udemy & code /w mosh certificates
+- Addendum sort projects
+- Navlinks in constants.js link on current page and to other pages.
 - Projects not rendering on small viewports
 
 Features:
