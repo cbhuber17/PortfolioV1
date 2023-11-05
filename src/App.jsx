@@ -1,38 +1,14 @@
-import { BrowserRouter } from "react-router-dom";
-import {
-  About,
-  Contact,
-  Experience,
-  // Feedbacks,
-  Certificates,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-  Footer,
-} from "./components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Addendum from "./pages/Addendum";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        {/* <Feedbacks /> */}
-        <Certificates />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <Footer />
-      </div>
+      <Routes>
+        <Route index element={<Homepage />} />
+        <Route path="addendum" element={<Addendum />} />
+      </Routes>
     </BrowserRouter>
   );
 };
