@@ -13,8 +13,8 @@ import html from "./tech/html.png";
 import cplusplus from "./tech/cplusplus.png";
 import mongodb from "./tech/mongodb.png";
 import supabase from "./tech/supabase.png";
-import neon from "./tech/neon.png";
-import pocketbase from "./tech/pocketbase.png";
+// import neon from "./tech/neon.png";
+// import pocketbase from "./tech/pocketbase.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
@@ -23,60 +23,92 @@ import typescript from "./tech/typescript.png";
 import hexagon from "./company/hexagon.png";
 import elections from "./company/elections.png";
 
-import wildoasis from "./projects/wildoasis.png";
 import traveljournal from "./projects/traveljournal.png";
-import videogame from "./projects/videogame.png";
-import defectrecord from "./projects/defectrecord.png";
-import natours from "./projects/natours.png";
+import packtravel from "./projects/packtravel.png";
 import forkify from "./projects/forkify.png";
-import nextnotes from "./projects/nextnotes.png";
-import rpgai from "./projects/rpgai.png";
-import fastpizza from "./projects/fastpizza.png";
-import gnssquiz from "./projects/gnssquiz.png";
-import usepopcorn from "./projects/usepopcorn.png";
 import collatz from "./projects/collatz.png";
+import rpgai from "./projects/rpgai.png";
+import videogame from "./projects/videogame.png";
+import nextphoto from "./projects/nextphoto.png";
+import countriesapi from "./projects/countriesapi.png";
+import vietnamblog from "./projects/vietnamblog.png";
+import gnssquiz from "./projects/gnssquiz.png";
+import natourslanding from "./projects/natourslanding.png";
+import natours from "./projects/natours.png";
+import pportfolio from "./projects/pportfolio.png";
+import zeal from "./projects/zeal.png";
+import nodefarm from "./projects/nodefarm.png";
+import fastpizza from "./projects/fastpizza.png";
+import trillo from "./projects/trillo.png";
+import vnlandingpage from "./projects/vnlandingpage.png";
+import saaslanding from "./projects/saaslanding.png";
+import guessnumretro from "./projects/guessnumretro.png";
+import usepopcorn from "./projects/usepopcorn.png";
+import threadportfolio from "./projects/threadportfolio.png";
+import wildoasis from "./projects/wildoasis.png";
+import techd from "./projects/techd.png";
+import web2004 from "./projects/web2004.png";
+import piggame from "./projects/piggame.png";
+import defectrecord from "./projects/defectrecord.png";
+import nexter from "./projects/nexter.png";
 import aberwait from "./projects/aberwait.png";
 import bingosim from "./projects/bingosim.png";
-import web2004 from "./projects/web2004.png";
-import zeal from "./projects/zeal.png";
+import nextnotes from "./projects/nextnotes.png";
+import eventgrids from "./projects/eventgrids.png";
 
 export {
-  logo,
+  // pocketbase,
+  css,
+  techd,
+  reactjs,
+  fastpizza,
+  piggame,
+  packtravel,
+  forkify,
+  collatz,
+  vietnamblog,
+  hexagon,
+  external,
   github,
+  logo,
   menu,
   close,
-  external,
+  saaslanding,
+  guessnumretro,
   python,
-  css,
-  sass,
-  docker,
-  git,
-  html,
-  mongodb,
-  supabase,
-  neon,
-  pocketbase,
-  nodejs,
-  reactjs,
-  tailwind,
-  typescript,
-  cplusplus,
-  hexagon,
-  elections,
-  wildoasis,
-  traveljournal,
-  videogame,
-  defectrecord,
-  natours,
-  forkify,
+  trillo,
   nextnotes,
-  rpgai,
-  fastpizza,
-  gnssquiz,
+  // neon,
+  docker,
+  nodefarm,
+  traveljournal,
+  wildoasis,
+  vnlandingpage,
+  natours,
+  nexter,
+  nodejs,
+  eventgrids,
   usepopcorn,
-  collatz,
   aberwait,
-  bingosim,
-  web2004,
+  elections,
+  tailwind,
+  pportfolio,
+  rpgai,
+  natourslanding,
   zeal,
+  supabase,
+  threadportfolio,
+  git,
+  web2004,
+  bingosim,
+  typescript,
+  gnssquiz,
+  countriesapi,
+  sass,
+  html,
+  defectrecord,
+  mongodb,
+  videogame,
+  nextphoto,
+  cplusplus,
 };

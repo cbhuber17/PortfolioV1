@@ -1,37 +1,53 @@
 import {
-  python,
-  typescript,
-  html,
-  css,
-  sass,
-  reactjs,
-  tailwind,
-  nodejs,
-  mongodb,
-  supabase,
-  // neon,
-  // pocketbase,
-  git,
-  docker,
-  hexagon,
-  elections,
+  trillo,
   wildoasis,
-  traveljournal,
-  videogame,
-  defectrecord,
+  html,
+  techd,
   natours,
+  nexter,
+  python,
+  guessnumretro,
+  web2004,
+  elections,
+  supabase,
+  natourslanding,
   forkify,
+  nextphoto,
+  mongodb,
+  pportfolio,
   nextnotes,
+  cplusplus,
+  collatz,
+  typescript,
+  // pocketbase,
+  videogame,
+  docker,
+  aberwait,
+  defectrecord,
+  saaslanding,
+  vietnamblog,
+  packtravel,
+  bingosim,
+  hexagon,
+  piggame,
+  gnssquiz,
+  threadportfolio,
+  usepopcorn,
+  zeal,
   rpgai,
   fastpizza,
-  gnssquiz,
-  usepopcorn,
-  collatz,
-  aberwait,
-  bingosim,
-  web2004,
-  zeal,
-  cplusplus,
+  countriesapi,
+  nodejs,
+  eventgrids,
+  reactjs,
+  git,
+  nodefarm,
+  sass,
+  traveljournal,
+  tailwind,
+  vnlandingpage,
+  // neon,
+  css,
 } from "../assets";
 
 import { full_stack, gnss, cloud, tutor } from "../assets/service_icons";
@@ -686,6 +702,37 @@ const projects = [
     date_created: new Date(2023, 5, 30),
   },
   {
+    name: "AI Photo Album",
+    description:
+      "Modern tech stack of Cloudinary combined with AI to portray a different style photo album.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cloudinary",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "radix-ui",
+        color: "red-text-gradient",
+      },
+    ],
+    image: nextphoto,
+    project_link: "https://nextjs-photo-album-three.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/nextjs-photo-album",
+    date_created: new Date(2023, 7, 10),
+  },
+  {
     name: "Use Popcorn",
     description:
       "A movie searching app to keep track of your favorite movies plus your choice of ratings!",
@@ -732,6 +779,21 @@ const projects = [
     date_created: new Date(2022, 5, 3),
   },
   {
+    name: "Where am I?",
+    description:
+      "A simple API-fetching app to render the country you are in (and the neighboring country if applicable).",
+    tags: [
+      {
+        name: "api",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: countriesapi,
+    project_link: "https://cbhuber17.github.io/CountriesAPI/",
+    source_code_link: "https://github.com/cbhuber17/CountriesAPI",
+    date_created: new Date(2023, 2, 10),
+  },
+  {
     name: "Personal Website 2004",
     description: "Retro website that I made back in my university days!",
     tags: [
@@ -749,6 +811,70 @@ const projects = [
       "https://cbhuber17.github.io/website2004/public_html/html/main.html",
     source_code_link: "https://github.com/cbhuber17/website2004",
     date_created: new Date(2004, 10, 15),
+  },
+  {
+    name: "Vietnam Blog Page",
+    description:
+      "My first attempt at HMTL5/CSS3 (15 years since I used HTML4/CSS2) during the pandemic in 2020.  A small blog to host travels to my favorite country.",
+    tags: [
+      {
+        name: "html5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css3",
+        color: "green-text-gradient",
+      },
+    ],
+    image: vietnamblog,
+    project_link: "https://cbhuber17.github.io/VietnamBlogPage/",
+    source_code_link: "https://github.com/cbhuber17/VietnamBlogPage",
+    date_created: new Date(2020, 8, 29),
+  },
+  {
+    name: "Vietnam Tour Landing Page",
+    description: "My favorite city tour landing page.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: vnlandingpage,
+    project_link: "https://cbhuber17.github.io/LandingPage/",
+    source_code_link: "https://github.com/cbhuber17/LandingPage",
+    date_created: new Date(2020, 9, 13),
+  },
+  {
+    name: "Event Grids Conference",
+    description:
+      "Looking to host a conference?  Event Grids can hook you up. A complete standard HTML/CSS/JS website.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: eventgrids,
+    project_link: "https://cbhuber17.github.io/event-grids-conference/",
+    source_code_link: "https://github.com/cbhuber17/event-grids-conference",
+    date_created: new Date(2022, 3, 1),
   },
   {
     name: "Personal Trainer Landing Page",
@@ -771,248 +897,250 @@ const projects = [
     project_link: "https://cbhuber17.github.io/personal-trainer-landing-page/",
     source_code_link:
       "https://github.com/cbhuber17/personal-trainer-landing-page",
-    date_created: new Date(2023, 9, 24),
+    date_created: new Date(2022, 6, 27),
   },
-  // {
-  //   name: "",
-  //   description: "",
-  //   tags: [
-  //     {
-  //       name: "",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "red-text-gradient",
-  //     },
-  //   ],
-  // image: ,
-  // project_link: "",
-  // source_code_link: "",
-  // date_created: new Date(yyyy, mm-1, đ),
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   tags: [
-  //     {
-  //       name: "",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "red-text-gradient",
-  //     },
-  //   ],
-  // image: ,
-  // project_link: "",
-  // source_code_link: "",
-  // date_created: new Date(yyyy, mm-1, đ),
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   tags: [
-  //     {
-  //       name: "",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "red-text-gradient",
-  //     },
-  //   ],
-  // image: ,
-  // project_link: "",
-  // source_code_link: "",
-  // date_created: new Date(yyyy, mm-1, đ),
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   tags: [
-  //     {
-  //       name: "",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "red-text-gradient",
-  //     },
-  //   ],
-  // image: ,
-  // project_link: "",
-  // source_code_link: "",
-  // date_created: new Date(yyyy, mm-1, đ),
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   tags: [
-  //     {
-  //       name: "",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "red-text-gradient",
-  //     },
-  //   ],
-  // image: ,
-  // project_link: "",
-  // source_code_link: "",
-  // date_created: new Date(yyyy, mm-1, đ),
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   tags: [
-  //     {
-  //       name: "",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "red-text-gradient",
-  //     },
-  //   ],
-  // image: ,
-  // project_link: "",
-  // source_code_link: "",
-  // date_created: new Date(yyyy, mm-1, đ),
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   tags: [
-  //     {
-  //       name: "",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "red-text-gradient",
-  //     },
-  //   ],
-  // image: ,
-  // project_link: "",
-  // source_code_link: "",
-  // date_created: new Date(yyyy, mm-1, đ),
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   tags: [
-  //     {
-  //       name: "",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "",
-  //       color: "red-text-gradient",
-  //     },
-  //   ],
-  // image: ,
-  // project_link: "",
-  // source_code_link: "",
-  // date_created: new Date(yyyy, mm-1, đ),
-  // },
+  {
+    name: "Photographer Portfolio",
+    description:
+      "An effective representation of a well established photographer.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pportfolio,
+    project_link: "https://cbhuber17.github.io/photographer-portfolio/",
+    source_code_link: "https://github.com/cbhuber17/photographer-portfolio",
+    date_created: new Date(2022, 2, 24),
+  },
+  {
+    name: "Packing Travel List",
+    description:
+      "A React Single Page Application (SPA) to keep track of items to pack for your next trip!",
+    tags: [
+      {
+        name: "react18",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: packtravel,
+    project_link: "https://cbhuber17.github.io/travel-list/",
+    source_code_link: "https://github.com/cbhuber17/travel-list",
+    date_created: new Date(2023, 5, 21),
+  },
+  {
+    name: "Node Farm",
+    description:
+      "Using NodeJS, create a mini vegetable hosting e-commerce website.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: nodefarm,
+    project_link: "https://node-farm-uzim.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/node-farm",
+    date_created: new Date(2023, 2, 21),
+  },
+  {
+    name: "Pig Game",
+    description:
+      "Game where you get points equal to the dice roll.  However if you roll a 1, you lose your turn :)",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "game",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: piggame,
+    project_link: "https://cbhuber17.github.io/PigGame/index.html",
+    source_code_link: "https://github.com/cbhuber17/PigGame",
+    date_created: new Date(2022, 11, 17),
+  },
+  {
+    name: "Guess My Number Retro",
+    description: "Simple number guessing game with a retro layout!",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "game",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: guessnumretro,
+    project_link:
+      "https://cbhuber17.github.io/guess-my-number-retro/index.html",
+    source_code_link: "https://github.com/cbhuber17/guess-my-number-retro",
+    date_created: new Date(2022, 11, 13),
+  },
+  {
+    name: "Natours Landing Page",
+    description:
+      "A more immersive lesson in CSS, develop a fully responsive tours landing page.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: natourslanding,
+    project_link: "https://cbhuber17.github.io/Natours/",
+    source_code_link: "https://github.com/cbhuber17/Natours",
+    date_created: new Date(2020, 10, 9),
+  },
+  {
+    name: "Trillo",
+    description:
+      "More advanced CSS/SASS responsive design of a hotel booking/review page.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: trillo,
+    project_link: "https://cbhuber17.github.io/Trillo/",
+    source_code_link: "https://github.com/cbhuber17/Trillo",
+    date_created: new Date(2020, 11, 16),
+  },
+  {
+    name: "Nexter",
+    description:
+      "A complete lesson in CSS grids, showcase luxury homes from real estate agents.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "grid",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nexter,
+    project_link: "https://cbhuber17.github.io/Nexter/",
+    source_code_link: "https://github.com/cbhuber17/Nexter",
+    date_created: new Date(2020, 11, 19),
+  },
+  {
+    name: "Thread Portfolio Creator",
+    description: "A simple landing page as a SaaS to create a portfolio.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: threadportfolio,
+    project_link: "https://cbhuber17.github.io/thread-portfolio-creator/",
+    source_code_link: "https://github.com/cbhuber17/thread-portfolio-creator",
+    date_created: new Date(2022, 0, 15),
+  },
+  {
+    name: "TechD",
+    description: "Creative Tech Agency for Technology Solutions Landing Page",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: techd,
+    project_link: "https://cbhuber17.github.io/creative-techd/",
+    source_code_link: "https://github.com/cbhuber17/creative-techd",
+    date_created: new Date(2022, 3, 16),
+  },
+  {
+    name: "SaaS Landing Page",
+    description: "Simple SaaS Landing Page",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: saaslanding,
+    project_link: "https://cbhuber17.github.io/saas-landing-page/",
+    source_code_link: "https://github.com/cbhuber17/saas-landing-page",
+    date_created: new Date(2022, 1, 14),
+  },
   // {
   //   name: "",
   //   description: "",
