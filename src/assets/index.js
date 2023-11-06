@@ -38,6 +38,7 @@ import collatz from "./projects/collatz.png";
 import aberwait from "./projects/aberwait.png";
 import bingosim from "./projects/bingosim.png";
 import web2004 from "./projects/web2004.png";
+import zeal from "./projects/zeal.png";
 
 export {
   logo,
@@ -77,4 +78,5 @@ export {
   aberwait,
   bingosim,
   web2004,
+  zeal,
 };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import ParagraphHeader from "./ParagraphHeader";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
@@ -27,10 +27,21 @@ const Works = () => {
       </div>
 
       <div className="card-grid mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        {/* Show top projects */}
+        {projects.map((project, index) =>
+          index < 6 ? (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ) : (
+            ""
+          )
+        )}
       </div>
+      <p className="mt-10">
+        See complete list on the addendum page 👉{" "}
+        <Link to="/addendum#projects" className="text-blue-300">
+          addendum.
+        </Link>{" "}
+      </p>
     </>
   );
 };

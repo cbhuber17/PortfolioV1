@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import ParagraphHeader from "./../components/ParagraphHeader";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-// import { projects } from "../constants";
-// import ProjectCard from "./ProjectCard";
+import { projects } from "../constants";
+import ProjectCard from "./../components/ProjectCard";
 
 const Addendum = () => {
   return (
-    <div className="relative z-0 bg-primary">
+    <div className="relative z-0 bg-primary" id="projects">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
       </div>
@@ -22,7 +22,14 @@ const Addendum = () => {
       >
         All projects are shown below.
       </motion.p>
-      {/* TODO: Sort ascending/descending by date created, or by popularity */}
+
+      {/* TODO: Filter button: Sort by: Popular, alphabetical, created date asc/desc  */}
+
+      <div className="card-grid mt-20 flex flex-wrap gap-7" id="certificates">
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
 
       <motion.div variants={textVariant()}>
         <ParagraphHeader

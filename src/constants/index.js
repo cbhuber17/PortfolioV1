@@ -30,6 +30,7 @@ import {
   aberwait,
   bingosim,
   web2004,
+  zeal,
   cplusplus,
 } from "../assets";
 
@@ -386,6 +387,7 @@ const projects = [
     image: wildoasis,
     project_link: "https://cbhuber17.github.io/the-wild-oasis/",
     source_code_link: "https://github.com/cbhuber17/the-wild-oasis",
+    date_created: new Date(2023, 6, 13),
   },
   {
     name: "GeoNotes Travel Journal",
@@ -416,28 +418,7 @@ const projects = [
     image: traveljournal,
     project_link: "https://cbhuber17.github.io/WorldWise/",
     source_code_link: "https://github.com/cbhuber17/WorldWise",
-  },
-  {
-    name: "Video Game Archive",
-    description:
-      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: videogame,
-    project_link: "https://video-game-archive.vercel.app/",
-    source_code_link: "https://video-game-archive.vercel.app/",
+    date_created: new Date(2023, 6, 3),
   },
   {
     name: "Bugz Defect Record",
@@ -468,180 +449,7 @@ const projects = [
     image: defectrecord,
     project_link: "",
     source_code_link: "https://github.com/cbhuber17/bugz-defect-record",
-  },
-  {
-    name: "Natours Tour Booking",
-    description:
-      "A tour booking website, complete with user accounts and credit card payments via stipe.",
-    tags: [
-      {
-        name: "nodejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "stripe",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongo",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "pug",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "sass",
-        color: "red-text-gradient",
-      },
-    ],
-    image: natours,
-    project_link: "https://natours-ewub.onrender.com/",
-    source_code_link: "https://github.com/cbhuber17/natours-api",
-  },
-  {
-    name: "Forkify",
-    description: "A recipe searching and preview app.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sass",
-        color: "green-text-gradient",
-      },
-      {
-        name: "api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "parcel",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: forkify,
-    project_link: "https://forkify-bys9.onrender.com/",
-    source_code_link: "https://github.com/cbhuber17/Forkify",
-  },
-  {
-    name: "NextJS Notes",
-    description: "A medieval theme note taking app.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "pocketbase",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "red-text-gradient",
-      },
-    ],
-    image: nextnotes,
-    project_link: "https://nextjs-notes-navy.vercel.app/",
-    source_code_link: "https://github.com/cbhuber17/nextjs-notes",
-  },
-  {
-    name: "RPG Text Adventure AI",
-    description:
-      "A mock Dungeons & Dragons theme app to chat with GPT regarding your situation in a dungeon 🐉.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "openai",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcscs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "convex",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "red-text-gradient",
-      },
-    ],
-    image: rpgai,
-    project_link: "https://rpg-text-adventure-oco0dha61-cbhuber17.vercel.app/",
-    source_code_link: "https://github.com/cbhuber17/rpg-text-adventure-ai",
-  },
-  {
-    name: "Fast React Pizza Co.",
-    description: "Pizza ordering app!  🍕.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcscs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: fastpizza,
-    project_link: "https://cbhuber17.github.io/fast-react-pizza-co/",
-    source_code_link: "https://github.com/cbhuber17/fast-react-pizza-co",
-  },
-  {
-    name: "The GNSS Quiz",
-    description: "Test your knowledge on GNSS!",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: gnssquiz,
-    project_link: "https://cbhuber17.github.io/react-quiz/",
-    source_code_link: "https://github.com/cbhuber17/react-quiz",
-  },
-  {
-    name: "Use Popcorn",
-    description:
-      "A movie searching app to keep track of your favorite movies plus your choice of ratings!",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sass",
-        color: "green-text-gradient",
-      },
-      {
-        name: "api",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: usepopcorn,
-    project_link: "https://cbhuber17.github.io/use-popcorn/",
-    source_code_link: "https://cbhuber17.github.io/use-popcorn/",
+    date_created: new Date(2023, 9, 10),
   },
   {
     name: "Collatz Conjecture",
@@ -663,6 +471,7 @@ const projects = [
     image: collatz,
     project_link: "https://collatz-conjecture-1wmr.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
+    date_created: new Date(2023, 1, 27),
   },
   {
     name: "Alberta ER Wait Times",
@@ -693,6 +502,211 @@ const projects = [
     image: aberwait,
     project_link: "https://alberta-er-wait-times.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/ERWaitTimes",
+    date_created: new Date(2022, 4, 30),
+  },
+  {
+    name: "Video Game Archive",
+    description:
+      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: videogame,
+    project_link: "https://github.com/cbhuber17/VideoGameArchive",
+    source_code_link: "https://video-game-archive.vercel.app/",
+    date_created: new Date(2023, 5, 21),
+  },
+  {
+    name: "Natours Tour Booking",
+    description:
+      "A tour booking website, complete with user accounts and credit card payments via stipe.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongo",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "pug",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "red-text-gradient",
+      },
+    ],
+    image: natours,
+    project_link: "https://natours-ewub.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/natours-api",
+    date_created: new Date(2023, 2, 23),
+  },
+  {
+    name: "Forkify",
+    description: "A recipe searching and preview app.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "green-text-gradient",
+      },
+      {
+        name: "api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "parcel",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: forkify,
+    project_link: "https://forkify-bys9.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/Forkify",
+    date_created: new Date(2023, 2, 12),
+  },
+  {
+    name: "Fast React Pizza Co.",
+    description: "Pizza ordering app!  🍕.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcscs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: fastpizza,
+    project_link: "https://cbhuber17.github.io/fast-react-pizza-co/",
+    source_code_link: "https://github.com/cbhuber17/fast-react-pizza-co",
+    date_created: new Date(2023, 6, 11),
+  },
+  {
+    name: "RPG Text Adventure AI",
+    description:
+      "A mock Dungeons & Dragons theme app to chat with GPT regarding your situation in a dungeon 🐉.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcscs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "convex",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "red-text-gradient",
+      },
+    ],
+    image: rpgai,
+    project_link: "https://rpg-text-adventure-oco0dha61-cbhuber17.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/rpg-text-adventure-ai",
+    date_created: new Date(2023, 8, 13),
+  },
+  {
+    name: "NextJS Notes",
+    description: "A medieval theme note taking app.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pocketbase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "red-text-gradient",
+      },
+    ],
+    image: nextnotes,
+    project_link: "https://nextjs-notes-navy.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/nextjs-notes",
+    date_created: new Date(2023, 8, 18),
+  },
+  {
+    name: "The GNSS Quiz",
+    description: "Test your knowledge on GNSS!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: gnssquiz,
+    project_link: "https://cbhuber17.github.io/react-quiz/",
+    source_code_link: "https://github.com/cbhuber17/react-quiz",
+    date_created: new Date(2023, 5, 30),
+  },
+  {
+    name: "Use Popcorn",
+    description:
+      "A movie searching app to keep track of your favorite movies plus your choice of ratings!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "green-text-gradient",
+      },
+      {
+        name: "api",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: usepopcorn,
+    project_link: "https://cbhuber17.github.io/use-popcorn/",
+    source_code_link: "https://cbhuber17.github.io/use-popcorn/",
+    date_created: new Date(2023, 5, 25),
   },
   {
     name: "Bingo Run Simulator",
@@ -715,6 +729,7 @@ const projects = [
     image: bingosim,
     project_link: "https://bingo-simulator.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/BingoSimulator",
+    date_created: new Date(2022, 5, 3),
   },
   {
     name: "Personal Website 2004",
@@ -733,7 +748,301 @@ const projects = [
     project_link:
       "https://cbhuber17.github.io/website2004/public_html/html/main.html",
     source_code_link: "https://github.com/cbhuber17/website2004",
+    date_created: new Date(2004, 10, 15),
   },
+  {
+    name: "Personal Trainer Landing Page",
+    description: "Simple HTML/CSS landing page of personal trainer services.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: zeal,
+    project_link: "https://cbhuber17.github.io/personal-trainer-landing-page/",
+    source_code_link:
+      "https://github.com/cbhuber17/personal-trainer-landing-page",
+    date_created: new Date(2023, 9, 24),
+  },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
+  // {
+  //   name: "",
+  //   description: "",
+  //   tags: [
+  //     {
+  //       name: "",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "",
+  //       color: "red-text-gradient",
+  //     },
+  //   ],
+  // image: ,
+  // project_link: "",
+  // source_code_link: "",
+  // date_created: new Date(yyyy, mm-1, đ),
+  // },
 ];
 
 const certificates = [
