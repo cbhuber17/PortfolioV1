@@ -41,7 +41,11 @@ const Addendum = () => {
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
       </div>
-      <ParagraphHeader pText="All Projects" hText="Addendum." style="" />
+      <ParagraphHeader
+        pText="Addendum"
+        hText={`All Projects. (${sortedProjects.length})`}
+        style=""
+      />
 
       <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
         All projects are shown below.
