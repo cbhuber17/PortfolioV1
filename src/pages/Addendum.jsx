@@ -51,7 +51,6 @@ const Addendum = () => {
         All projects are shown below.
       </p>
 
-      {/* TODO: Sort button: Sort by: Popular, alphabetical, created date asc/desc  */}
       {/* TODO: Filter button: Query text from input element  */}
       {/* <Filter
         filterField="projects"
