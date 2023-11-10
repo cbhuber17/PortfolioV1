@@ -13,6 +13,7 @@ Welcome! This project is currently under construction.
 - Addendum sort projects
 - Navlinks in constants.js link on current page and to other pages.
 - Projects not rendering on small viewports
+- Handle incorrect 404 routes
 
 Features:
 
