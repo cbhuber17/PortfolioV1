@@ -1241,7 +1241,6 @@ const certificates = [
       "ISTQB® is the leading global certification program in the field of software testing.",
     link: "https://cstb.ca/certified-testers?certlevelid=1&search=huber",
   },
-
   {
     img: "apega.png",
     credential: "P. Eng, Professional Engineer",
