@@ -3,7 +3,6 @@ import ParagraphHeader from "./../components/ParagraphHeader";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import ProjectCard from "./../components/ProjectCard";
-// import Filter from "../components/Filter";
 import SortBy from "../components/SortBy";
 import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
