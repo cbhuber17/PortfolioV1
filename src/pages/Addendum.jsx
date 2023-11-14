@@ -1,6 +1,5 @@
 import { Navbar } from "../components";
 import ParagraphHeader from "./../components/ParagraphHeader";
-import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import ProjectCard from "./../components/ProjectCard";
 import SortBy from "../components/SortBy";
@@ -72,57 +71,62 @@ const Addendum = () => {
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
       </div>
-      <ParagraphHeader
-        pText="Addendum"
-        hText={`All Projects. (${uniqueProjects.length})`}
-        style=""
-      />
-
-      <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        All projects are shown below.
-      </p>
-
-      <input
-        type="text"
-        placeholder="Filter projects..."
-        onChange={(e) => setSearchQuery(e.target.value)}
-        className="my-5 px-2 py-2"
-      />
-
-      <div className="flex w-60 justify-between">
-        <p>Sort By:</p>
-        <SortBy
-          options={[
-            { value: "popular", label: "Popular" },
-            { value: "alphabetical", label: "Alphabetical" },
-            { value: "created-desc", label: "Created ↓" },
-            { value: "created-asc", label: "Created ↑" },
-          ]}
+      <div className="mt-12 px-10">
+        <ParagraphHeader
+          pText="Addendum"
+          hText={`All Projects. (${uniqueProjects.length})`}
+          style=""
         />
-      </div>
 
-      <div className="card-grid mt-20 flex flex-wrap gap-7" id="certificates">
-        {uniqueProjects.map((project, index) => (
-          <ProjectCard
-            key={`project-${index}`}
-            show_motion={false}
-            {...project}
+        <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+          All projects are shown below.
+        </p>
+
+        <input
+          type="text"
+          placeholder="Filter projects..."
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="my-5 px-2 py-2"
+        />
+
+        <div className="flex w-60 justify-between">
+          <p>Sort By:</p>
+          <SortBy
+            options={[
+              { value: "popular", label: "Popular" },
+              { value: "alphabetical", label: "Alphabetical" },
+              { value: "created-desc", label: "Created ↓" },
+              { value: "created-asc", label: "Created ↑" },
+            ]}
           />
-        ))}
+        </div>
+
+        <div className="card-grid mt-20 flex flex-wrap gap-7">
+          {uniqueProjects.map((project, index) => (
+            <ProjectCard
+              key={`project-${index}`}
+              show_motion={false}
+              {...project}
+            />
+          ))}
+        </div>
+
+        <br />
+
+        <ParagraphHeader
+          pText="All Certificates"
+          hText="Extracurricular Learning."
+        />
+
+        <p
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          id="certificates"
+        >
+          All certificates are shown below.
+        </p>
       </div>
-
-      <br />
-
-      <ParagraphHeader
-        pText="All Certificates"
-        hText="Extracurricular Learning."
-      />
-
-      <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        All certificates are shown below.
-      </p>
     </div>
   );
 };
 
-export default SectionWrapper(Addendum);
+export default Addendum;
