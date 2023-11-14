@@ -1277,6 +1277,8 @@ const certificates = [
   {
     img: "aws.png",
     credential: "Certified Cloud Practitioner",
+    provider: "AWS",
+    instructor: "",
     issued: new Date(2023, 7, 9),
     summary:
       "Amazon Web Services offers a broad set of global cloud-based products.",
@@ -1285,6 +1287,8 @@ const certificates = [
   {
     img: "udacity.png",
     credential: "Full-Stack Developer Nanodegree",
+    provider: "Udacity",
+    instructor: "Sebastian Thrun",
     issued: new Date(2020, 11, 14),
     summary:
       "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
@@ -1293,6 +1297,8 @@ const certificates = [
   {
     img: "udacity.png",
     credential: "Front-End Develpoer Nanodegree",
+    provider: "Udacity",
+    instructor: "Sebastian Thrun",
     issued: new Date(2020, 10, 7),
     summary:
       "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
@@ -1301,6 +1307,8 @@ const certificates = [
   {
     img: "istqb.png",
     credential: "Certified Tester Foundation Level",
+    provider: "CTSB",
+    instructor: "",
     issued: new Date(2015, 5, 22),
     summary:
       "ISTQB® is the leading global certification program in the field of software testing.",
@@ -1309,6 +1317,8 @@ const certificates = [
   {
     img: "apega.png",
     credential: "P. Eng, Professional Engineer",
+    provider: "APEGA",
+    instructor: "",
     issued: new Date(2010, 5, 12),
     summary:
       "APEGA regulates the practices of engineering and geoscience in Alberta.",
@@ -1317,12 +1327,22 @@ const certificates = [
   {
     img: "ucalgary.png",
     credential: "BSc. Geomatics Engineering",
+    provider: "University of Calgary",
+    instructor: "",
     issued: new Date(2005, 5, 10),
     summary:
       "Geomatics Engineering deals with the acquisition, modelling and management of spatially referenced data.",
     link: "https://schulich.ucalgary.ca/geomatics",
   },
-  // UDEMY & CODE WITH MOSH
+  // {
+  //   img: "",
+  //   credential: "",
+  //   provider: "",
+  //   instructor: "",
+  //   issued: new Date(yyyy, mm - 1, dd),
+  //   summary: "",
+  //   link: "",
+  // },
 ];
 
 export {
