@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-
+import { Link } from "react-router-dom";
 import { SectionWrapper } from "../hoc";
 import Certificate from "./Certificate";
 import ParagraphHeader from "./ParagraphHeader";
@@ -28,6 +28,12 @@ const Certificates = () => {
           <Certificate key={index} {...certificate} />
         ))}
       </div>
+      <p className="mt-10">
+        See complete list on the addendum page 👉{" "}
+        <Link to="/addendum#certificates" className="text-blue-300">
+          addendum.
+        </Link>{" "}
+      </p>
     </>
   );
 };
