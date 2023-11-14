@@ -7,15 +7,9 @@ import SortBy from "../components/SortBy";
 import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
 
-const Addendum = () => {
-  const [searchParams] = useSearchParams();
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const sortBy = searchParams.get("sortBy") || "popular";
-
+function getSortedProjects(sortBy) {
   // Default order is popularity (index number) in constants.js
   let sortedProjects;
-
   switch (sortBy) {
     case "alphabetical":
       sortedProjects = projects.sort(function (a, b) {
@@ -37,13 +31,17 @@ const Addendum = () => {
       break;
   }
 
+  return sortedProjects;
+}
+
+function getFilteredProjects(projects, searchQuery) {
   // Project names (titles) filtered by search query
-  const filteredNames = sortedProjects.filter((project) =>
+  const filteredNames = projects.filter((project) =>
     project.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   // Project tags filtered by search query
-  const filteredTags = sortedProjects.filter((project) =>
+  const filteredTags = projects.filter((project) =>
     project.tags.map((tag) => tag.name).includes(searchQuery)
   );
 
@@ -55,6 +53,19 @@ const Addendum = () => {
   const uniqueProjects = [
     ...new Map(filteredProjects.map((item) => [item["name"], item])).values(),
   ];
+
+  return uniqueProjects;
+}
+
+const Addendum = () => {
+  const [searchParams] = useSearchParams();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const sortBy = searchParams.get("sortBy") || "popular";
+
+  // Sort & Filter
+  const sortedProjects = getSortedProjects(sortBy);
+  const uniqueProjects = getFilteredProjects(sortedProjects, searchQuery);
 
   return (
     <div className="relative z-0 bg-primary" id="projects">
