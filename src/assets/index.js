@@ -19,6 +19,20 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import swtest from "./tech/swtest.png";
+import java from "./tech/java.png";
+import javascript from "./tech/javascript.png";
+import redux from "./tech/redux.png";
+import nextjs from "./tech/nextjs.png";
+import aws from "./tech/aws.png";
+import yaml from "./tech/yaml.png";
+import google from "./tech/google.png";
+import reactquery from "./tech/reactquery.png";
+import plotly from "./tech/plotly.png";
+import figma from "./tech/figma.png";
+import postgre from "./tech/postgre.png";
+import express from "./tech/express.png";
+import angular from "./tech/angular.png";
 
 import hexagon from "./company/hexagon.png";
 import elections from "./company/elections.png";
@@ -89,6 +103,7 @@ export {
   vnlandingpage,
   natours,
   nexter,
+  reactquery,
   nodejs,
   eventgrids,
   usepopcorn,
@@ -115,4 +130,17 @@ export {
   videogame,
   nextphoto,
   cplusplus,
+  swtest,
+  java,
+  javascript,
+  redux,
+  nextjs,
+  aws,
+  yaml,
+  google,
+  plotly,
+  figma,
+  postgre,
+  angular,
+  express,
 };

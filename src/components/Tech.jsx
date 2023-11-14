@@ -1,16 +1,16 @@
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { shuffle } from "../utils/shuffle";
-import toast from "react-hot-toast";
 import PeriodicTech from "./PeriodicTech";
 
 const Tech = () => {
-  
   if (technologies.length != 30) {
-    toast.error("30 Techs required to fill periodic table.");
+    console.log(
+      `30 Techs required to fill periodic table: ${technologies.length}`
+    );
     return;
   }
-  
+
   shuffle(technologies);
   // Holes in periodic table
   // const skipIndex = [2, 3, 4, 5, 27, 35];
