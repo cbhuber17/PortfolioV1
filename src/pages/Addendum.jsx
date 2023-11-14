@@ -3,7 +3,6 @@ import ParagraphHeader from "./../components/ParagraphHeader";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import ProjectCard from "./../components/ProjectCard";
-// import Filter from "../components/Filter";
 import SortBy from "../components/SortBy";
 import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
@@ -38,9 +37,24 @@ const Addendum = () => {
       break;
   }
 
-  let filteredProjects = sortedProjects.filter((project) =>
+  // Project names (titles) filtered by search query
+  const filteredNames = sortedProjects.filter((project) =>
     project.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  // Project tags filtered by search query
+  const filteredTags = sortedProjects.filter((project) =>
+    project.tags.map((tag) => tag.name).includes(searchQuery)
+  );
+
+  // Combine
+  const filteredProjects = [...filteredNames, ...filteredTags];
+
+  // Remove duplicates in case tag or name has same searchQuery (like "react")
+  // Using project."name" here to make sure they are unique
+  const uniqueProjects = [
+    ...new Map(filteredProjects.map((item) => [item["name"], item])).values(),
+  ];
 
   return (
     <div className="relative z-0 bg-primary" id="projects">
@@ -49,7 +63,7 @@ const Addendum = () => {
       </div>
       <ParagraphHeader
         pText="Addendum"
-        hText={`All Projects. (${filteredProjects.length})`}
+        hText={`All Projects. (${uniqueProjects.length})`}
         style=""
       />
 
@@ -64,17 +78,6 @@ const Addendum = () => {
         className="my-5 px-2 py-2"
       />
 
-      {/* TODO: Filter button: Query text from input element  */}
-      {/* <Filter
-        filterField="projects"
-        options={[
-          { value: "popular", label: "Popular" },
-          { value: "alphabetical", label: "Alphabetical" },
-          { value: "created-asc", label: "Created &#8593;" },
-          { value: "created-desc", label: "Created &#8595;" },
-        ]}
-      /> */}
-
       <div className="flex w-60 justify-between">
         <p>Sort By:</p>
         <SortBy
@@ -88,7 +91,7 @@ const Addendum = () => {
       </div>
 
       <div className="card-grid mt-20 flex flex-wrap gap-7" id="certificates">
-        {filteredProjects.map((project, index) => (
+        {uniqueProjects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
             show_motion={false}
