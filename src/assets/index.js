@@ -31,9 +31,11 @@ import rpgai from "./projects/rpgai.png";
 import videogame from "./projects/videogame.png";
 import nextphoto from "./projects/nextphoto.png";
 import countriesapi from "./projects/countriesapi.png";
+import justscroll from "./projects/justscroll.png";
 import vietnamblog from "./projects/vietnamblog.png";
 import gnssquiz from "./projects/gnssquiz.png";
 import natourslanding from "./projects/natourslanding.png";
+import kanban from "./projects/kanban.png";
 import natours from "./projects/natours.png";
 import pportfolio from "./projects/pportfolio.png";
 import zeal from "./projects/zeal.png";
@@ -79,6 +81,7 @@ export {
   trillo,
   nextnotes,
   // neon,
+  kanban,
   docker,
   nodefarm,
   traveljournal,
@@ -95,6 +98,7 @@ export {
   pportfolio,
   rpgai,
   natourslanding,
+  justscroll,
   zeal,
   supabase,
   threadportfolio,

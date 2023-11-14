@@ -32,7 +32,9 @@ import {
   piggame,
   gnssquiz,
   threadportfolio,
+  kanban,
   usepopcorn,
+  justscroll,
   zeal,
   rpgai,
   fastpizza,
@@ -528,6 +530,38 @@ const projects = [
     index: index++,
   },
   {
+    name: "Just Scroll",
+    description:
+      "Currently under development!  A Social Media App featuring: Users to follow, make posts/upload photos, infinite scrolling, like/save posts, create profile, chit-chat!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "radix-ui",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "react-query",
+        color: "red-text-gradient",
+      },
+    ],
+    image: justscroll,
+    project_link: "",
+    source_code_link: "",
+    date_created: new Date(2023, 9, 27),
+    index: index++,
+  },
+  {
     name: "Video Game Archive",
     description:
       "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
@@ -1004,6 +1038,33 @@ const projects = [
     project_link: "https://cbhuber17.github.io/PigGame/index.html",
     source_code_link: "https://github.com/cbhuber17/PigGame",
     date_created: new Date(2022, 11, 17),
+    index: index++,
+  },
+  {
+    name: "Kanban Board",
+    description: "A React-focused draggable Kanban board.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dnd-kit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: kanban,
+    project_link: "https://cbhuber17.github.io/kanban-board/",
+    source_code_link: "https://github.com/cbhuber17/kanban-board",
+    date_created: new Date(2023, 10, 12),
     index: index++,
   },
   {
