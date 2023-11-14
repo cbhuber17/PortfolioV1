@@ -13,8 +13,8 @@ import html from "./tech/html.png";
 import cplusplus from "./tech/cplusplus.png";
 import mongodb from "./tech/mongodb.png";
 import supabase from "./tech/supabase.png";
-// import neon from "./tech/neon.png";
-// import pocketbase from "./tech/pocketbase.png";
+import neon from "./tech/neon.png";
+import pocketbase from "./tech/pocketbase.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
@@ -59,7 +59,7 @@ import nextnotes from "./projects/nextnotes.png";
 import eventgrids from "./projects/eventgrids.png";
 
 export {
-  // pocketbase,
+  pocketbase,
   css,
   techd,
   reactjs,
@@ -80,7 +80,7 @@ export {
   python,
   trillo,
   nextnotes,
-  // neon,
+  neon,
   kanban,
   docker,
   nodefarm,
