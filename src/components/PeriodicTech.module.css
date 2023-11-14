@@ -1,14 +1,3 @@
-body {
-  background: #1c2b2d;
-  font-family: "Poppins", sans-serif;
-  margin: 100px;
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
 .periodictable {
   display: grid;
   grid-template-columns: repeat(9, 100px);
@@ -19,18 +8,6 @@ a {
   justify-content: center;
 }
 
-@media only screen and (max-width: 1000px) {
-  .wrapper {
-    transform: rotate(90deg);
-    transform-origin: bottom left;
-    position: absolute;
-    top: -100vw;
-    left: 0;
-    height: 100vw;
-    width: 100vh;
-    overflow: auto;
-  }
-}
 .periodicelement {
   padding: 4px;
   position: relative;
@@ -38,31 +15,37 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .periodicelementinner {
   background: #202e38;
   padding: 10px 15px;
-  width: calc(100% - 30px);
-  height: calc(100% - 20px);
+  width: 100%;
+  height: 100%;
   transition: inherit;
 }
+
 .title {
   font: 700 26.1538px "Poppins", sans-serif;
   margin: 0.3em 0 0;
   text-align: center;
   transition: 0.8s ease 600ms;
 }
+
 .name {
   font: 500 12px "Poppins", sans-serif;
   margin-top: -0.2em;
   text-align: center;
 }
+
 .periodic-element:hover {
   transform: scale(1.12);
   z-index: 10;
 }
+
 .periodic-element:hover .periodic-element-inner {
   background: transparent;
 }
+
 .periodic-element:hover .title,
 .periodic-element:hover .desc {
   -webkit-text-fill-color: #222;
@@ -108,11 +91,12 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.empty-space-1 {
+.emptyspace1 {
   grid-column: 3 / span 4;
   grid-row: 1;
 }
-.empty-space-2 {
-  grid-column: 1;
-  grid-row: 4;
+.emptyspace2 {
+  display: none;
+  /* grid-column: 1;
+  grid-row: 4; */
 }

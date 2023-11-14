@@ -4,35 +4,35 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import external from "./external.png";
 
-import python from "./tech/python.png";
-import css from "./tech/css.png";
-import sass from "./tech/sass.png";
-import docker from "./tech/docker.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import cplusplus from "./tech/cplusplus.png";
-import mongodb from "./tech/mongodb.png";
-import supabase from "./tech/supabase.png";
-import neon from "./tech/neon.png";
-import pocketbase from "./tech/pocketbase.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import swtest from "./tech/swtest.png";
-import java from "./tech/java.png";
-import javascript from "./tech/javascript.png";
-import redux from "./tech/redux.png";
-import nextjs from "./tech/nextjs.png";
-import aws from "./tech/aws.png";
-import yaml from "./tech/yaml.png";
-import google from "./tech/google.png";
-import reactquery from "./tech/reactquery.png";
-import plotly from "./tech/plotly.png";
-import figma from "./tech/figma.png";
-import postgre from "./tech/postgre.png";
-import express from "./tech/express.png";
-import angular from "./tech/angular.png";
+// import python from "./tech/python.png";
+// import css from "./tech/css.png";
+// import sass from "./tech/sass.png";
+// import docker from "./tech/docker.png";
+// import git from "./tech/git.png";
+// import html from "./tech/html.png";
+// import cplusplus from "./tech/cplusplus.png";
+// import mongodb from "./tech/mongodb.png";
+// import supabase from "./tech/supabase.png";
+// import neon from "./tech/neon.png";
+// import pocketbase from "./tech/pocketbase.png";
+// import nodejs from "./tech/nodejs.png";
+// import reactjs from "./tech/reactjs.png";
+// import tailwind from "./tech/tailwind.png";
+// import typescript from "./tech/typescript.png";
+// import swtest from "./tech/swtest.png";
+// import java from "./tech/java.png";
+// import javascript from "./tech/javascript.png";
+// import redux from "./tech/redux.png";
+// import nextjs from "./tech/nextjs.png";
+// import aws from "./tech/aws.png";
+// import yaml from "./tech/yaml.png";
+// import google from "./tech/google.png";
+// import reactquery from "./tech/reactquery.png";
+// import plotly from "./tech/plotly.png";
+// import figma from "./tech/figma.png";
+// import postgre from "./tech/postgre.png";
+// import express from "./tech/express.png";
+// import angular from "./tech/angular.png";
 
 import hexagon from "./company/hexagon.png";
 import elections from "./company/elections.png";
@@ -73,10 +73,10 @@ import nextnotes from "./projects/nextnotes.png";
 import eventgrids from "./projects/eventgrids.png";
 
 export {
-  pocketbase,
-  css,
+  // pocketbase,
+  // css,
   techd,
-  reactjs,
+  // reactjs,
   fastpizza,
   piggame,
   packtravel,
@@ -91,56 +91,56 @@ export {
   close,
   saaslanding,
   guessnumretro,
-  python,
+  // python,
   trillo,
   nextnotes,
-  neon,
+  // neon,
   kanban,
-  docker,
+  // docker,
   nodefarm,
   traveljournal,
   wildoasis,
   vnlandingpage,
   natours,
   nexter,
-  reactquery,
-  nodejs,
+  // reactquery,
+  // nodejs,
   eventgrids,
   usepopcorn,
   aberwait,
   elections,
-  tailwind,
+  // tailwind,
   pportfolio,
   rpgai,
   natourslanding,
   justscroll,
   zeal,
-  supabase,
+  // supabase,
   threadportfolio,
-  git,
+  // git,
   web2004,
   bingosim,
-  typescript,
+  // typescript,
   gnssquiz,
   countriesapi,
-  sass,
-  html,
+  // sass,
+  // html,
   defectrecord,
-  mongodb,
+  // mongodb,
   videogame,
   nextphoto,
-  cplusplus,
-  swtest,
-  java,
-  javascript,
-  redux,
-  nextjs,
-  aws,
-  yaml,
-  google,
-  plotly,
-  figma,
-  postgre,
-  angular,
-  express,
+  // cplusplus,
+  // swtest,
+  // java,
+  // javascript,
+  // redux,
+  // nextjs,
+  // aws,
+  // yaml,
+  // google,
+  // plotly,
+  // figma,
+  // postgre,
+  // angular,
+  // express,
 };
