@@ -8,6 +8,7 @@ import { testimonials } from "../constants";
 import ParagraphHeader from "./ParagraphHeader";
 import FeedbackCard from "./FeedbackCard";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Feedbacks = () => {
   return (
     <div className={`mt-12 bg-sky-900 rounded-[20px]`}>
@@ -32,4 +33,5 @@ const Feedbacks = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(Feedbacks, "");

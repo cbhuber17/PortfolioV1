@@ -3,6 +3,7 @@ import { technologies } from "../constants";
 import PeriodicTech from "./PeriodicTech";
 import { styles } from "../styles";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Tech = () => {
   if (technologies.length != 36) {
     console.log(
@@ -72,4 +73,5 @@ const Tech = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(Tech, "");

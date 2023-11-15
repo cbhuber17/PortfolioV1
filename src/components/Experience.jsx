@@ -7,6 +7,7 @@ import { textVariant } from "../utils/motion";
 import ParagraphHeader from "./ParagraphHeader";
 import ExperienceCard from "./ExperienceCard";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Experience = () => {
   return (
     <>
@@ -32,4 +33,5 @@ const Experience = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(Experience, "work");

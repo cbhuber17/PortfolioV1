@@ -2,6 +2,7 @@ import { useCallback, useEffect } from "react";
 import ParagraphHeader from "./ParagraphHeader";
 import { SectionWrapper } from "../hoc";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const RandomQuote = () => {
   let quote = "";
   let author = "";
@@ -70,4 +71,5 @@ const RandomQuote = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(RandomQuote);

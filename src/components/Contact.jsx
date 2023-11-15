@@ -14,6 +14,7 @@ function validateEmail(email) {
   return re.test(email);
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -168,4 +169,5 @@ const Contact = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(Contact, "contact");

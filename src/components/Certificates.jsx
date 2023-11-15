@@ -7,6 +7,7 @@ import ParagraphHeader from "./ParagraphHeader";
 import certificateStyles from "./Certificates.module.css";
 import { certificates } from "../constants";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Certificates = () => {
   return (
     <>
@@ -38,4 +39,5 @@ const Certificates = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(Certificates);

@@ -6,6 +6,7 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import ProjectCard from "./ProjectCard";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Works = () => {
   return (
     <>
@@ -46,4 +47,5 @@ const Works = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(Works, "");

@@ -7,6 +7,7 @@ import ServiceCard from "./ServiceCard";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { shuffle } from "../utils/shuffle";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const About = () => {
   shuffle(services);
   return (
@@ -52,5 +53,5 @@ const About = () => {
   );
 };
 
-// export default About;
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(About, "about");
