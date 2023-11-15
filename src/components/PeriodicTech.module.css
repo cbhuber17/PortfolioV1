@@ -92,11 +92,10 @@
 }
 
 .emptyspace1 {
-  grid-column: 3 / span 4;
-  grid-row: 1;
+  grid-column: 3;
+  grid-row: 3;
 }
 .emptyspace2 {
-  display: none;
-  /* grid-column: 1;
-  grid-row: 4; */
+  grid-column: 1;
+  grid-row: 4;
 }
