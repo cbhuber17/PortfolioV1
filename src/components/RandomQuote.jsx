@@ -64,8 +64,7 @@ const RandomQuote = () => {
       <div
         id="randomquote"
         className=" tracking-[2px] text-[22px] text-[#00ffff] p-5;
-        
-  text-shadow: 0 0 10px #00ffff;"
+                    text-shadow: 0 0 10px #00ffff;"
       ></div>
     </>
   );
