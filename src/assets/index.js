@@ -36,6 +36,7 @@ import external from "./external.png";
 
 import hexagon from "./company/hexagon.png";
 import elections from "./company/elections.png";
+import flyht from "./company/flyht.png";
 
 import traveljournal from "./projects/traveljournal.png";
 import packtravel from "./projects/packtravel.png";
@@ -112,6 +113,7 @@ export {
   // tailwind,
   pportfolio,
   rpgai,
+  flyht,
   natourslanding,
   justscroll,
   zeal,

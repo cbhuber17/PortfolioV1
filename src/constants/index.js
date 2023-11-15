@@ -27,6 +27,7 @@ import {
   videogame,
   // docker,
   aberwait,
+  flyht,
   defectrecord,
   // postgre,
   saaslanding,
@@ -364,11 +365,25 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Developer",
+    company_name: "FLYHT Aerospace Solutions",
+    icon: flyht,
+    iconBg: "#C8BFE7",
+    date: "Nov 2023 - Present",
+    points: [
+      "Actively participated in the analysis, design, and development of new aviation applications.",
+      "Perform system maintenance, including staging and deployment of new code production.",
+      "Execute different levels of testing and various process support tools and practices.",
+      "Provide technical support to other functional groups.",
+      "Java, Python, Go, JavaScript, Nodejs, Angular, AWS, Terraform & Jenkins.",
+    ],
+  },
+  {
     title: "Information & Registration Officer and Record Clerk",
     company_name: "Elections Alberta",
     icon: elections,
     iconBg: "#F1B51F",
-    date: "May 2023 - May 2023",
+    date: "May 2023",
     points: [
       "Determines an elector's voting area, then directs electors to the appropriate voting or registration station.",
       "Helps maintain flow of electors through the voting place.",
