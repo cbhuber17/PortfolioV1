@@ -21,6 +21,14 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/bluebg.png')",
       },
+      animation: {
+        blinker: "blinker 1s linear infinite",
+      },
+      keyframes: {
+        blinker: {
+          "50%": { opacity: 0 },
+        },
+      },
     },
   },
   plugins: [],

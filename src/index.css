@@ -250,3 +250,9 @@
 .card-grid:hover * .card:not(:hover) {
   filter: brightness(0.85) saturate(0.6) contrast(1.2) blur(2px);
 }
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,5 +1,4 @@
 import { useCallback, useEffect } from "react";
-import "./RandomQuote.module.css";
 import ParagraphHeader from "./ParagraphHeader";
 import { SectionWrapper } from "../hoc";
 
@@ -28,23 +27,19 @@ const RandomQuote = () => {
       await loadQuote();
       quote += " ";
 
-      //   if (!quote || quote.length < 2) {
-      //     quote = colinQuotes[Math.floor(Math.random() * colinQuotes.length)];
-      //     author = "Colin Huber";
-      //   }
-
       getNewQuote = false;
     }
 
     destination.innerHTML =
-      quote.substring(0, textPosition) + "<span class='csr'>\u25AE</span>";
+      quote.substring(0, textPosition) +
+      "<span style='animation: blinker 1s linear infinite'>\u25AE</span>";
 
     if (textPosition++ != quote.length) {
       setTimeout(typewriter, 85);
     } else {
       destination.innerHTML =
         quote +
-        "<span class='csr'>\u25AE</span>" +
+        "<span style='animation: blinker 1s linear infinite'>\u25AE</span>" +
         "<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp" +
         author;
       setTimeout(typewriter, 30000);
@@ -68,6 +63,7 @@ const RandomQuote = () => {
       <div
         id="randomquote"
         className=" tracking-[2px] text-[22px] text-[#00ffff] p-5;
+        
   text-shadow: 0 0 10px #00ffff;"
       ></div>
     </>
