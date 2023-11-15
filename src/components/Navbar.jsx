@@ -4,11 +4,18 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import LanguageSwitch from "./LanguageSwitch";
 
-const Navbar = () => {
+/* eslint react/prop-types: 0 */
+const Navbar = ({ isForeign, setIsForeign }) => {
+  console.log(isForeign);
   // Determines where the user is on the page
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  function switchChange() {
+    setIsForeign(!isForeign);
+  }
 
   return (
     <nav
@@ -28,6 +35,7 @@ const Navbar = () => {
             Colin &nbsp;
             <span className="sm:block hidden">|&nbsp; Geomatics Engineer</span>
           </p>
+          <LanguageSwitch checked={isForeign} switchChange={switchChange} />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
@@ -44,7 +52,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
