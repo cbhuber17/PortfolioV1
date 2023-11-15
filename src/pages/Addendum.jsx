@@ -1,10 +1,11 @@
-import { Navbar } from "../components";
+import { Footer, Navbar } from "../components";
 import ParagraphHeader from "./../components/ParagraphHeader";
 import { projects } from "../constants";
 import ProjectCard from "./../components/ProjectCard";
 import SortBy from "../components/SortBy";
 import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
+import RandomQuote from "../components/RandomQuote";
 
 function getSortedProjects(sortBy) {
   // Default order is popularity (index number) in constants.js
@@ -125,6 +126,8 @@ const Addendum = () => {
           All certificates are shown below.
         </p>
       </div>
+      <RandomQuote />
+      <Footer />
     </div>
   );
 };
