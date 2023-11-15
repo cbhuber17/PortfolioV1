@@ -2,6 +2,7 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import PeriodicTech from "./PeriodicTech";
 import { styles } from "../styles";
+
 const Tech = () => {
   if (technologies.length != 36) {
     console.log(
@@ -9,9 +10,6 @@ const Tech = () => {
     );
     return;
   }
-
-  // TODO: Maybe not shuffle
-  // shuffle(technologies);
 
   const themeIndex = {
     0: "one",
