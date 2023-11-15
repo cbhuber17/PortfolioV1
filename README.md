@@ -6,12 +6,7 @@ Welcome! This project is currently under construction.
 
 - Three different domains (perhaps as tabs at the top of the page): GNSS, Web Dev, Personal:Trip photos, volunteering, nieces, personal accomplishments
 - Browse [https://sketchfab.com/](https://sketchfab.com/) for 3D models
-- Change balls to periodic table
 - Sign up emailjs & hostdinger
 - Check overall responsiveness
-- Navlinks in constants.js link on current page and to other pages.
 - Handle incorrect 404 routes
-
-Features:
-
-- Random blue quotes, not on main page
+- Addendum certificates
