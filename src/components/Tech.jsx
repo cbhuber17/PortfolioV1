@@ -55,7 +55,7 @@ const Tech = () => {
       <h2 className={`${styles.sectionHeadText} text-center mb-10`}>
         Tech Stack Table
       </h2>
-      <div className="grid grid-cols-[repeat(9,100px)] grid-rows-[repeat(4,100px)] gap-2.5 max-w-[1200px] justify-center m-auto">
+      <div className="grid grid-cols-[repeat(9,100px)] grid-rows-[repeat(4,100px)] gap-2.5 justify-center m-auto overflow-x-auto">
         {technologies.map((technology, index) =>
           themeIndex[index] === "empty" ? (
             <div key={`empty-${index}`}></div>
