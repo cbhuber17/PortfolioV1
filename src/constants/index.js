@@ -291,17 +291,17 @@ const technologies = [
     // theme: "",
   },
   {
-    short: "",
-    name: "",
-    link: "",
-    // icon: gnss,
-    // theme: "",
-  },
-  {
     short: "Jv",
     name: "Java",
     link: "",
     // icon: java,
+    // theme: "",
+  },
+  {
+    short: "",
+    name: "",
+    link: "",
+    // icon: gnss,
     // theme: "",
   },
   {
