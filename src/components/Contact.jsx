@@ -105,7 +105,7 @@ const Contact = () => {
       {/* Flex take up 3/4 of page */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-sky-950 p-8 rounded-2xl"
+        className="flex-[0.75] bg-blue-900 p-8 rounded-2xl"
       >
         <ParagraphHeader pText="Get in touch" hText="Contact." style="" />
 
