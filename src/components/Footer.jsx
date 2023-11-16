@@ -7,6 +7,7 @@ import IconGithub from "./icons/IconGithub";
 import IconLinkedIn from "./icons/IconLinkedIn";
 import IconDiscord from "./icons/IconDiscord";
 import IconYoutube from "./icons/IconYoutube";
+import { useLanguage } from "../contexts/LanguageContext";
 
 /* eslint react/prop-types: 0 */
 const Icon = ({ icon, href }) => {
@@ -35,10 +36,19 @@ if (window.innerWidth < 500) {
 }
 
 const Footer = () => {
+  const { isForeign } = useLanguage();
   return (
     <>
       <div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
-        <ParagraphHeader pText="Find me" hText="Social Media." style="" />
+        {isForeign ? (
+          <ParagraphHeader
+            pText="Tìm Anh"
+            hText="Truyền Thông Xã Hội."
+            style=""
+          />
+        ) : (
+          <ParagraphHeader pText="Find me" hText="Social Media." style="" />
+        )}
       </div>
       <footer style={footerStyles.footer}>
         <ul>
