@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Hero = () => {
+  const { isForeign } = useLanguage();
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -16,12 +19,17 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I am <span className="text-[#000FCA]">Colin</span>
+            {isForeign ? "Xin chào, tôi là" : "Hi, I am"}{" "}
+            <span className="text-[#000FCA]">Colin</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
-            GNSS Expertise, Full Stack Web Developer,{" "}
-            <br className="sm:block hidden" /> Avid Software Tester, Certified
-            Cloud Solutions
+            {isForeign
+              ? "Chuyên môn về GNSS, Nhà phát triển web toàn diện,"
+              : "GNSS Expertise, Full Stack Web Developer,"}
+            <br className="sm:block hidden" />
+            {isForeign
+              ? "Người kiểm tra phần mềm được chứng nhận, Giải pháp đám mây"
+              : "Avid Software Tester, Certified Cloud Solutions"}
           </p>
         </div>
       </div>
