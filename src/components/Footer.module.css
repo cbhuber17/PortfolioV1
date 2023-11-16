@@ -5,7 +5,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #0a073c, #f809b4);
+  background: linear-gradient(to bottom, #0a073c, #000);
 }
 
 footer::before {
