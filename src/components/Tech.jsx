@@ -4,9 +4,12 @@ import PeriodicTech from "./PeriodicTech";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
+import { useLanguage } from "../contexts/LanguageContext";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Tech = () => {
+  const { isForeign } = useLanguage();
+
   if (technologies.length != 36) {
     console.log(
       `36 Techs (6 blank) required to fill periodic table: ${technologies.length}`
@@ -57,7 +60,7 @@ const Tech = () => {
     <>
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText} text-center mb-10`}>
-          Tech Stack Table
+          {isForeign ? "Bảng Ngăn Xếp Công Nghệ" : "Tech Stack Table"}
         </h2>
       </motion.div>
 
