@@ -6,15 +6,21 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import ParagraphHeader from "./ParagraphHeader";
 import ExperienceCard from "./ExperienceCard";
+import { useLanguage } from "../contexts/LanguageContext";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Experience = () => {
+  const { isForeign } = useLanguage();
   return (
     <>
       <motion.div variants={textVariant()}>
         <ParagraphHeader
-          pText="What I have done so far"
-          hText="Work Experience."
+          pText={
+            isForeign
+              ? "Những gì tôi đã làm cho đến nay"
+              : "What I have done so far"
+          }
+          hText={isForeign ? "Kinh Nghiệm Làm Việc" : "Work Experience."}
           style="text-center"
         />
       </motion.div>
