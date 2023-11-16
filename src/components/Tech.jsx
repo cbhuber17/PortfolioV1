@@ -2,6 +2,8 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import PeriodicTech from "./PeriodicTech";
 import { styles } from "../styles";
+import { motion } from "framer-motion";
+import { textVariant } from "../utils/motion";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Tech = () => {
@@ -53,9 +55,12 @@ const Tech = () => {
 
   return (
     <>
-      <h2 className={`${styles.sectionHeadText} text-center mb-10`}>
-        Tech Stack Table
-      </h2>
+      <motion.div variants={textVariant()}>
+        <h2 className={`${styles.sectionHeadText} text-center mb-10`}>
+          Tech Stack Table
+        </h2>
+      </motion.div>
+
       <div className="grid grid-cols-[repeat(9,100px)] grid-rows-[repeat(4,100px)] gap-2.5 justify-center m-auto overflow-x-auto">
         {technologies.map((technology, index) =>
           themeIndex[index] === "empty" ? (
