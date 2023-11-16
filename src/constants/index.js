@@ -95,18 +95,22 @@ export const navLinks = [
 const services = [
   {
     title: "Full Stack Web Developer",
+    titlevn: "Nhà Phát Triển Web Toàn Diện",
     icon: full_stack,
   },
   {
     title: "GNSS Software Testing",
+    titlevn: "Kiểm Tra Phần Mềm GNSS",
     icon: gnss,
   },
   {
     title: "Cloud Solutions",
+    titlevn: "Giải Pháp Đám Mây",
     icon: cloud,
   },
   {
     title: "Tutoring",
+    titlevn: "Dạy Kèm",
     icon: tutor,
   },
 ];
