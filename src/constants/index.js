@@ -1550,6 +1550,8 @@ const certificates = [
     issued: new Date(2023, 7, 9),
     summary:
       "Amazon Web Services offers a broad set of global cloud-based products.",
+    summaryvn:
+      "Amazon Web Services cung cấp một loạt các sản phẩm dựa trên đám mây toàn cầu.",
     link: "https://www.credly.com/badges/e8390a7a-b771-4ced-8b03-d120ee586d1c",
   },
   {
@@ -1560,6 +1562,8 @@ const certificates = [
     issued: new Date(2020, 11, 14),
     summary:
       "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
+    summaryvn:
+      "Udacity là một nền tảng học tập suốt đời, trực tuyến, toàn cầu, kết nối giáo dục với việc làm.",
     link: "https://confirm.udacity.com/LNUKASGH",
   },
   {
@@ -1570,6 +1574,8 @@ const certificates = [
     issued: new Date(2020, 10, 7),
     summary:
       "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
+    summaryvn:
+      "Udacity là một nền tảng học tập suốt đời, trực tuyến, toàn cầu, kết nối giáo dục với việc làm.",
     link: "https://confirm.udacity.com/DZJTQCXD",
   },
   {
@@ -1580,6 +1586,8 @@ const certificates = [
     issued: new Date(2015, 5, 22),
     summary:
       "ISTQB® is the leading global certification program in the field of software testing.",
+    summaryvn:
+      "ISTQB® là chương trình chứng nhận toàn cầu hàng đầu trong lĩnh vực kiểm thử phần mềm.",
     link: "https://cstb.ca/certified-testers?certlevelid=1&search=huber",
   },
   {
@@ -1590,6 +1598,8 @@ const certificates = [
     issued: new Date(2010, 5, 12),
     summary:
       "APEGA regulates the practices of engineering and geoscience in Alberta.",
+    summaryvn:
+      "APEGA quy định các hoạt động kỹ thuật và khoa học địa chất ở Alberta.",
     link: "https://www.apega.ca/",
   },
   {
@@ -1600,6 +1610,8 @@ const certificates = [
     issued: new Date(2005, 5, 10),
     summary:
       "Geomatics Engineering deals with the acquisition, modelling and management of spatially referenced data.",
+    summaryvn:
+      "Kỹ thuật địa tin học liên quan đến việc thu thập, mô hình hóa và quản lý dữ liệu được tham chiếu không gian.",
     link: "https://schulich.ucalgary.ca/geomatics",
   },
   // {
