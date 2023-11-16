@@ -9,4 +9,4 @@ Welcome! This project is currently under construction.
 - Sign up emailjs & hostdinger
 - Check overall responsiveness
 - Addendum certificates
-- Context manager for language
+- Context manager for language, URL bar for language default
