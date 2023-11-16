@@ -2,10 +2,9 @@ import Switch from "react-switch";
 
 /* eslint react/prop-types: 0 */
 const LanguageSwitch = ({ checked, switchChange }) => {
-  console.log(checked);
   return (
     <div id="lang" className="ml-5 flex gap-2 items-center">
-      ENG
+      🇨🇦 ENG
       <Switch
         checked={checked}
         onChange={switchChange}
@@ -22,7 +21,7 @@ const LanguageSwitch = ({ checked, switchChange }) => {
         className="react-switch"
         id="lang-switch"
       />
-      VIE
+      VIE 🇻🇳
     </div>
   );
 };

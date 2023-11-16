@@ -5,16 +5,19 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 import LanguageSwitch from "./LanguageSwitch";
+import { useLanguage } from "../contexts/LanguageContext";
 
 /* eslint react/prop-types: 0 */
-const Navbar = ({ isForeign, setIsForeign }) => {
-  console.log(isForeign);
+const Navbar = () => {
+  // Language switch
+  const { isForeign, dispatch } = useLanguage();
+
   // Determines where the user is on the page
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   function switchChange() {
-    setIsForeign(!isForeign);
+    dispatch({ type: "toggle" });
   }
 
   return (
@@ -33,7 +36,10 @@ const Navbar = ({ isForeign, setIsForeign }) => {
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Colin &nbsp;
-            <span className="sm:block hidden">|&nbsp; Geomatics Engineer</span>
+            <span className="sm:block hidden">
+              |&nbsp;{" "}
+              {isForeign ? "Kỹ sư địa tin học GNSS" : "Geomatics Engineer"}
+            </span>
           </p>
           <LanguageSwitch checked={isForeign} switchChange={switchChange} />
         </Link>
@@ -42,12 +48,14 @@ const Navbar = ({ isForeign, setIsForeign }) => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
+                active === link.title || active === link.titlevn
+                  ? "text-white"
+                  : "text-secondary"
               } hover:text-white text-[18-px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => setActive(isForeign ? link.titlevn : link.title)}
             >
               <a href={link.id === "addendum" ? `${link.id}` : `#${link.id}`}>
-                {link.title}
+                {isForeign ? link.titlevn : link.title}
               </a>
             </li>
           ))}
@@ -69,14 +77,18 @@ const Navbar = ({ isForeign, setIsForeign }) => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-white" : "text-secondary"
+                    active === link.title || active === link.titlevn
+                      ? "text-white"
+                      : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(link.title);
+                    setActive(isForeign ? link.titlevn : link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={`#${link.id}`}>
+                    {isForeign ? link.titlevn : link.title}
+                  </a>
                 </li>
               ))}
             </ul>

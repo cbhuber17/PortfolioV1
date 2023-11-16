@@ -13,11 +13,11 @@ import {
 } from "./../components";
 
 /* eslint react/prop-types: 0 */
-const Homepage = ({ isForeign, setIsForeign }) => {
+const Homepage = () => {
   return (
     <div className="relative z-0 bg-primary">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-        <Navbar isForeign={isForeign} setIsForeign={setIsForeign} />
+        <Navbar />
         <Hero />
       </div>
       <About />

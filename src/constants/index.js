@@ -73,18 +73,22 @@ export const navLinks = [
   {
     id: "about",
     title: "About",
+    titlevn: "Về Anh",
   },
   {
     id: "work",
     title: "Work",
+    titlevn: "Dự án cá nhân",
   },
   {
     id: "addendum",
     title: "Addendum",
+    titlevn: "Phụ lục",
   },
   {
     id: "contact",
     title: "Contact",
+    titlevn: "Liên hệ",
   },
 ];
 
