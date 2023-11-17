@@ -93,7 +93,7 @@ const Tech = () => {
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-[repeat(9,100px)] grid-rows-[repeat(4,100px)] gap-2.5 justify-center m-auto overflow-x-auto">
+      <div className="grid grid-cols-[repeat(9,100px)] grid-rows-[repeat(4,100px)] gap-2.5 justify-center m-auto overflow-x-auto overflow-y-hidden">
         {technologies.map((technology, index) =>
           themeIndex[index] === "empty" ? (
             <div key={`empty-${index}`}></div>
