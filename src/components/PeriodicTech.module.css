@@ -16,9 +16,18 @@
   transition: all 0.3s ease;
 }
 
+.periodicnumber {
+  position: relative;
+  top: 8px;
+  left: 8px;
+  font-size: 10px;
+  z-index: 5;
+}
+
 .periodicelementinner {
   background: #0a073c;
   padding: 10px 15px;
+  transform: translateY(-15px);
   width: 100%;
   height: 100%;
   transition: inherit;

@@ -101,6 +101,7 @@ const Tech = () => {
             <PeriodicTech
               key={`tech-${index}`}
               theme={themeIndex[index]}
+              index={index}
               {...technology}
             />
           )

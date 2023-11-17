@@ -2,7 +2,7 @@ import styles from "./PeriodicTech.module.css";
 
 /* eslint react/prop-types: 0 */
 // const PeriodicTech = ({ short, name, link, icon, theme }) => {
-const PeriodicTech = ({ short, name, link, theme }) => {
+const PeriodicTech = ({ short, name, link, theme, index }) => {
   switch (theme) {
     case "one":
       theme = styles.one;
@@ -25,8 +25,13 @@ const PeriodicTech = ({ short, name, link, theme }) => {
       break;
   }
 
+  // Periodic number labelling
+  if (index > 5 && index < 27) index -= 4;
+  if (index > 27 && index < 35) index -= 5;
+
   return (
     <div className={`${styles.periodicelement} ${theme}`}>
+      <div className={styles.periodicnumber}>{index + 1}</div>
       <a href={link} target="_blank" rel="noreferrer noopener">
         <div className={styles.periodicelementinner}>
           <div className={styles.title}>{short}</div>
