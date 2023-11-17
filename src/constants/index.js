@@ -19,6 +19,7 @@ import {
   // mongodb,
   pportfolio,
   // redux,
+  // stripe,
   nextnotes,
   // cplusplus,
   collatz,
@@ -286,10 +287,10 @@ const technologies = [
     // theme: "",
   },
   {
-    short: "Rx",
-    name: "Redux",
-    link: "https://redux.js.org/",
-    // icon: redux,
+    short: "St",
+    name: "Stripe",
+    link: "https://stripe.com/",
+    // icon: stripe,
     // theme: "",
   },
   {

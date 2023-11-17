@@ -8,6 +8,7 @@ import external from "./external.png";
 // import css from "./tech/css.png";
 // import sass from "./tech/sass.png";
 // import docker from "./tech/docker.png";
+// import stripe from './tech/stripe.png';
 // import git from "./tech/git.png";
 // import html from "./tech/html.png";
 // import cplusplus from "./tech/cplusplus.png";
@@ -115,6 +116,7 @@ export {
   rpgai,
   flyht,
   natourslanding,
+  // stripe,
   justscroll,
   zeal,
   // supabase,
