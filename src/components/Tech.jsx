@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { useLanguage } from "../contexts/LanguageContext";
+// import { shuffle } from "../utils/shuffle";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Tech = () => {
@@ -17,44 +18,72 @@ const Tech = () => {
     return;
   }
 
-  const themeIndex = {
-    0: "one",
-    1: "one",
-    2: "empty",
-    3: "empty",
-    4: "empty",
-    5: "empty",
-    6: "two",
-    7: "three",
-    8: "three",
-    9: "four",
-    10: "four",
-    11: "one",
-    12: "one",
-    13: "three",
-    14: "three",
-    15: "two",
-    16: "two",
-    17: "two",
-    18: "four",
-    19: "four",
-    20: "four",
-    21: "two",
-    22: "two",
-    23: "three",
-    24: "three",
-    25: "two",
-    26: "two",
-    27: "empty",
-    28: "one",
-    29: "four",
-    30: "four",
-    31: "three",
-    32: "one",
-    33: "three",
-    34: "three",
-    35: "empty",
-  };
+  const themeIndex = [
+    "one",
+    "one",
+    "empty",
+    "empty",
+    "empty",
+    "empty",
+    "two",
+    "three",
+    "three",
+    "four",
+    "four",
+    "one",
+    "one",
+    "three",
+    "three",
+    "two",
+    "two",
+    "two",
+    "four",
+    "four",
+    "four",
+    "two",
+    "two",
+    "three",
+    "three",
+    "two",
+    "two",
+    "empty",
+    "one",
+    "four",
+    "four",
+    "three",
+    "one",
+    "three",
+    "three",
+    "empty",
+  ];
+
+  // Randomize content
+  // shuffle(technologies);
+
+  // Keep blank spaces in their proper positions
+  // Get all indices that are "empty"
+  // const fixedIndices = themeIndex
+  //   .map(function (theme, index) {
+  //     if (theme === "empty") {
+  //       return index;
+  //     }
+  //   })
+  //   .filter((theme) => theme !== undefined);
+
+  // let fixedPositionIndex = 0;
+  // let tmp = null;
+
+  // for (let i = 0; i < technologies.length; i++) {
+  //   // If is a blank entry and is not in a fixed position, put the blank entry in a fixed position
+  //   if (!technologies[i].name && !fixedIndices.includes(i)) {
+  //     // Swap
+  //     tmp = technologies[i];
+  //     technologies[i] = technologies[fixedIndices[fixedPositionIndex]];
+  //     technologies[fixedIndices[fixedPositionIndex]] = tmp;
+
+  //     fixedPositionIndex++;
+  //   }
+  // }
 
   return (
     <>

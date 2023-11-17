@@ -231,10 +231,10 @@ const technologies = [
     // theme: "",
   },
   {
-    short: "Ne",
-    name: "Neon",
-    link: "https://neon.tech/",
-    // icon: neon,
+    short: "Gn",
+    name: "GNSS",
+    link: "https://www.gps.gov/systems/gnss/",
+    // icon: gnss,
     // theme: "",
   },
   {
@@ -357,10 +357,10 @@ const technologies = [
     // theme: "",
   },
   {
-    short: "Gn",
-    name: "GNSS",
-    link: "https://www.gps.gov/systems/gnss/",
-    // icon: gnss,
+    short: "Ne",
+    name: "Neon",
+    link: "https://neon.tech/",
+    // icon: neon,
     // theme: "",
   },
   {
