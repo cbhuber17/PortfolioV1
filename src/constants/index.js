@@ -654,6 +654,8 @@ const projects = [
     name: "The Wild Oasis",
     description:
       "Internal hotel/cabin rental portal to manage dashboard, users, cabins, bookings & settings. (Use the contact form below if you would like to try the app ✌️)",
+    descriptionvn:
+      "Cổng thông tin nội bộ cho thuê khách sạn/cabin để quản lý bảng điều khiển, người dùng, cabin, đặt chỗ và cài đặt. (Sử dụng biểu mẫu liên hệ bên dưới nếu bạn muốn dùng thử ứng dụng ✌️)",
     tags: [
       {
         name: "react",
@@ -686,6 +688,7 @@ const projects = [
     name: "GeoNotes Travel Journal",
     description:
       "An app to select a location on a map and create a journal entry of the visited location!",
+    descriptionvn: "",
     tags: [
       {
         name: "react",
@@ -718,6 +721,7 @@ const projects = [
     name: "Bugz Defect Record",
     description:
       "Similar to JIRA, a simple defect record database.  Currently under construction! 👷‍♂️",
+    descriptionvn: "",
     tags: [
       {
         name: "nextjs",
@@ -749,6 +753,7 @@ const projects = [
   {
     name: "Collatz Conjecture",
     description: "Visualization of the 3n+1 problem.",
+    descriptionvn: "",
     tags: [
       {
         name: "python",
@@ -773,6 +778,7 @@ const projects = [
     name: "Alberta ER Wait Times",
     description:
       "Visualization the wait times at various Calgary and Edmonton hospitals.",
+    descriptionvn: "",
     tags: [
       {
         name: "python",
@@ -805,6 +811,7 @@ const projects = [
     name: "Just Scroll",
     description:
       "Currently under development!  A Social Media App featuring: Users to follow, make posts/upload photos, infinite scrolling, like/save posts, create profile, chit-chat!",
+    descriptionvn: "",
     tags: [
       {
         name: "react",
@@ -837,6 +844,7 @@ const projects = [
     name: "Video Game Archive",
     description:
       "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
+    descriptionvn: "",
     tags: [
       {
         name: "react",
@@ -861,6 +869,7 @@ const projects = [
     name: "Natours Tour Booking",
     description:
       "A tour booking website, complete with user accounts and credit card payments via stipe.",
+    descriptionvn: "",
     tags: [
       {
         name: "nodejs",
@@ -892,6 +901,7 @@ const projects = [
   {
     name: "Forkify",
     description: "A recipe searching and preview app.",
+    descriptionvn: "",
     tags: [
       {
         name: "javascript",
@@ -919,6 +929,7 @@ const projects = [
   {
     name: "Fast React Pizza Co.",
     description: "Pizza ordering app!  🍕.",
+    descriptionvn: "",
     tags: [
       {
         name: "react",
@@ -947,6 +958,7 @@ const projects = [
     name: "RPG Text Adventure AI",
     description:
       "A mock Dungeons & Dragons theme app to chat with GPT regarding your situation in a dungeon 🐉.",
+    descriptionvn: "",
     tags: [
       {
         name: "nextjs",
@@ -978,6 +990,7 @@ const projects = [
   {
     name: "NextJS Notes",
     description: "A medieval theme note taking app.",
+    descriptionvn: "",
     tags: [
       {
         name: "nextjs",
@@ -1009,6 +1022,7 @@ const projects = [
   {
     name: "The GNSS Quiz",
     description: "Test your knowledge on GNSS!",
+    descriptionvn: "",
     tags: [
       {
         name: "react",
@@ -1025,6 +1039,7 @@ const projects = [
     name: "AI Photo Album",
     description:
       "Modern tech stack of Cloudinary combined with AI to portray a different style photo album.",
+    descriptionvn: "",
     tags: [
       {
         name: "nextjs",
@@ -1057,6 +1072,7 @@ const projects = [
     name: "Use Popcorn",
     description:
       "A movie searching app to keep track of your favorite movies plus your choice of ratings!",
+    descriptionvn: "",
     tags: [
       {
         name: "react",
@@ -1081,6 +1097,7 @@ const projects = [
     name: "Bingo Run Simulator",
     description:
       "Visualization of the results when playing BINGO 10 million times!",
+    descriptionvn: "",
     tags: [
       {
         name: "python",
@@ -1105,6 +1122,7 @@ const projects = [
     name: "Where am I?",
     description:
       "A simple API-fetching app to render the country you are in (and the neighboring country if applicable).",
+    descriptionvn: "",
     tags: [
       {
         name: "api",
@@ -1120,6 +1138,7 @@ const projects = [
   {
     name: "Personal Website 2004",
     description: "Retro website that I made back in my university days!",
+    descriptionvn: "",
     tags: [
       {
         name: "html4",
@@ -1141,6 +1160,7 @@ const projects = [
     name: "Vietnam Blog Page",
     description:
       "My first attempt at HMTL5/CSS3 (15 years since I used HTML4/CSS2) during the pandemic in 2020.  A small blog to host travels to my favorite country.",
+    descriptionvn: "",
     tags: [
       {
         name: "html5",
@@ -1160,6 +1180,7 @@ const projects = [
   {
     name: "Vietnam Tour Landing Page",
     description: "My favorite city tour landing page.",
+    descriptionvn: "",
     tags: [
       {
         name: "html",
@@ -1184,6 +1205,7 @@ const projects = [
     name: "Event Grids Conference",
     description:
       "Looking to host a conference?  Event Grids can hook you up. A complete standard HTML/CSS/JS website.",
+    descriptionvn: "",
     tags: [
       {
         name: "HTML",
@@ -1207,6 +1229,7 @@ const projects = [
   {
     name: "Personal Trainer Landing Page",
     description: "Simple HTML/CSS landing page of personal trainer services.",
+    descriptionvn: "",
     tags: [
       {
         name: "HTML",
@@ -1232,6 +1255,7 @@ const projects = [
     name: "Photographer Portfolio",
     description:
       "An effective representation of a well established photographer.",
+    descriptionvn: "",
     tags: [
       {
         name: "HTML",
@@ -1256,6 +1280,7 @@ const projects = [
     name: "Packing Travel List",
     description:
       "A React Single Page Application (SPA) to keep track of items to pack for your next trip!",
+    descriptionvn: "",
     tags: [
       {
         name: "react18",
@@ -1272,6 +1297,7 @@ const projects = [
     name: "Node Farm",
     description:
       "Using NodeJS, create a mini vegetable hosting e-commerce website.",
+    descriptionvn: "",
     tags: [
       {
         name: "nodejs",
@@ -1288,6 +1314,7 @@ const projects = [
     name: "Pig Game",
     description:
       "Game where you get points equal to the dice roll.  However if you roll a 1, you lose your turn :)",
+    descriptionvn: "",
     tags: [
       {
         name: "html",
@@ -1315,6 +1342,7 @@ const projects = [
   {
     name: "Kanban Board",
     description: "A React-focused draggable Kanban board.",
+    descriptionvn: "",
     tags: [
       {
         name: "react",
@@ -1342,6 +1370,7 @@ const projects = [
   {
     name: "Guess My Number Retro",
     description: "Simple number guessing game with a retro layout!",
+    descriptionvn: "",
     tags: [
       {
         name: "html",
@@ -1371,6 +1400,7 @@ const projects = [
     name: "Natours Landing Page",
     description:
       "A more immersive lesson in CSS, develop a fully responsive tours landing page.",
+    descriptionvn: "",
     tags: [
       {
         name: "html",
@@ -1395,6 +1425,7 @@ const projects = [
     name: "Trillo",
     description:
       "More advanced CSS/SASS responsive design of a hotel booking/review page.",
+    descriptionvn: "",
     tags: [
       {
         name: "html",
@@ -1419,6 +1450,7 @@ const projects = [
     name: "Nexter",
     description:
       "A complete lesson in CSS grids, showcase luxury homes from real estate agents.",
+    descriptionvn: "",
     tags: [
       {
         name: "html",
@@ -1442,6 +1474,7 @@ const projects = [
   {
     name: "Thread Portfolio Creator",
     description: "A simple landing page as a SaaS to create a portfolio.",
+    descriptionvn: "",
     tags: [
       {
         name: "HTML",
@@ -1465,6 +1498,7 @@ const projects = [
   {
     name: "TechD",
     description: "Creative Tech Agency for Technology Solutions Landing Page",
+    descriptionvn: "",
     tags: [
       {
         name: "HTML",
@@ -1488,6 +1522,7 @@ const projects = [
   {
     name: "SaaS Landing Page",
     description: "Simple SaaS Landing Page",
+    descriptionvn: "",
     tags: [
       {
         name: "HTML",

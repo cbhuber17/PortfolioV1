@@ -2,18 +2,22 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { github, external } from "../assets";
 import { fadeIn } from "../utils/motion";
+import { useLanguage } from "../contexts/LanguageContext";
 
 /* eslint react/prop-types: 0 */
 const ProjectCard = ({
   index,
   name,
   description,
+  descriptionvn,
   tags,
   image,
   source_code_link,
   project_link,
   show_motion = true,
 }) => {
+  const { isForeign } = useLanguage();
+
   return (
     <>
       {/* Motion lib limited to number of ProjectCard renders */}
@@ -65,7 +69,9 @@ const ProjectCard = ({
 
             <div className="mt-5">
               <h3 className="text-white font-bold text-[24px]">{name}</h3>
-              <p className="mt-2 text-secondary text-[14px]">{description}</p>
+              <p className="mt-2 text-secondary text-[14px]">
+                {isForeign ? descriptionvn : description}
+              </p>
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
@@ -121,7 +127,9 @@ const ProjectCard = ({
 
           <div className="mt-5">
             <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+            <p className="mt-2 text-secondary text-[14px]">
+              {isForeign ? descriptionvn : description}
+            </p>
           </div>
 
           <div className="mt-4 flex flex-wrap gap-2">
