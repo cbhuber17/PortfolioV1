@@ -688,7 +688,8 @@ const projects = [
     name: "GeoNotes Travel Journal",
     description:
       "An app to select a location on a map and create a journal entry of the visited location!",
-    descriptionvn: "",
+    descriptionvn:
+      "Một ứng dụng để chọn một vị trí trên bản đồ và tạo một mục nhật ký về vị trí đã ghé thăm!",
     tags: [
       {
         name: "react",
@@ -721,7 +722,8 @@ const projects = [
     name: "Bugz Defect Record",
     description:
       "Similar to JIRA, a simple defect record database.  Currently under construction! 👷‍♂️",
-    descriptionvn: "",
+    descriptionvn:
+      "Tương tự như JIRA, một cơ sở dữ liệu ghi lại lỗi đơn giản. Hiện đang được xây dựng! 👷‍♂️",
     tags: [
       {
         name: "nextjs",
@@ -753,7 +755,7 @@ const projects = [
   {
     name: "Collatz Conjecture",
     description: "Visualization of the 3n+1 problem.",
-    descriptionvn: "",
+    descriptionvn: "Trực quan hóa bài toán 3n+1.",
     tags: [
       {
         name: "python",
@@ -778,7 +780,8 @@ const projects = [
     name: "Alberta ER Wait Times",
     description:
       "Visualization the wait times at various Calgary and Edmonton hospitals.",
-    descriptionvn: "",
+    descriptionvn:
+      "Hình dung thời gian chờ đợi tại các bệnh viện khác nhau ở Calgary và Edmonton.",
     tags: [
       {
         name: "python",
@@ -811,7 +814,8 @@ const projects = [
     name: "Just Scroll",
     description:
       "Currently under development!  A Social Media App featuring: Users to follow, make posts/upload photos, infinite scrolling, like/save posts, create profile, chit-chat!",
-    descriptionvn: "",
+    descriptionvn:
+      "Hiện tại đang trong quá trình phát triển! Ứng dụng mạng xã hội có tính năng: Người dùng theo dõi, tạo bài đăng/tải ảnh lên, cuộn vô hạn, thích/lưu bài đăng, tạo hồ sơ, trò chuyện!",
     tags: [
       {
         name: "react",
@@ -844,7 +848,8 @@ const projects = [
     name: "Video Game Archive",
     description:
       "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
-    descriptionvn: "",
+    descriptionvn:
+      "Ứng dụng React đơn giản nhưng hoàn toàn hiện đại sử dụng API RAWG để truy xuất danh sách tất cả các trò chơi điện tử có sẵn.",
     tags: [
       {
         name: "react",
@@ -869,7 +874,8 @@ const projects = [
     name: "Natours Tour Booking",
     description:
       "A tour booking website, complete with user accounts and credit card payments via stipe.",
-    descriptionvn: "",
+    descriptionvn:
+      "Một trang web đặt tour du lịch, hoàn chỉnh với tài khoản người dùng và thanh toán bằng thẻ tín dụng qua stipe.",
     tags: [
       {
         name: "nodejs",
@@ -901,7 +907,7 @@ const projects = [
   {
     name: "Forkify",
     description: "A recipe searching and preview app.",
-    descriptionvn: "",
+    descriptionvn: "Một ứng dụng tìm kiếm và xem trước công thức nấu ăn.",
     tags: [
       {
         name: "javascript",
@@ -929,7 +935,7 @@ const projects = [
   {
     name: "Fast React Pizza Co.",
     description: "Pizza ordering app!  🍕.",
-    descriptionvn: "",
+    descriptionvn: "Ứng dụng đặt hàng pizza! 🍕.",
     tags: [
       {
         name: "react",
@@ -958,7 +964,8 @@ const projects = [
     name: "RPG Text Adventure AI",
     description:
       "A mock Dungeons & Dragons theme app to chat with GPT regarding your situation in a dungeon 🐉.",
-    descriptionvn: "",
+    descriptionvn:
+      "Một ứng dụng chủ đề Dungeons & Dragons mô phỏng để trò chuyện với GPT về tình huống của bạn trong ngục tối 🐉.",
     tags: [
       {
         name: "nextjs",
@@ -990,7 +997,7 @@ const projects = [
   {
     name: "NextJS Notes",
     description: "A medieval theme note taking app.",
-    descriptionvn: "",
+    descriptionvn: "Một ứng dụng ghi chú chủ đề thời trung cổ.",
     tags: [
       {
         name: "nextjs",
@@ -1022,7 +1029,7 @@ const projects = [
   {
     name: "The GNSS Quiz",
     description: "Test your knowledge on GNSS!",
-    descriptionvn: "",
+    descriptionvn: "Kiểm tra kiến ​​thức của bạn về GNSS!",
     tags: [
       {
         name: "react",
@@ -1039,7 +1046,8 @@ const projects = [
     name: "AI Photo Album",
     description:
       "Modern tech stack of Cloudinary combined with AI to portray a different style photo album.",
-    descriptionvn: "",
+    descriptionvn:
+      "Công nghệ hiện đại của Cloudinary kết hợp với AI để tạo nên một album ảnh có phong cách khác.",
     tags: [
       {
         name: "nextjs",
@@ -1072,7 +1080,8 @@ const projects = [
     name: "Use Popcorn",
     description:
       "A movie searching app to keep track of your favorite movies plus your choice of ratings!",
-    descriptionvn: "",
+    descriptionvn:
+      "Một ứng dụng tìm kiếm phim để theo dõi các bộ phim yêu thích của bạn cùng với sự lựa chọn xếp hạng của bạn!",
     tags: [
       {
         name: "react",
@@ -1097,7 +1106,7 @@ const projects = [
     name: "Bingo Run Simulator",
     description:
       "Visualization of the results when playing BINGO 10 million times!",
-    descriptionvn: "",
+    descriptionvn: "Trực quan hóa kết quả khi chơi BINGO 10 triệu lần!",
     tags: [
       {
         name: "python",
@@ -1122,7 +1131,8 @@ const projects = [
     name: "Where am I?",
     description:
       "A simple API-fetching app to render the country you are in (and the neighboring country if applicable).",
-    descriptionvn: "",
+    descriptionvn:
+      "Một ứng dụng tìm nạp API đơn giản để hiển thị quốc gia bạn đang ở (và quốc gia lân cận nếu có).",
     tags: [
       {
         name: "api",
@@ -1138,7 +1148,7 @@ const projects = [
   {
     name: "Personal Website 2004",
     description: "Retro website that I made back in my university days!",
-    descriptionvn: "",
+    descriptionvn: "Trang web cổ điển mà tôi đã tạo hồi còn học đại học!",
     tags: [
       {
         name: "html4",
@@ -1160,7 +1170,8 @@ const projects = [
     name: "Vietnam Blog Page",
     description:
       "My first attempt at HMTL5/CSS3 (15 years since I used HTML4/CSS2) during the pandemic in 2020.  A small blog to host travels to my favorite country.",
-    descriptionvn: "",
+    descriptionvn:
+      "Lần thử đầu tiên của tôi với HMTL5/CSS3 (15 năm kể từ khi tôi sử dụng HTML4/CSS2) trong trận đại dịch năm 2020. Một blog nhỏ để tổ chức các chuyến du lịch đến đất nước yêu thích của tôi.",
     tags: [
       {
         name: "html5",
@@ -1180,7 +1191,7 @@ const projects = [
   {
     name: "Vietnam Tour Landing Page",
     description: "My favorite city tour landing page.",
-    descriptionvn: "",
+    descriptionvn: "Trang đích tham quan thành phố yêu thích của tôi.",
     tags: [
       {
         name: "html",
@@ -1205,7 +1216,8 @@ const projects = [
     name: "Event Grids Conference",
     description:
       "Looking to host a conference?  Event Grids can hook you up. A complete standard HTML/CSS/JS website.",
-    descriptionvn: "",
+    descriptionvn:
+      "Bạn đang tìm cách tổ chức một hội nghị? Lưới sự kiện có thể kết nối bạn. Một trang web HTML/CSS/JS tiêu chuẩn hoàn chỉnh.",
     tags: [
       {
         name: "HTML",
@@ -1229,7 +1241,8 @@ const projects = [
   {
     name: "Personal Trainer Landing Page",
     description: "Simple HTML/CSS landing page of personal trainer services.",
-    descriptionvn: "",
+    descriptionvn:
+      "Trang đích HTML/CSS đơn giản của các dịch vụ huấn luyện viên cá nhân.",
     tags: [
       {
         name: "HTML",
@@ -1255,7 +1268,7 @@ const projects = [
     name: "Photographer Portfolio",
     description:
       "An effective representation of a well established photographer.",
-    descriptionvn: "",
+    descriptionvn: "Một đại diện hiệu quả của một nhiếp ảnh gia có uy tín.",
     tags: [
       {
         name: "HTML",
@@ -1280,7 +1293,8 @@ const projects = [
     name: "Packing Travel List",
     description:
       "A React Single Page Application (SPA) to keep track of items to pack for your next trip!",
-    descriptionvn: "",
+    descriptionvn:
+      "Ứng dụng React Single Page (SPA) để theo dõi các vật phẩm cần đóng gói cho chuyến đi tiếp theo của bạn!",
     tags: [
       {
         name: "react18",
@@ -1297,7 +1311,8 @@ const projects = [
     name: "Node Farm",
     description:
       "Using NodeJS, create a mini vegetable hosting e-commerce website.",
-    descriptionvn: "",
+    descriptionvn:
+      "Sử dụng NodeJS, tạo một trang web thương mại điện tử lưu trữ rau củ mini.",
     tags: [
       {
         name: "nodejs",
@@ -1314,7 +1329,8 @@ const projects = [
     name: "Pig Game",
     description:
       "Game where you get points equal to the dice roll.  However if you roll a 1, you lose your turn :)",
-    descriptionvn: "",
+    descriptionvn:
+      "Trò chơi mà bạn nhận được số điểm tương đương với việc tung xúc xắc. Tuy nhiên nếu bạn tung được số 1, bạn sẽ mất lượt :)",
     tags: [
       {
         name: "html",
@@ -1342,7 +1358,7 @@ const projects = [
   {
     name: "Kanban Board",
     description: "A React-focused draggable Kanban board.",
-    descriptionvn: "",
+    descriptionvn: "Bảng Kanban có thể kéo tập trung vào React.",
     tags: [
       {
         name: "react",
@@ -1370,7 +1386,7 @@ const projects = [
   {
     name: "Guess My Number Retro",
     description: "Simple number guessing game with a retro layout!",
-    descriptionvn: "",
+    descriptionvn: "Trò chơi đoán số đơn giản với bố cục cổ điển!",
     tags: [
       {
         name: "html",
@@ -1400,7 +1416,8 @@ const projects = [
     name: "Natours Landing Page",
     description:
       "A more immersive lesson in CSS, develop a fully responsive tours landing page.",
-    descriptionvn: "",
+    descriptionvn:
+      "Một bài học sâu sắc hơn về CSS, phát triển trang đích chuyến tham quan đáp ứng đầy đủ.",
     tags: [
       {
         name: "html",
@@ -1425,7 +1442,8 @@ const projects = [
     name: "Trillo",
     description:
       "More advanced CSS/SASS responsive design of a hotel booking/review page.",
-    descriptionvn: "",
+    descriptionvn:
+      "Thiết kế đáp ứng CSS/SASS nâng cao hơn của trang đặt phòng/đánh giá khách sạn.",
     tags: [
       {
         name: "html",
@@ -1450,7 +1468,8 @@ const projects = [
     name: "Nexter",
     description:
       "A complete lesson in CSS grids, showcase luxury homes from real estate agents.",
-    descriptionvn: "",
+    descriptionvn:
+      "Một bài học hoàn chỉnh về lưới CSS, giới thiệu những ngôi nhà sang trọng từ các đại lý bất động sản.",
     tags: [
       {
         name: "html",
@@ -1474,7 +1493,8 @@ const projects = [
   {
     name: "Thread Portfolio Creator",
     description: "A simple landing page as a SaaS to create a portfolio.",
-    descriptionvn: "",
+    descriptionvn:
+      "Một trang đích đơn giản dưới dạng SaaS để tạo danh mục đầu tư.",
     tags: [
       {
         name: "HTML",
@@ -1497,8 +1517,9 @@ const projects = [
   },
   {
     name: "TechD",
-    description: "Creative Tech Agency for Technology Solutions Landing Page",
-    descriptionvn: "",
+    description: "Creative Tech Agency for Technology Solutions Landing Page.",
+    descriptionvn:
+      "Trang đích của Cơ quan Công nghệ Sáng tạo về Giải pháp Công nghệ.",
     tags: [
       {
         name: "HTML",
@@ -1521,8 +1542,8 @@ const projects = [
   },
   {
     name: "SaaS Landing Page",
-    description: "Simple SaaS Landing Page",
-    descriptionvn: "",
+    description: "Simple SaaS Landing Page.",
+    descriptionvn: "Trang đích SaaS đơn giản.",
     tags: [
       {
         name: "HTML",
@@ -1546,6 +1567,7 @@ const projects = [
   // {
   //   name: "",
   //   description: "",
+  //   descriptionvn: "",
   //   tags: [
   //     {
   //       name: "",
