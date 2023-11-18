@@ -1,7 +1,7 @@
 import { Footer, Navbar } from "../components";
 import RandomQuote from "../components/RandomQuote";
 import AllProjects from "../components/AllProjects";
-import AllCertificates from "../components/AllCertificates";
+// import AllCertificates from "../components/AllCertificates";
 
 const Addendum = () => {
   return (
@@ -11,7 +11,7 @@ const Addendum = () => {
       </div>
       <AllProjects />
       <br />
-      <AllCertificates />
+      {/* <AllCertificates /> */}
       <RandomQuote />
       <Footer />
     </div>
