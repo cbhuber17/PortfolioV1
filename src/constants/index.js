@@ -168,10 +168,10 @@ const technologies = [
     // theme: "",
   },
   {
-    short: "Ex",
-    name: "Express",
-    link: "https://expressjs.com/",
-    // icon: express,
+    short: "Aw",
+    name: "AWS",
+    link: "https://aws.amazon.com/",
+    // icon: aws,
     // theme: "",
   },
   {
@@ -322,10 +322,10 @@ const technologies = [
     // theme: "",
   },
   {
-    short: "Aw",
-    name: "AWS",
-    link: "https://aws.amazon.com/",
-    // icon: aws,
+    short: "Ex",
+    name: "Express",
+    link: "https://expressjs.com/",
+    // icon: express,
     // theme: "",
   },
   {

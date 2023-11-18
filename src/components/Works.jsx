@@ -46,7 +46,7 @@ const Works = () => {
         {isForeign
           ? "Xem danh sách đầy đủ trên trang 👉"
           : "See complete list on the addendum page 👉"}
-        <Link to="/addendum#projects" className="text-blue-300">
+        <Link to="/addendum" className="text-blue-300">
           {isForeign ? "phụ lục" : "addendum"}.
         </Link>{" "}
       </p>
