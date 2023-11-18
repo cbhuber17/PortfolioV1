@@ -33,7 +33,6 @@ const PeriodicTech = ({ short, name, link, theme, index }) => {
     <div className={`${styles.periodicelement} ${theme}`}>
       <div className={styles.periodicnumber}>{index + 1}</div>
       <a href={link} target="_blank" rel="noreferrer noopener">
-        {/* <img class="..." style="background-image: url('<?= $img ?>');"/> */}
         <div className={styles.periodicelementinner}>
           <div className={styles.title}>{short}</div>
           <div className={styles.name}>{name}</div>
