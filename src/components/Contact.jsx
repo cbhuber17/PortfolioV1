@@ -8,6 +8,7 @@ import { slideIn } from "../utils/motion";
 import toast, { Toaster } from "react-hot-toast";
 
 import ParagraphHeader from "./ParagraphHeader";
+import { useLanguage } from "../contexts/LanguageContext";
 
 function validateEmail(email) {
   var re = /\S+@\S+\.\S+/;
@@ -25,6 +26,8 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
+  const { isForeign } = useLanguage();
+
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -41,24 +44,40 @@ const Contact = () => {
     const toastStyle = { fontSize: "20px" };
 
     if (!form.name) {
-      toast.error("Please enter your name.", { style: toastStyle });
+      toast.error(
+        isForeign ? "Xin hãy nhập tên của bạn." : "Please enter your name.",
+        { style: toastStyle }
+      );
       return;
     }
 
     if (!form.email) {
-      toast.error("Please provide an email address.", { style: toastStyle });
+      toast.error(
+        isForeign
+          ? "Vui lòng cung cấp một địa chỉ email."
+          : "Please provide an email address.",
+        { style: toastStyle }
+      );
       return;
     }
 
     if (!validateEmail(form.email)) {
-      toast.error("Please provide a valid email address.", {
-        style: toastStyle,
-      });
+      toast.error(
+        isForeign
+          ? "Vui lòng cung cấp một địa chỉ email hợp lệ."
+          : "Please provide a valid email address.",
+        {
+          style: toastStyle,
+        }
+      );
       return;
     }
 
     if (!form.message) {
-      toast.error("Please enter a message", { style: toastStyle });
+      toast.error(
+        isForeign ? "Vui lòng nhập tin nhắn." : "Please enter a message.",
+        { style: toastStyle }
+      );
       return;
     }
 
@@ -80,8 +99,11 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Many thanks! I will get back to you ASAP :)");
-          toast.success("Many thanks! I will get back to you ASAP :)");
+          toast.success(
+            isForeign
+              ? "Cảm ơn nhiều! Tôi sẽ liên lạc lại với bạn càng sớm càng tốt :)"
+              : "Many thanks! I will get back to you ASAP :)"
+          );
 
           setForm({
             name: "",
@@ -92,9 +114,11 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Something went wrong. Kindly try again.");
-          toast.error("Something went wrong. Kindly try again.");
+          toast.error(
+            isForeign
+              ? "Đã xảy ra lỗi. Vui lòng thử lại."
+              : "Something went wrong. Kindly try again."
+          );
         }
       );
   };
@@ -108,7 +132,11 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-blue-900 p-8 rounded-2xl"
       >
-        <ParagraphHeader pText="Get in touch" hText="Contact." style="" />
+        {isForeign ? (
+          <ParagraphHeader pText="Liên lạc" hText="Liên hệ." style="" />
+        ) : (
+          <ParagraphHeader pText="Get in touch" hText="Contact." style="" />
+        )}
 
         <form
           ref={formRef}
@@ -122,7 +150,9 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="[First] [Last]"
+              placeholder={
+                isForeign ? "[Tên Gia Dình] [Tên]" : "[First] [Last]"
+              }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -144,7 +174,9 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What's up my friend?"
+              placeholder={
+                isForeign ? "Có chuyện gì thế bạn?" : "What's up my friend?"
+              }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -153,7 +185,13 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-yellow-400 hover:text-black transition-all"
           >
-            {loading ? "Sending..." : "Send"}
+            {loading
+              ? isForeign
+                ? "Gửi..."
+                : "Sending..."
+              : isForeign
+              ? "Gửi"
+              : "Send"}
           </button>
         </form>
       </motion.div>
