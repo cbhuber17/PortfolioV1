@@ -1,9 +1,53 @@
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import ParagraphHeader from "./ParagraphHeader";
 import { SectionWrapper } from "../hoc";
+import { useLanguage } from "../contexts/LanguageContext";
+import { useOnScreen } from "../hooks/useOnScreen";
+
+const vnQuotes = [
+  {
+    quote:
+      "Chính lòng yêu nước, chứ không phải lý tưởng cộng sản, là nguồn cảm hứng cho tôi.",
+    author: "Hồ Chí Minh",
+  },
+  {
+    quote:
+      "Không có hoàn cảnh nào tuyệt vọng, chỉ có người tuyệt vọng vì hoàn cảnh.",
+    author: "Khuyết Danh",
+  },
+  {
+    quote: "Hành động của tôi nói lên tôi là ai.",
+    author: "Thích Nhất Hạnh",
+  },
+  {
+    quote:
+      "Các vua Hùng đã có công dựng nước, Bác cháu ta phải cùng nhau giữ lấy nước.",
+    author: "Hồ Chí Minh",
+  },
+  {
+    quote: "Nơi lạnh nhất không phải là Bắc cực mà là nơi không có tình người.",
+    author: "Khuyết Danh",
+  },
+  {
+    quote: "Hãy mỉm cười, hít thở và đi từ từ.",
+    author: "Thích Nhất Hạnh",
+  },
+  {
+    quote: "Trẻ em như búp trên cành; biết ăn ngủ, biết học hành là ngoan.",
+    author: "Hồ Chí Minh",
+  },
+  {
+    quote: "Không có ai thực sự hiểu sự ưu sầu hay nỗi vui mừng của kẻ khác.",
+    author: "Khuyết Danh",
+  },
+];
 
 // eslint-disable-next-line react-refresh/only-export-components
 const RandomQuote = () => {
+  const { isForeign } = useLanguage();
+  const elementRef = useRef(null);
+  const isOnScreen = useOnScreen(elementRef);
+
   let quote = "";
   let author = "";
   let textPosition = 0;
@@ -25,7 +69,14 @@ const RandomQuote = () => {
   const typewriter = useCallback(async () => {
     let destination = document.getElementById("randomquote");
     if (getNewQuote) {
-      await loadQuote();
+      if (isForeign) {
+        const randomVnQuote =
+          vnQuotes[Math.floor(Math.random() * vnQuotes.length)];
+        quote = randomVnQuote.quote;
+        author = randomVnQuote.author;
+      } else {
+        await loadQuote();
+      }
       quote += " ";
 
       getNewQuote = false;
@@ -53,16 +104,26 @@ const RandomQuote = () => {
 
   useEffect(() => {
     window.addEventListener("load", typewriter);
-    typewriter();
-  }, [typewriter]);
+    {
+      isOnScreen ? typewriter() : null;
+    }
+  }, [isOnScreen, typewriter]);
 
   return (
     <>
       <div className="my-6"></div>
-      <ParagraphHeader pText="Useful messages" hText="Random Quotes." />
+      {isForeign ? (
+        <ParagraphHeader
+          pText="Thông điệp hữu ích"
+          hText="Báo Giá Ngẫu Nhiên."
+        />
+      ) : (
+        <ParagraphHeader pText="Useful messages" hText="Random Quotes." />
+      )}
 
       <div
         id="randomquote"
+        ref={elementRef}
         className=" tracking-[2px] text-[22px] text-[#00ffff] p-5;
                     text-shadow: 0 0 10px #00ffff;"
       ></div>
