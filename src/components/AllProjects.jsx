@@ -6,6 +6,7 @@ import ParagraphHeader from "./ParagraphHeader";
 import ProjectCard from "./ProjectCard";
 import SortBy from "./SortBy";
 import { useSearchParams } from "react-router-dom";
+import { useLanguage } from "../contexts/LanguageContext";
 
 function getSortedProjects(sortBy) {
   // Default order is popularity (index number) in constants.js
@@ -62,6 +63,7 @@ function getFilteredProjects(projects, searchQuery) {
 const AllProjects = () => {
   const [searchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
+  const { isForeign } = useLanguage();
 
   const sortBy = searchParams.get("sortBy") || "popular";
 
@@ -71,19 +73,29 @@ const AllProjects = () => {
 
   return (
     <>
-      <ParagraphHeader
-        pText="Addendum"
-        hText={`All Projects. (${uniqueProjects.length})`}
-        style=""
-      />
+      {isForeign ? (
+        <ParagraphHeader
+          pText="Phụ Lục"
+          hText={`Tất Cả Dự Án. (${uniqueProjects.length})`}
+          style=""
+        />
+      ) : (
+        <ParagraphHeader
+          pText="Addendum"
+          hText={`All Projects. (${uniqueProjects.length})`}
+          style=""
+        />
+      )}
 
       <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        All projects are shown below.
+        {isForeign
+          ? "Tất cả các dự án được hiển thị dưới đây."
+          : "All projects are shown below."}
       </p>
 
       <input
         type="text"
-        placeholder="Filter projects..."
+        placeholder={isForeign ? "Lọc dự án..." : "Filter projects..."}
         onChange={(e) => setSearchQuery(e.target.value)}
         className="my-5 px-2 py-2"
       />
@@ -92,10 +104,13 @@ const AllProjects = () => {
         <p>Sort By:</p>
         <SortBy
           options={[
-            { value: "popular", label: "Popular" },
-            { value: "alphabetical", label: "Alphabetical" },
-            { value: "created-desc", label: "Created ↓" },
-            { value: "created-asc", label: "Created ↑" },
+            { value: "popular", label: isForeign ? "Phổ biến" : "Popular" },
+            {
+              value: "alphabetical",
+              label: isForeign ? "Theo bảng chữ cái" : "Alphabetical",
+            },
+            { value: "created-desc", label: isForeign ? "Tạo ↓" : "Created ↓" },
+            { value: "created-asc", label: isForeign ? "Tạo ↑" : "Created ↑" },
           ]}
         />
       </div>
