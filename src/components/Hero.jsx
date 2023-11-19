@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { SatelliteCanvas } from "./canvas";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const Hero = () => {
@@ -33,7 +33,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      <SatelliteCanvas />
 
       <div className="absolute bottom-2 w-full flex justify-center items-center">
         <a href="#about">
