@@ -3,6 +3,7 @@ import ParagraphHeader from "./ParagraphHeader";
 import { SectionWrapper } from "../hoc";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useOnScreen } from "../hooks/useOnScreen";
+import { useState } from "react";
 
 const vnQuotes = [
   {
@@ -100,7 +101,7 @@ const RandomQuote = () => {
       quote = "";
       author = "";
     }
-  }, []);
+  }, [isForeign]);
 
   useEffect(() => {
     window.addEventListener("load", typewriter);
