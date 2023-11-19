@@ -5,7 +5,6 @@ import { projects } from "../constants";
 import ParagraphHeader from "./ParagraphHeader";
 import ProjectCard from "./ProjectCard";
 import SortBy from "./SortBy";
-import { useSearchParams } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
 
 function getSortedProjects(sortBy) {
@@ -61,11 +60,10 @@ function getFilteredProjects(projects, searchQuery) {
 /* eslint react/prop-types: 0 */
 // eslint-disable-next-line react-refresh/only-export-components
 const AllProjects = () => {
-  const [searchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
   const { isForeign } = useLanguage();
 
-  const sortBy = searchParams.get("sortBy") || "popular";
+  const [sortBy, setSortBy] = useState("popular");
 
   // Sort & Filter
   const sortedProjects = getSortedProjects(sortBy);
@@ -112,6 +110,8 @@ const AllProjects = () => {
             { value: "created-desc", label: isForeign ? "Tạo ↓" : "Created ↓" },
             { value: "created-asc", label: isForeign ? "Tạo ↑" : "Created ↑" },
           ]}
+          value={sortBy}
+          setSortBy={setSortBy}
         />
       </div>
 
