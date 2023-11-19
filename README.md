@@ -8,5 +8,4 @@ Welcome! This project is currently under construction.
 - Browse [https://sketchfab.com/](https://sketchfab.com/) for 3D models
 - Sign up emailjs & hostdinger
 - Check overall responsiveness
-- Addendum certificates
-- Context manager for language, URL bar for language default
+- Language URL
