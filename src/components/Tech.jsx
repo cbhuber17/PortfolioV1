@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { useLanguage } from "../contexts/LanguageContext";
-// import { shuffle } from "../utils/shuffle";
+import { shuffle } from "../utils/shuffle";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Tech = () => {
@@ -58,32 +58,39 @@ const Tech = () => {
   ];
 
   // Randomize content
-  // shuffle(technologies);
+  shuffle(technologies);
 
   // Keep blank spaces in their proper positions
   // Get all indices that are "empty"
-  // const fixedIndices = themeIndex
-  //   .map(function (theme, index) {
-  //     if (theme === "empty") {
-  //       return index;
-  //     }
-  //   })
-  //   .filter((theme) => theme !== undefined);
+  const fixedIndices = themeIndex
+    .map(function (theme, index) {
+      if (theme === "empty") {
+        return index;
+      }
+    })
+    .filter((theme) => theme !== undefined);
 
-  // let fixedPositionIndex = 0;
-  // let tmp = null;
+  let fixedPositionIndex = 0;
+  let tmp = null;
 
-  // for (let i = 0; i < technologies.length; i++) {
-  //   // If is a blank entry and is not in a fixed position, put the blank entry in a fixed position
-  //   if (!technologies[i].name && !fixedIndices.includes(i)) {
-  //     // Swap
-  //     tmp = technologies[i];
-  //     technologies[i] = technologies[fixedIndices[fixedPositionIndex]];
-  //     technologies[fixedIndices[fixedPositionIndex]] = tmp;
+  for (let i = 0; i < technologies.length; i++) {
+    // If is a blank entry and is not in a fixed position, put the blank entry in a fixed position
+    if (!technologies[i].name && !fixedIndices.includes(i)) {
+      // If the current position is blank and the swapped position is also blank, increment the blank counter
+      if (!technologies[fixedIndices[fixedPositionIndex]].name) {
+        fixedPositionIndex++;
+        if (!technologies[fixedIndices[fixedPositionIndex]].name)
+          fixedPositionIndex++;
+      }
 
-  //     fixedPositionIndex++;
-  //   }
-  // }
+      // Swap
+      tmp = technologies[i];
+      technologies[i] = technologies[fixedIndices[fixedPositionIndex]];
+      technologies[fixedIndices[fixedPositionIndex]] = tmp;
+
+      fixedPositionIndex++;
+    }
+  }
 
   return (
     <>
