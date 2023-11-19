@@ -2,14 +2,23 @@ import { createContext, useReducer, useContext } from "react";
 
 const LanguageContext = createContext();
 
+const urlParams = new URLSearchParams(window.location.search);
+const language = urlParams.get("lang") || "eng";
+
 const initialState = {
-  isForeign: false,
+  isForeign: language === "eng" ? false : true,
 };
 
 function reducer(state, action) {
   switch (action.type) {
     case "toggle":
       return { isForeign: !state.isForeign };
+
+    case "eng":
+      return { isForeign: false };
+
+    case "vie":
+      return { isForeign: true };
 
     default:
       throw new Error(`Action ${action.type} unknown`);

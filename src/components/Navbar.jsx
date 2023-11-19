@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -16,7 +16,12 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
+  const [searchParams, setSearchParams] = useSearchParams();
+  const oppositeLanguageSwitch = isForeign ? "eng" : "vie";
+
   function switchChange() {
+    searchParams.set("lang", oppositeLanguageSwitch);
+    setSearchParams(searchParams);
     dispatch({ type: "toggle" });
   }
 
