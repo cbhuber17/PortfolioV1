@@ -41,8 +41,8 @@ const Navbar = () => {
               {isForeign ? "Kỹ sư địa tin học GNSS" : "Geomatics Engineer"}
             </span>
           </p>
-          <LanguageSwitch checked={isForeign} switchChange={switchChange} />
         </Link>
+        <LanguageSwitch checked={isForeign} switchChange={switchChange} />
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
