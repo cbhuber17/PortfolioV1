@@ -3,7 +3,7 @@ import Switch from "react-switch";
 /* eslint react/prop-types: 0 */
 const LanguageSwitch = ({ checked, switchChange }) => {
   return (
-    <div id="lang" className="ml-5 flex gap-2 items-center">
+    <div id="lang" className="sm:ml-5 ml-2 flex gap-2 items-center">
       🇨🇦 ENG
       <Switch
         checked={checked}
