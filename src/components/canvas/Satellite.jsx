@@ -21,9 +21,9 @@ const Satellite = ({ isMobile }) => {
       {/* Satellite position, smooth rotation */}
       <primitive
         object={satellite.scene}
-        scale={isMobile ? 0.7 : 0.6}
-        position={isMobile ? [0, -3, -2.2] : [0.6, -1.5, 0]}
-        rotation={[0.1, 2.4, 0.1]}
+        scale={isMobile ? 0.4 : 0.6}
+        position={isMobile ? [-1, -2, 0.1] : [0.6, -1.5, 0]}
+        rotation={[-0.2, 1.5, 0.1]}
       />
     </mesh>
   );
