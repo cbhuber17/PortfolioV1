@@ -30,7 +30,7 @@ const Addendum = () => {
               {isForeign
                 ? "Biến ý tưởng thành trải nghiệm trực tuyến phong phú"
                 : "Transforming ideas into immersive online experiences"}
-              <br className="sm:block hidden" />
+              <br />
               {isForeign
                 ? "Trưng bày một loạt các giải pháp kỹ thuật số năng động"
                 : "Showcasing a dynamic range of digital solutions"}
