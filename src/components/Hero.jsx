@@ -25,7 +25,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} text-white-100`}>
             {isForeign
               ? "Chuyên môn về GNSS, Nhà phát triển web toàn diện,"
-              : "GNSS Expertise, Full Stack Web Developer,"}
+              : "GNSS Expertise, Full Stack Web Developer, "}
             <br className="sm:block hidden" />
             {isForeign
               ? "Người kiểm tra phần mềm được chứng nhận, Giải pháp đám mây"
