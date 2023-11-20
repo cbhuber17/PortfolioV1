@@ -7,3 +7,4 @@ Welcome! This project is currently under construction.
 - Sign up emailjs & hostdinger
 - Check overall responsiveness
 - Test other browsers
+- Check main page to addendum page starts at top of page
