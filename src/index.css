@@ -263,3 +263,19 @@
     opacity: 0;
   }
 }
+
+.noisecontainer {
+  position: absolute;
+  top: -50;
+  left: -50;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
+  background: repeating-linear-gradient(#111, #111 50%, #fff 50%, #fff);
+  background-size: 5px 5px;
+  filter: url(#noise);
+}
+
+.svgcontainer {
+  width: 0;
+  height: 0;
+}
