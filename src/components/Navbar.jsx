@@ -59,7 +59,7 @@ const Navbar = () => {
               } hover:text-white text-[18-px] font-medium cursor-pointer`}
               onClick={() => setActive(isForeign ? link.titlevn : link.title)}
             >
-              <a href={link.id === "addendum" ? `${link.id}` : `#${link.id}`}>
+              <a href={link.id === "addendum" ? `${link.id}` : `/#${link.id}`}>
                 {isForeign ? link.titlevn : link.title}
               </a>
             </li>
@@ -91,7 +91,9 @@ const Navbar = () => {
                     setActive(isForeign ? link.titlevn : link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>
+                  <a
+                    href={link.id === "addendum" ? `${link.id}` : `#${link.id}`}
+                  >
                     {isForeign ? link.titlevn : link.title}
                   </a>
                 </li>
