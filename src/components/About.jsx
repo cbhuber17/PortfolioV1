@@ -7,21 +7,36 @@ import ServiceCard from "./ServiceCard";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { shuffle } from "../utils/shuffle";
 import { useLanguage } from "../contexts/LanguageContext";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const About = () => {
   const { isForeign } = useLanguage();
+  const { width } = useWindowDimensions();
+  let isMobile = false;
   shuffle(services);
+
+  if (width < 500) isMobile = true;
 
   return (
     <>
-      <motion.div variants={textVariant()}>
-        {isForeign ? (
-          <ParagraphHeader pText="Giới Thiệu" hText="Tổng Quan." style="" />
-        ) : (
-          <ParagraphHeader pText="Introduction" hText="Overview." style="" />
-        )}
-      </motion.div>
+      {isMobile ? (
+        <div variants={textVariant()}>
+          {isForeign ? (
+            <ParagraphHeader pText="Giới Thiệu" hText="Tổng Quan." style="" />
+          ) : (
+            <ParagraphHeader pText="Introduction" hText="Overview." style="" />
+          )}
+        </div>
+      ) : (
+        <motion.div variants={textVariant()}>
+          {isForeign ? (
+            <ParagraphHeader pText="Giới Thiệu" hText="Tổng Quan." style="" />
+          ) : (
+            <ParagraphHeader pText="Introduction" hText="Overview." style="" />
+          )}
+        </motion.div>
+      )}
 
       {/* Direction, type, delay(s), duration(s) */}
       <motion.p
