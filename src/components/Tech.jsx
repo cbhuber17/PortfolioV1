@@ -22,7 +22,7 @@ const Tech = () => {
     return;
   }
 
-  if (width < 500) isMobile = true;
+  if (width < 1024) isMobile = true;
 
   // If mobile, remove blanks
   if (isMobile) {

@@ -15,12 +15,12 @@ const Experience = () => {
   const { width } = useWindowDimensions();
   let isMobile = false;
 
-  if (width < 500) isMobile = true;
+  if (width < 1024) isMobile = true;
 
   return (
     <>
       {isMobile ? (
-        <div variants={textVariant()}>
+        <div>
           <ParagraphHeader
             pText={
               isForeign

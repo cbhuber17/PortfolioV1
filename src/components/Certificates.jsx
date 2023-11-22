@@ -15,7 +15,7 @@ const Certificates = () => {
   const { width } = useWindowDimensions();
   let isMobile = false;
 
-  if (width < 500) isMobile = true;
+  if (width < 1024) isMobile = true;
 
   return (
     <>
