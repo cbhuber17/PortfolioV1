@@ -66,7 +66,7 @@ const Works = () => {
         )}
       </div>
 
-      <div className="card-grid mt-20 flex flex-wrap gap-7">
+      <div className="card-grid mt-20 flex flex-wrap gap-7 justify-center lg:justify-start">
         {/* Show top projects */}
         {projects.map((project, index) =>
           index < 6 ? (
