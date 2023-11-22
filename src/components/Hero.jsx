@@ -19,7 +19,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {isForeign ? "Xin chào, tôi là" : "Hi, I am"}{" "}
+            {isForeign ? "Chào, tôi là" : "Hi, I am"}{" "}
             <span className="text-[#000FCA]">Colin</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
