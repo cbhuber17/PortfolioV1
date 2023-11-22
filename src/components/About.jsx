@@ -52,7 +52,7 @@ const About = () => {
           ? "Tôi cũng xuất sắc trong các công nghệ GNSS trong đó độ chính xác và độ chính xác là điều tối quan trọng. Tôi có con mắt tinh tường về chi tiết, đảm bảo rằng hệ thống định vị đáp ứng các tiêu chuẩn chất lượng nghiêm ngặt cho các ứng dụng quan trọng về an toàn. Cách tiếp cận tỉ mỉ này áp dụng cho công việc của tôi trong Giải pháp đám mây, đặc biệt là với AWS. Tận dụng sức mạnh của đám mây, tôi thiết kế và triển khai các kiến ​​trúc an toàn và có thể mở rộng nhằm nâng cao hiệu suất và khả năng phục hồi của các ứng dụng nhằm đáp ứng nhu cầu của công nghệ hiện đại."
           : "I also excel in GNSS technologies where precision and accuracy are paramount. I have a keen eye for detail, ensuring that navigation systems meet stringent quality standards for safety-critical applications. This meticulous approach extends to my work in Cloud Solutions, particularly with AWS. Leveraging the power of the cloud, I design and implement scalable and secure architectures that enhance the performance and resilience of applications to meet the demands of modern technology."}
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center sm:justify-start">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
