@@ -32,7 +32,7 @@ const footerIcons = [
 let numIcons = footerIcons.length;
 
 if (window.innerWidth < 500) {
-  numIcons = 4;
+  numIcons = 3;
 }
 
 const Footer = () => {
