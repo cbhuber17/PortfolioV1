@@ -115,7 +115,7 @@ const AllProjects = () => {
         />
       </div>
 
-      <div className="card-grid mt-20 flex flex-wrap gap-7">
+      <div className="card-grid mt-20 justify-center lg:justify-start flex flex-wrap gap-7">
         {uniqueProjects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
