@@ -41,14 +41,14 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Colin &nbsp;
-            <span className="sm:block hidden">
+            <span className="lg:block hidden">
               |&nbsp;{" "}
               {isForeign ? "Kỹ sư địa tin học GNSS" : "Geomatics Engineer"}
             </span>
           </p>
         </Link>
         <LanguageSwitch checked={isForeign} switchChange={switchChange} />
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden lg:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -65,7 +65,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="lg:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
