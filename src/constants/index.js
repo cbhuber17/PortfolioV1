@@ -683,6 +683,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/the-wild-oasis/",
     source_code_link: "https://github.com/cbhuber17/the-wild-oasis",
     date_created: new Date(2023, 6, 13),
+    under_construction: false,
     index: index++,
   },
   {
@@ -717,6 +718,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/WorldWise/",
     source_code_link: "https://github.com/cbhuber17/WorldWise",
     date_created: new Date(2023, 6, 3),
+    under_construction: false,
     index: index++,
   },
   {
@@ -751,6 +753,7 @@ const projects = [
     project_link: "",
     source_code_link: "https://github.com/cbhuber17/bugz-defect-record",
     date_created: new Date(2023, 9, 10),
+    under_construction: true,
     index: index++,
   },
   {
@@ -775,6 +778,7 @@ const projects = [
     project_link: "https://collatz-conjecture-1wmr.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
     date_created: new Date(2023, 1, 27),
+    under_construction: false,
     index: index++,
   },
   {
@@ -809,6 +813,7 @@ const projects = [
     project_link: "https://alberta-er-wait-times.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/ERWaitTimes",
     date_created: new Date(2022, 4, 30),
+    under_construction: false,
     index: index++,
   },
   {
@@ -843,6 +848,7 @@ const projects = [
     project_link: "",
     source_code_link: "",
     date_created: new Date(2023, 9, 27),
+    under_construction: true,
     index: index++,
   },
   {
@@ -869,6 +875,7 @@ const projects = [
     project_link: "https://github.com/cbhuber17/VideoGameArchive",
     source_code_link: "https://video-game-archive.vercel.app/",
     date_created: new Date(2023, 5, 21),
+    under_construction: false,
     index: index++,
   },
   {
@@ -903,6 +910,7 @@ const projects = [
     project_link: "https://natours-ewub.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/natours-api",
     date_created: new Date(2023, 2, 23),
+    under_construction: false,
     index: index++,
   },
   {
@@ -931,6 +939,7 @@ const projects = [
     project_link: "https://forkify-bys9.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/Forkify",
     date_created: new Date(2023, 2, 12),
+    under_construction: false,
     index: index++,
   },
   {
@@ -959,6 +968,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/fast-react-pizza-co/",
     source_code_link: "https://github.com/cbhuber17/fast-react-pizza-co",
     date_created: new Date(2023, 6, 11),
+    under_construction: false,
     index: index++,
   },
   {
@@ -993,6 +1003,7 @@ const projects = [
     project_link: "https://rpg-text-adventure-oco0dha61-cbhuber17.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/rpg-text-adventure-ai",
     date_created: new Date(2023, 8, 13),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1025,6 +1036,7 @@ const projects = [
     project_link: "https://nextjs-notes-navy.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/nextjs-notes",
     date_created: new Date(2023, 8, 18),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1041,6 +1053,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/react-quiz/",
     source_code_link: "https://github.com/cbhuber17/react-quiz",
     date_created: new Date(2023, 5, 30),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1075,6 +1088,7 @@ const projects = [
     project_link: "https://nextjs-photo-album-three.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/nextjs-photo-album",
     date_created: new Date(2023, 7, 10),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1101,6 +1115,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/use-popcorn/",
     source_code_link: "https://cbhuber17.github.io/use-popcorn/",
     date_created: new Date(2023, 5, 25),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1126,6 +1141,7 @@ const projects = [
     project_link: "https://bingo-simulator.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/BingoSimulator",
     date_created: new Date(2022, 5, 3),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1144,6 +1160,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/CountriesAPI/",
     source_code_link: "https://github.com/cbhuber17/CountriesAPI",
     date_created: new Date(2023, 2, 10),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1165,6 +1182,7 @@ const projects = [
       "https://cbhuber17.github.io/website2004/public_html/html/main.html",
     source_code_link: "https://github.com/cbhuber17/website2004",
     date_created: new Date(2004, 10, 15),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1187,6 +1205,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/VietnamBlogPage/",
     source_code_link: "https://github.com/cbhuber17/VietnamBlogPage",
     date_created: new Date(2020, 8, 29),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1211,6 +1230,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/LandingPage/",
     source_code_link: "https://github.com/cbhuber17/LandingPage",
     date_created: new Date(2020, 9, 13),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1237,6 +1257,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/event-grids-conference/",
     source_code_link: "https://github.com/cbhuber17/event-grids-conference",
     date_created: new Date(2022, 3, 1),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1263,6 +1284,7 @@ const projects = [
     source_code_link:
       "https://github.com/cbhuber17/personal-trainer-landing-page",
     date_created: new Date(2022, 6, 27),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1288,6 +1310,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/photographer-portfolio/",
     source_code_link: "https://github.com/cbhuber17/photographer-portfolio",
     date_created: new Date(2022, 2, 24),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1306,6 +1329,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/travel-list/",
     source_code_link: "https://github.com/cbhuber17/travel-list",
     date_created: new Date(2023, 5, 21),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1324,6 +1348,7 @@ const projects = [
     project_link: "https://node-farm-uzim.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/node-farm",
     date_created: new Date(2023, 2, 21),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1354,6 +1379,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/PigGame/index.html",
     source_code_link: "https://github.com/cbhuber17/PigGame",
     date_created: new Date(2022, 11, 17),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1382,6 +1408,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/kanban-board/",
     source_code_link: "https://github.com/cbhuber17/kanban-board",
     date_created: new Date(2023, 10, 12),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1411,6 +1438,7 @@ const projects = [
       "https://cbhuber17.github.io/guess-my-number-retro/index.html",
     source_code_link: "https://github.com/cbhuber17/guess-my-number-retro",
     date_created: new Date(2022, 11, 13),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1437,6 +1465,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/Natours/",
     source_code_link: "https://github.com/cbhuber17/Natours",
     date_created: new Date(2020, 10, 9),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1463,6 +1492,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/Trillo/",
     source_code_link: "https://github.com/cbhuber17/Trillo",
     date_created: new Date(2020, 11, 16),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1489,6 +1519,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/Nexter/",
     source_code_link: "https://github.com/cbhuber17/Nexter",
     date_created: new Date(2020, 11, 19),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1514,6 +1545,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/thread-portfolio-creator/",
     source_code_link: "https://github.com/cbhuber17/thread-portfolio-creator",
     date_created: new Date(2022, 0, 15),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1539,6 +1571,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/creative-techd/",
     source_code_link: "https://github.com/cbhuber17/creative-techd",
     date_created: new Date(2022, 3, 16),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1563,6 +1596,7 @@ const projects = [
     project_link: "https://cbhuber17.github.io/saas-landing-page/",
     source_code_link: "https://github.com/cbhuber17/saas-landing-page",
     date_created: new Date(2022, 1, 14),
+    under_construction: false,
     index: index++,
   },
   // {
@@ -1595,6 +1629,7 @@ const projects = [
   // project_link: "",
   // source_code_link: "",
   // date_created: new Date(yyyy, mm-1, đ),
+  // under_construction: false,
   // index: index++,
   // },
 ];

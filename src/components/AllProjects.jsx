@@ -57,6 +57,12 @@ function getFilteredProjects(projects, searchQuery) {
   return uniqueProjects;
 }
 
+function getDevProjects(showDevProjects, projects) {
+  if (showDevProjects)
+    return projects.filter((project) => project.under_construction);
+  return projects;
+}
+
 /* eslint react/prop-types: 0 */
 // eslint-disable-next-line react-refresh/only-export-components
 const AllProjects = () => {
@@ -64,10 +70,12 @@ const AllProjects = () => {
   const { isForeign } = useLanguage();
 
   const [sortBy, setSortBy] = useState("popular");
+  const [showDevProjects, setShowDevProjects] = useState(false);
 
   // Sort & Filter
   const sortedProjects = getSortedProjects(sortBy);
-  const uniqueProjects = getFilteredProjects(sortedProjects, searchQuery);
+  const devSortedProjects = getDevProjects(showDevProjects, sortedProjects);
+  const uniqueProjects = getFilteredProjects(devSortedProjects, searchQuery);
 
   return (
     <>
@@ -113,6 +121,19 @@ const AllProjects = () => {
           value={sortBy}
           setSortBy={setSortBy}
         />
+      </div>
+
+      <div className="mt-5">
+        <label>
+          <input
+            type="checkbox"
+            onClick={() => setShowDevProjects(!showDevProjects)}
+          />
+          &nbsp;
+          {isForeign
+            ? "Hiển thị các dự án đang tiến hành"
+            : "Show Projects In Progress"}
+        </label>
       </div>
 
       <div className="card-grid mt-20 justify-center lg:justify-start flex flex-wrap gap-7">
