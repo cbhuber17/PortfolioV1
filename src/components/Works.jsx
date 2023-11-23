@@ -87,7 +87,7 @@ const Works = () => {
           : "See complete list on the addendum page 👉"}
         <Link to="/addendum" className="text-blue-300">
           {isForeign ? "phụ lục" : "addendum"}.
-        </Link>{" "}
+        </Link>
       </p>
     </>
   );

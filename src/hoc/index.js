@@ -1,3 +1,4 @@
 import SectionWrapper from "./SectionWrapper";
+import ScrollTopWrapper from "./ScrollTopWrapper";
 
-export { SectionWrapper };
+export { SectionWrapper, ScrollTopWrapper };

@@ -1,10 +1,11 @@
 # Colin Huber Personal Portfolio V1
 
-Welcome! This project is currently under construction.
+Welcome!
+
+<h1 align="center">
+    <img src="src\assets\logo2.png"/>
+</h1>
 
 ## TODO:
 
-- Sign up emailjs & hostdinger
-- Check overall responsiveness
-- Test other browsers
-- Check main page to addendum page starts at top of page
+-
