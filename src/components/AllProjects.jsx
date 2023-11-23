@@ -107,7 +107,7 @@ const AllProjects = () => {
       />
 
       <div className="flex w-60 justify-between">
-        <p>Sort By:</p>
+        <p className="text-white">Sort By:</p>
         <SortBy
           options={[
             { value: "popular", label: isForeign ? "Phổ biến" : "Popular" },
@@ -123,7 +123,7 @@ const AllProjects = () => {
         />
       </div>
 
-      <div className="mt-5">
+      <div className="text-white mt-5">
         <label>
           <input
             type="checkbox"

@@ -9,6 +9,7 @@
 }
 
 .periodicelement {
+  color: white;
   padding: 4px;
   position: relative;
   z-index: 1;
