@@ -56,6 +56,7 @@ import natours from "./projects/natours.png";
 import pportfolio from "./projects/pportfolio.png";
 import zeal from "./projects/zeal.png";
 import nodefarm from "./projects/nodefarm.png";
+import devoverflow from "./projects/devoverflow.png";
 import fastpizza from "./projects/fastpizza.png";
 import trillo from "./projects/trillo.png";
 import vnlandingpage from "./projects/vnlandingpage.png";
@@ -126,6 +127,7 @@ export {
   bingosim,
   // typescript,
   gnssquiz,
+  devoverflow,
   countriesapi,
   // sass,
   // html,

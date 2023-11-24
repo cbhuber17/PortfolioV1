@@ -32,6 +32,7 @@ import {
   defectrecord,
   // postgre,
   saaslanding,
+  devoverflow,
   vietnamblog,
   // java,
   // yaml,
@@ -652,6 +653,41 @@ let index = 0;
 
 const projects = [
   {
+    name: "GeoNotes Travel Journal",
+    description:
+      "An app to select a location on a map and create a journal entry of the visited location! Try a demo with account: demo@demo.com / Pass1234",
+    descriptionvn:
+      "Một ứng dụng để chọn một vị trí trên bản đồ và tạo một mục nhật ký về vị trí đã ghé thăm! Dùng thử demo với tài khoản: demo@demo.com / Pass1234",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pocketbase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "leaflet",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "aws_amplify",
+        color: "red-text-gradient",
+      },
+    ],
+    image: traveljournal,
+    project_link: "https://cbhuber17.github.io/WorldWise/",
+    source_code_link: "https://github.com/cbhuber17/WorldWise",
+    date_created: new Date(2023, 6, 3),
+    under_construction: false,
+    index: index++,
+  },
+  {
     name: "The Wild Oasis",
     description:
       "Internal hotel/cabin rental portal to manage dashboard, users, cabins, bookings & settings. (Use the contact form below if you would like to try the app ✌️)",
@@ -687,37 +723,122 @@ const projects = [
     index: index++,
   },
   {
-    name: "GeoNotes Travel Journal",
+    name: "Collatz Conjecture",
     description:
-      "An app to select a location on a map and create a journal entry of the visited location!",
+      "Visualization of the 3n+1 problem. Fully interactive with user inputs and performance settings. The result of the conjecture is displayed on a line graph, with the history of each setting preserved for reference.",
     descriptionvn:
-      "Một ứng dụng để chọn một vị trí trên bản đồ và tạo một mục nhật ký về vị trí đã ghé thăm!",
+      "Trực quan hóa bài toán 3n+1. Tương tác hoàn toàn với đầu vào của người dùng và cài đặt hiệu suất. Kết quả phỏng đoán được hiển thị trên biểu đồ đường, với lịch sử của từng cài đặt được lưu giữ để tham khảo.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "plotly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dash",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: collatz,
+    project_link: "https://collatz-conjecture-1wmr.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
+    date_created: new Date(2023, 1, 27),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Video Game Archive",
+    description:
+      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
+    descriptionvn:
+      "Ứng dụng React đơn giản nhưng hoàn toàn hiện đại sử dụng API RAWG để truy xuất danh sách tất cả các trò chơi điện tử có sẵn.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "pocketbase",
+        name: "api",
         color: "green-text-gradient",
       },
       {
-        name: "vite",
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: videogame,
+    project_link: "https://github.com/cbhuber17/VideoGameArchive",
+    source_code_link: "https://video-game-archive.vercel.app/",
+    date_created: new Date(2023, 5, 21),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Alberta ER Wait Times",
+    description:
+      "Visualization the wait times at various Calgary and Edmonton hospitals. Fully interactive with line and violin charts.",
+    descriptionvn:
+      "Hình dung thời gian chờ đợi tại các bệnh viện khác nhau ở Calgary và Edmonton. Tương tác hoàn toàn với biểu đồ đường và violin.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "plotly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dash",
         color: "pink-text-gradient",
       },
       {
-        name: "leaflet",
+        name: "aws",
         color: "orange-text-gradient",
       },
       {
-        name: "aws_amplify",
+        name: "mongo",
         color: "red-text-gradient",
       },
     ],
-    image: traveljournal,
-    project_link: "https://cbhuber17.github.io/WorldWise/",
-    source_code_link: "https://github.com/cbhuber17/WorldWise",
-    date_created: new Date(2023, 6, 3),
+    image: aberwait,
+    project_link: "https://alberta-er-wait-times.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/ERWaitTimes",
+    date_created: new Date(2022, 4, 30),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Fast React Pizza Co.",
+    description:
+      "Pizza ordering app! 🍕. Globally controlled state to allow a user to simply choose and order a pizza.",
+    descriptionvn:
+      "Ứng dụng đặt hàng pizza! 🍕. Trạng thái được kiểm soát toàn cầu để cho phép người dùng chỉ cần chọn và đặt mua pizza.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcscs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: fastpizza,
+    project_link: "https://cbhuber17.github.io/fast-react-pizza-co/",
+    source_code_link: "https://github.com/cbhuber17/fast-react-pizza-co",
+    date_created: new Date(2023, 6, 11),
     under_construction: false,
     index: index++,
   },
@@ -757,66 +878,6 @@ const projects = [
     index: index++,
   },
   {
-    name: "Collatz Conjecture",
-    description: "Visualization of the 3n+1 problem.",
-    descriptionvn: "Trực quan hóa bài toán 3n+1.",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "plotly",
-        color: "green-text-gradient",
-      },
-      {
-        name: "dash",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: collatz,
-    project_link: "https://collatz-conjecture-1wmr.onrender.com/",
-    source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
-    date_created: new Date(2023, 1, 27),
-    under_construction: false,
-    index: index++,
-  },
-  {
-    name: "Alberta ER Wait Times",
-    description:
-      "Visualization the wait times at various Calgary and Edmonton hospitals.",
-    descriptionvn:
-      "Hình dung thời gian chờ đợi tại các bệnh viện khác nhau ở Calgary và Edmonton.",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "plotly",
-        color: "green-text-gradient",
-      },
-      {
-        name: "dash",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "aws",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "mongo",
-        color: "red-text-gradient",
-      },
-    ],
-    image: aberwait,
-    project_link: "https://alberta-er-wait-times.onrender.com/",
-    source_code_link: "https://github.com/cbhuber17/ERWaitTimes",
-    date_created: new Date(2022, 4, 30),
-    under_construction: false,
-    index: index++,
-  },
-  {
     name: "Just Scroll",
     description:
       "Currently under development!  A Social Media App featuring: Users to follow, make posts/upload photos, infinite scrolling, like/save posts, create profile, chit-chat!",
@@ -852,30 +913,38 @@ const projects = [
     index: index++,
   },
   {
-    name: "Video Game Archive",
+    name: "DevOverflow",
     description:
-      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
+      "Similar to StackOverflow, a community based website to ask programming and technology-related questions.",
     descriptionvn:
-      "Ứng dụng React đơn giản nhưng hoàn toàn hiện đại sử dụng API RAWG để truy xuất danh sách tất cả các trò chơi điện tử có sẵn.",
+      "Tương tự như StackOverflow, một trang web dựa trên cộng đồng để đặt câu hỏi liên quan đến lập trình và công nghệ.",
     tags: [
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "api",
+        name: "mongo",
         color: "green-text-gradient",
       },
       {
-        name: "typescript",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
+      {
+        name: "typescript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "red-text-gradient",
+      },
     ],
-    image: videogame,
-    project_link: "https://github.com/cbhuber17/VideoGameArchive",
-    source_code_link: "https://video-game-archive.vercel.app/",
-    date_created: new Date(2023, 5, 21),
-    under_construction: false,
+    image: devoverflow,
+    project_link: "",
+    source_code_link: "https://github.com/cbhuber17/dev-overflow",
+    date_created: new Date(2023, 10, 18),
+    under_construction: true,
     index: index++,
   },
   {
@@ -939,35 +1008,6 @@ const projects = [
     project_link: "https://forkify-bys9.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/Forkify",
     date_created: new Date(2023, 2, 12),
-    under_construction: false,
-    index: index++,
-  },
-  {
-    name: "Fast React Pizza Co.",
-    description: "Pizza ordering app!  🍕.",
-    descriptionvn: "Ứng dụng đặt hàng pizza! 🍕.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcscs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: fastpizza,
-    project_link: "https://cbhuber17.github.io/fast-react-pizza-co/",
-    source_code_link: "https://github.com/cbhuber17/fast-react-pizza-co",
-    date_created: new Date(2023, 6, 11),
     under_construction: false,
     index: index++,
   },
