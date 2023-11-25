@@ -725,9 +725,9 @@ const projects = [
   {
     name: "Collatz Conjecture",
     description:
-      "Visualization of the 3n+1 problem. Fully interactive with user inputs and performance settings. The result of the conjecture is displayed on a line graph, with the history of each setting preserved for reference.",
+      "Visualization of the 3n+1 problem. Fully interactive with user inputs and performance settings. The result of the conjecture is displayed on a line graph, with the history of each setting preserved for reference. Please wait during the slow loading time.",
     descriptionvn:
-      "Trực quan hóa bài toán 3n+1. Tương tác hoàn toàn với đầu vào của người dùng và cài đặt hiệu suất. Kết quả phỏng đoán được hiển thị trên biểu đồ đường, với lịch sử của từng cài đặt được lưu giữ để tham khảo.",
+      "Trực quan hóa bài toán 3n+1. Tương tác hoàn toàn với đầu vào của người dùng và cài đặt hiệu suất. Kết quả phỏng đoán được hiển thị trên biểu đồ đường, với lịch sử của từng cài đặt được lưu giữ để tham khảo. Vui lòng đợi trong thời gian tải chậm.",
     tags: [
       {
         name: "python",
@@ -770,8 +770,8 @@ const projects = [
       },
     ],
     image: videogame,
-    project_link: "https://github.com/cbhuber17/VideoGameArchive",
-    source_code_link: "https://video-game-archive.vercel.app/",
+    project_link: "https://video-game-archive.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/VideoGameArchive",
     date_created: new Date(2023, 5, 21),
     under_construction: false,
     index: index++,
@@ -779,9 +779,9 @@ const projects = [
   {
     name: "Alberta ER Wait Times",
     description:
-      "Visualization the wait times at various Calgary and Edmonton hospitals. Fully interactive with line and violin charts.",
+      "Visualization the wait times at various Calgary and Edmonton hospitals. Fully interactive with line and violin charts. Please wait during the slow loading time.",
     descriptionvn:
-      "Hình dung thời gian chờ đợi tại các bệnh viện khác nhau ở Calgary và Edmonton. Tương tác hoàn toàn với biểu đồ đường và violin.",
+      "Hình dung thời gian chờ đợi tại các bệnh viện khác nhau ở Calgary và Edmonton. Tương tác hoàn toàn với biểu đồ đường và violin. Vui lòng đợi trong thời gian tải chậm.",
     tags: [
       {
         name: "python",
@@ -950,9 +950,9 @@ const projects = [
   {
     name: "Natours Tour Booking",
     description:
-      "A tour booking website, complete with user accounts and credit card payments via stipe.",
+      "A tour booking website, complete with user accounts and credit card payments via stipe. Please wait during the slow loading time.",
     descriptionvn:
-      "Một trang web đặt tour du lịch, hoàn chỉnh với tài khoản người dùng và thanh toán bằng thẻ tín dụng qua stipe.",
+      "Một trang web đặt tour du lịch, hoàn chỉnh với tài khoản người dùng và thanh toán bằng thẻ tín dụng qua stipe. Vui lòng đợi trong thời gian tải chậm.",
     tags: [
       {
         name: "nodejs",
@@ -984,8 +984,10 @@ const projects = [
   },
   {
     name: "Forkify",
-    description: "A recipe searching and preview app.",
-    descriptionvn: "Một ứng dụng tìm kiếm và xem trước công thức nấu ăn.",
+    description:
+      "A recipe searching and preview app. Please wait during the slow loading time.",
+    descriptionvn:
+      "Một ứng dụng tìm kiếm và xem trước công thức nấu ăn. Vui lòng đợi trong thời gian tải chậm.",
     tags: [
       {
         name: "javascript",
@@ -1161,7 +1163,7 @@ const projects = [
   {
     name: "Bingo Run Simulator",
     description:
-      "Visualization of the results when playing BINGO 10 million times!",
+      "Visualization of the results when playing BINGO 10 million times! Please wait during the slow loading time.",
     descriptionvn: "Trực quan hóa kết quả khi chơi BINGO 10 triệu lần!",
     tags: [
       {
@@ -1375,9 +1377,9 @@ const projects = [
   {
     name: "Node Farm",
     description:
-      "Using NodeJS, create a mini vegetable hosting e-commerce website.",
+      "Using NodeJS, create a mini vegetable hosting e-commerce website. Please wait during the slow loading time.",
     descriptionvn:
-      "Sử dụng NodeJS, tạo một trang web thương mại điện tử lưu trữ rau củ mini.",
+      "Sử dụng NodeJS, tạo một trang web thương mại điện tử lưu trữ rau củ mini. Vui lòng đợi trong thời gian tải chậm.",
     tags: [
       {
         name: "nodejs",
