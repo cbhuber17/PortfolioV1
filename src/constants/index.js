@@ -655,9 +655,9 @@ const projects = [
   {
     name: "GeoNotes Travel Journal",
     description:
-      "An app to select a location on a map and create a journal entry of the visited location! Try a demo with account: demo@demo.com / Pass1234",
+      "An app to select a location on a map and create a journal entry of the visited location! Project will be released soon!",
     descriptionvn:
-      "Một ứng dụng để chọn một vị trí trên bản đồ và tạo một mục nhật ký về vị trí đã ghé thăm! Dùng thử demo với tài khoản: demo@demo.com / Pass1234",
+      "Một ứng dụng để chọn một vị trí trên bản đồ và tạo một mục nhật ký về vị trí đã ghé thăm! Dự án sẽ sớm được ra mắt!",
     tags: [
       {
         name: "react",
@@ -681,7 +681,7 @@ const projects = [
       },
     ],
     image: traveljournal,
-    project_link: "https://cbhuber17.github.io/WorldWise/",
+    project_link: "",
     source_code_link: "https://github.com/cbhuber17/WorldWise",
     date_created: new Date(2023, 6, 3),
     under_construction: false,
@@ -1016,9 +1016,9 @@ const projects = [
   {
     name: "RPG Text Adventure AI",
     description:
-      "A mock Dungeons & Dragons theme app to chat with GPT regarding your situation in a dungeon 🐉.",
+      "A mock Dungeons & Dragons theme app to chat with GPT regarding your situation in a dungeon 🐉. Offline for the time being due to limited OpenAI credits.",
     descriptionvn:
-      "Một ứng dụng chủ đề Dungeons & Dragons mô phỏng để trò chuyện với GPT về tình huống của bạn trong ngục tối 🐉.",
+      "Một ứng dụng chủ đề Dungeons & Dragons mô phỏng để trò chuyện với GPT về tình huống của bạn trong ngục tối 🐉. Hiện tại ngoại tuyến do tín dụng OpenAI bị hạn chế.",
     tags: [
       {
         name: "nextjs",
@@ -1042,7 +1042,7 @@ const projects = [
       },
     ],
     image: rpgai,
-    project_link: "https://rpg-text-adventure-oco0dha61-cbhuber17.vercel.app/",
+    project_link: "",
     source_code_link: "https://github.com/cbhuber17/rpg-text-adventure-ai",
     date_created: new Date(2023, 8, 13),
     under_construction: false,
