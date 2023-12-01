@@ -82,11 +82,11 @@ export const navLinks = [
     title: "Work",
     titlevn: "Dự án cá nhân",
   },
-  {
-    id: "addendum",
-    title: "Addendum",
-    titlevn: "Phụ lục",
-  },
+  // {
+  //   id: "addendum",
+  //   title: "Addendum",
+  //   titlevn: "Phụ lục",
+  // },
   {
     id: "contact",
     title: "Contact",
