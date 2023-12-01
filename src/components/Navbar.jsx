@@ -6,11 +6,16 @@ import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 import LanguageSwitch from "./LanguageSwitch";
 import { useLanguage } from "../contexts/LanguageContext";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 /* eslint react/prop-types: 0 */
 const Navbar = () => {
   // Language switch
   const { isForeign, dispatch } = useLanguage();
+
+  const { width } = useWindowDimensions();
+  let isMobile = false;
+  if (width < 500) isMobile = true;
 
   // Determines where the user is on the page
   const [active, setActive] = useState("");
@@ -47,7 +52,11 @@ const Navbar = () => {
             </span>
           </p>
         </Link>
-        <LanguageSwitch checked={isForeign} switchChange={switchChange} />
+        <LanguageSwitch
+          checked={isForeign}
+          switchChange={switchChange}
+          isMobile={isMobile}
+        />
         <ul className="list-none hidden lg:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li

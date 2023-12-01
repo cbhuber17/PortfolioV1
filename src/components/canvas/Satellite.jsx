@@ -21,7 +21,7 @@ const Satellite = ({ isMobile }) => {
       {/* Satellite position, smooth rotation */}
       <primitive
         object={satellite.scene}
-        scale={isMobile ? 0.4 : 0.6}
+        scale={isMobile ? 0.75 : 1}
         position={isMobile ? [-1, -2, 0.1] : [0.6, -1.5, 0]}
         rotation={[-0.2, 1.5, 0.1]}
       />
@@ -61,13 +61,14 @@ const SatelliteCanvas = () => {
       <Suspense fallback={<CanvasLoader isSmall={false} />}>
         {/* Allow satellite movement, disable zoom */}
         <OrbitControls
+          // enablePan={false}
+          // enableRotate={false}
           enableZoom={false}
           maxPolarAngle={Math.PI * 2}
           minPolarAngle={0}
         />
         <Satellite isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );

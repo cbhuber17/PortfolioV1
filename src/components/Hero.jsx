@@ -33,7 +33,10 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <SatelliteCanvas />
+      {/* Canvas size of parent container */}
+      <div className="w-full sm:h-1/2 absolute sm:bottom-40 h-1/3 bottom-24">
+        <SatelliteCanvas />
+      </div>
 
       <div className="absolute bottom-2 w-full flex justify-center items-center">
         <a href="#about">

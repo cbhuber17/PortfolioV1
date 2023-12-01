@@ -1,3 +1,4 @@
+import useWindowDimensions from "../hooks/useWindowDimensions";
 import {
   About,
   Contact,
@@ -14,6 +15,10 @@ import {
 
 /* eslint react/prop-types: 0 */
 const Homepage = () => {
+  const { width } = useWindowDimensions();
+  let isMobile = false;
+  if (width < 500) isMobile = true;
+
   return (
     <div className="relative z-0 bg-primary">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
@@ -22,10 +27,10 @@ const Homepage = () => {
       </div>
       <About />
       <Experience />
-      <Tech />
+      {isMobile ? null : <Tech />}
       <Works />
       {/* <Feedbacks /> */}
-      <Certificates />
+      {isMobile ? null : <Certificates />}
       <div className="relative z-0">
         <Contact />
         <StarsCanvas />
