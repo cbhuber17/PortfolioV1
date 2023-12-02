@@ -50,7 +50,7 @@ const About = () => {
         <br />
         <br />
         {isForeign
-          ? "Tôi cũng xuất sắc trong các công nghệ GNSS trong đó độ chính xác và độ chính xác là điều tối quan trọng. Tôi có con mắt tinh tường về chi tiết, đảm bảo rằng hệ thống định vị đáp ứng các tiêu chuẩn chất lượng nghiêm ngặt cho các ứng dụng quan trọng về an toàn. Cách tiếp cận tỉ mỉ này áp dụng cho công việc của tôi trong Giải pháp đám mây, đặc biệt là với AWS."
+          ? "Tôi cũng tự tin trong lĩnh vực công nghệ GNSS, điều mà tôi cảm thấy quan trọng nhất trong lĩnh vực này đó là độ chính xác tuyệt đối. Tôi có con mắt tinh tường về chi tiết, đảm bảo rằng hệ thống định vị đáp ứng các tiêu chuẩn chất lượng nghiêm ngặt cho các ứng dụng quan trọng về an toàn. Cách tiếp cận tỉ mỉ này áp dụng cho công việc của tôi trong Giải pháp đám mây, đặc biệt là với AWS."
           : "I also excel in GNSS technologies where precision and accuracy are paramount. I have a keen eye for detail, ensuring that navigation systems meet stringent quality standards for safety-critical applications. This meticulous approach extends to my work in Cloud Solutions, particularly with AWS."}
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 justify-center lg:justify-start">

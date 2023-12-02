@@ -19,16 +19,20 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {isForeign ? "Chào, tôi là" : "Hi, I am"}{" "}
+            {isForeign ? "Xin chào, tôi là" : "Hi, I am"}{" "}
             <span className="text-[#000FCA]">Colin</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
             {isForeign
-              ? "Chuyên môn về GNSS, Nhà phát triển web toàn diện,"
+              ? "Hiện tại tôi đang sinh sống và làm việc tại Canada."
+              : null}
+            <br className="sm:block hidden" />
+            {isForeign
+              ? "Tôi học chuyên ngành kĩ sư trắc địa. Tôi có chuyên môn về:"
               : "GNSS Expertise, Full Stack Web Developer, "}
             <br className="sm:block hidden" />
             {isForeign
-              ? "Người kiểm tra phần mềm được chứng nhận, Giải pháp đám mây"
+              ? "Hệ thống định vị GNSS. Nhà phát triển Web toàn diện. Tôi được cấp chứng chỉ chương trình điện toán đám mây của AWS."
               : "Avid Software Tester, Certified Cloud Solutions"}
           </p>
         </div>

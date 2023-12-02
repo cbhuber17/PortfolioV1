@@ -441,7 +441,7 @@ const experiences = [
   },
   {
     title: "Ground Reference Receivers Application Engineer",
-    titlevn: "Kỹ Sư Ứng Dụng Máy Thu Tham Chiếu Mặt Dất",
+    titlevn: "Kỹ Sư Ứng Dụng Máy Thu Tham Chiếu Mặt đất",
     company_name: "Hexagon",
     icon: hexagon,
     iconBg: "#383E56",
@@ -453,7 +453,7 @@ const experiences = [
       "Built relationships and resolved customer inquiries in a timely manner.",
     ],
     pointsvn: [
-      "Cung cấp hỗ trợ khách hàng đẳng cấp thế giới cho các hệ thống GNSS tham khảo trên toàn thế giới.",
+      "Hỗ trợ giới thiệu và cung cấp các hệ thống GNSS cho khách hàng trên toàn thế giới tham khảo.",
       "Tích cực lắng nghe, thu thập thông tin thực tế và thu hút khách hàng.",
       "Xây dựng mối quan hệ và giải quyết các thắc mắc của khách hàng một cách kịp thời.",
     ],
@@ -472,7 +472,7 @@ const experiences = [
       "Developer testing utilizing unit testing harnesses and GNSS simulators.",
     ],
     pointsvn: [
-      "Hỗ trợ phát triển nhúng, quản lý yêu cầu, truy tìm và thử nghiệm máy thu tham chiếu mặt đất (WAAS, GUS) cho ngành hàng không",
+      "Hỗ trợ phát triển, quản lý yêu cầu, truy tìm và thử nghiệm máy thu tham chiếu mặt đất (WAAS, GUS) cho ngành hàng không",
       "Quản lý yêu cầu và mô hình hóa UML để xây dựng sản phẩm theo thông số kỹ thuật của khách hàng",
       "Thử nghiệm dành cho nhà phát triển sử dụng khai thác thử nghiệm đơn vị và trình mô phỏng GNSS.",
     ],
