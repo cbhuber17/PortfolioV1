@@ -56,9 +56,12 @@ import natours from "./projects/natours.png";
 import pportfolio from "./projects/pportfolio.png";
 import zeal from "./projects/zeal.png";
 import nodefarm from "./projects/nodefarm.png";
+import medchat from "./projects/medchat.png";
 import devoverflow from "./projects/devoverflow.png";
 import fastpizza from "./projects/fastpizza.png";
 import trillo from "./projects/trillo.png";
+import evently from "./projects/evently.png";
+import techhaven from "./projects/techhaven.png";
 import vnlandingpage from "./projects/vnlandingpage.png";
 import saaslanding from "./projects/saaslanding.png";
 import guessnumretro from "./projects/guessnumretro.png";
@@ -73,7 +76,9 @@ import nexter from "./projects/nexter.png";
 import aberwait from "./projects/aberwait.png";
 import bingosim from "./projects/bingosim.png";
 import nextnotes from "./projects/nextnotes.png";
+import filmpire from "./projects/filmpire.png";
 import eventgrids from "./projects/eventgrids.png";
+import nftmarketplace from "./projects/nftmarketplace.png";
 
 export {
   // pocketbase,
@@ -116,14 +121,18 @@ export {
   pportfolio,
   rpgai,
   flyht,
+  evently,
   natourslanding,
   // stripe,
   justscroll,
+  medchat,
+  techhaven,
   zeal,
   // supabase,
   threadportfolio,
   // git,
   web2004,
+  filmpire,
   bingosim,
   // typescript,
   gnssquiz,
@@ -147,6 +156,7 @@ export {
   // plotly,
   // figma,
   // postgre,
+  nftmarketplace,
   // angular,
   // express,
 };

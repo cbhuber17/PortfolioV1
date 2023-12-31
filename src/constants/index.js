@@ -15,6 +15,7 @@ import {
   // supabase,
   natourslanding,
   forkify,
+  medchat,
   nextphoto,
   // mongodb,
   pportfolio,
@@ -33,6 +34,7 @@ import {
   // postgre,
   saaslanding,
   devoverflow,
+  evently,
   vietnamblog,
   // java,
   // yaml,
@@ -46,7 +48,9 @@ import {
   threadportfolio,
   kanban,
   usepopcorn,
+  techhaven,
   justscroll,
+  nftmarketplace,
   zeal,
   // plotly,
   rpgai,
@@ -67,6 +71,7 @@ import {
   // neon,
   // figma,
   // css,
+  filmpire,
 } from "../assets";
 
 import { full_stack, gnss, cloud, tutor } from "../assets/service_icons";
@@ -750,29 +755,31 @@ const projects = [
     index: index++,
   },
   {
-    name: "Video Game Archive",
-    description:
-      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
-    descriptionvn:
-      "Ứng dụng React đơn giản nhưng hoàn toàn hiện đại sử dụng API RAWG để truy xuất danh sách tất cả các trò chơi điện tử có sẵn.",
+    name: "Filmpire",
+    description: "An AI-powered Movie Database.",
+    descriptionvn: "Cơ sở dữ liệu phim được hỗ trợ bởi AI.",
     tags: [
       {
-        name: "react",
+        name: "alan-ai",
         color: "blue-text-gradient",
       },
       {
-        name: "api",
+        name: "react",
         color: "green-text-gradient",
       },
       {
-        name: "typescript",
+        name: "vite",
         color: "pink-text-gradient",
       },
+      {
+        name: "mui",
+        color: "orange-text-gradient",
+      },
     ],
-    image: videogame,
-    project_link: "https://video-game-archive.vercel.app/",
-    source_code_link: "https://github.com/cbhuber17/VideoGameArchive",
-    date_created: new Date(2023, 5, 21),
+    image: filmpire,
+    project_link: "https://cbhuber17.github.io/filmpire/",
+    source_code_link: "https://github.com/cbhuber17/filmpire",
+    date_created: new Date(2023, 11, 20),
     under_construction: false,
     index: index++,
   },
@@ -808,6 +815,33 @@ const projects = [
     project_link: "https://alberta-er-wait-times.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/ERWaitTimes",
     date_created: new Date(2022, 4, 30),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Video Game Archive",
+    description:
+      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
+    descriptionvn:
+      "Ứng dụng React đơn giản nhưng hoàn toàn hiện đại sử dụng API RAWG để truy xuất danh sách tất cả các trò chơi điện tử có sẵn.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: videogame,
+    project_link: "https://video-game-archive.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/VideoGameArchive",
+    date_created: new Date(2023, 5, 21),
     under_construction: false,
     index: index++,
   },
@@ -941,10 +975,66 @@ const projects = [
       },
     ],
     image: devoverflow,
-    project_link: "",
+    project_link: "https://dev-overflow-cbhuber17.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/dev-overflow",
     date_created: new Date(2023, 10, 18),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Evently",
+    description: "NextJS MERN application similar to event brite, meetup etc.",
+    descriptionvn:
+      "Ứng dụng NextJS MERN tương tự như các sự kiện brite, Meetup, v.v.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: evently,
+    project_link: "https://evently-cbhuber17.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/evently",
+    date_created: new Date(2023, 11, 15),
     under_construction: true,
+    index: index++,
+  },
+  {
+    name: "Tech Haven",
+    description: "An e-commerce website featuring common tech products.",
+    descriptionvn:
+      "Một trang web thương mại điện tử có các sản phẩm công nghệ phổ biến.",
+    tags: [
+      {
+        name: "payloadcms",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: techhaven,
+    project_link: "https://tech-haven-8ac4070-jsm.payloadcms.app/",
+    source_code_link: "https://github.com/cbhuber17/tech-haven",
+    date_created: new Date(2023, 11, 2),
+    under_construction: false,
     index: index++,
   },
   {
@@ -979,6 +1069,68 @@ const projects = [
     project_link: "https://natours-ewub.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/natours-api",
     date_created: new Date(2023, 2, 23),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Medical Paging Chat",
+    description:
+      "About A basic chat app used as a 'pager' for messaging and notifications in medical applications.",
+    descriptionvn:
+      "Một ứng dụng trò chuyện cơ bản được sử dụng làm 'máy nhắn tin' để nhắn tin và thông báo trong các ứng dụng y tế.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stream-chat",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: medchat,
+    project_link: "https://cbhuber17.github.io/medical-chat-app/",
+    source_code_link: "https://github.com/cbhuber17/medical-chat-app",
+    date_created: new Date(2023, 11, 10),
+    under_construction: true,
+    index: index++,
+  },
+  {
+    name: "NFT Marketplace",
+    description:
+      "CryptoKet dApp - Solidity: Use of smart contracts, that run on a decentralized computing, blockchain distributed ledger system.",
+    descriptionvn:
+      "CryptoKet dApp - Solidity: Sử dụng hợp đồng thông minh, chạy trên hệ thống sổ cái phân tán, tính toán phi tập trung.",
+    tags: [
+      {
+        name: "solidity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ipfs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sepolia",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "hardhat",
+        color: "red-text-gradient",
+      },
+    ],
+    image: nftmarketplace,
+    project_link: "https://nft-marketplace-cbhuber17.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/nft-marketplace",
+    date_created: new Date(2023, 11, 13),
     under_construction: false,
     index: index++,
   },
