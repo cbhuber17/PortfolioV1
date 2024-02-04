@@ -15,6 +15,7 @@ import {
   // supabase,
   natourslanding,
   forkify,
+  collaborative,
   medchat,
   nextphoto,
   // mongodb,
@@ -51,6 +52,7 @@ import {
   techhaven,
   justscroll,
   nftmarketplace,
+  admindashboard,
   zeal,
   // plotly,
   rpgai,
@@ -1010,6 +1012,72 @@ const projects = [
     date_created: new Date(2023, 11, 15),
     under_construction: true,
     index: index++,
+  },
+  {
+    name: "Admin Dashboard",
+    description: "A sales team dashboard featuring charts, a Kanban board and the ability to add remove tasks/companies.",
+    descriptionvn: "Trang tổng quan của nhóm bán hàng bao gồm các biểu đồ, bảng Kanban và khả năng thêm các nhiệm vụ/công ty bị loại bỏ.",
+    tags: [
+      {
+        name: "refine",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "graphql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ant-design",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "red-text-gradient",
+      },
+    ],
+  image: admindashboard,
+  project_link: "https://refine-project-tau.vercel.app/",
+  source_code_link: "https://github.com/cbhuber17/refine-project",
+  date_created: new Date(2024, 0, 21),
+  under_construction: false,
+  index: index++,
+  },
+  {
+    name: "Collaborative Web App",
+    description: "A simple clone of Figma allowing multiple simultaneous users to construct and design web applications, using shapes, text and chat.",
+    descriptionvn: "Một bản sao đơn giản của Figma cho phép nhiều người dùng đồng thời xây dựng và thiết kế các ứng dụng web, sử dụng hình dạng, văn bản và trò chuyện.",
+    tags: [
+      {
+        name: "liveblocks",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "fabric",
+        color: "red-text-gradient",
+      },
+    ],
+  image: collaborative,
+  project_link: "https://collaborative-web-app.vercel.app/",
+  source_code_link: "https://github.com/cbhuber17/collaborative-web-app",
+  date_created: new Date(2024, 1, 2),
+  under_construction: false,
+  index: index++,
   },
   {
     name: "Tech Haven",

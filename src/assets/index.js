@@ -40,6 +40,7 @@ import elections from "./company/elections.png";
 import flyht from "./company/flyht.png";
 
 import traveljournal from "./projects/traveljournal.png";
+import admindashboard from './projects/admindashboard.png';
 import packtravel from "./projects/packtravel.png";
 import forkify from "./projects/forkify.png";
 import collatz from "./projects/collatz.png";
@@ -70,6 +71,7 @@ import threadportfolio from "./projects/threadportfolio.png";
 import wildoasis from "./projects/wildoasis.png";
 import techd from "./projects/techd.png";
 import web2004 from "./projects/web2004.png";
+import collaborative from './projects/collaborative.png'
 import piggame from "./projects/piggame.png";
 import defectrecord from "./projects/defectrecord.png";
 import nexter from "./projects/nexter.png";
@@ -89,6 +91,7 @@ export {
   piggame,
   packtravel,
   forkify,
+  admindashboard,
   collatz,
   vietnamblog,
   hexagon,
@@ -107,6 +110,7 @@ export {
   // docker,
   nodefarm,
   traveljournal,
+  collaborative,
   wildoasis,
   vnlandingpage,
   natours,
