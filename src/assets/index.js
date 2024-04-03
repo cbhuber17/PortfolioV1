@@ -40,13 +40,15 @@ import elections from "./company/elections.png";
 import flyht from "./company/flyht.png";
 
 import traveljournal from "./projects/traveljournal.png";
-import admindashboard from './projects/admindashboard.png';
+import admindashboard from "./projects/admindashboard.png";
 import packtravel from "./projects/packtravel.png";
 import forkify from "./projects/forkify.png";
+import apple from "./projects/apple.png";
 import collatz from "./projects/collatz.png";
 import rpgai from "./projects/rpgai.png";
 import videogame from "./projects/videogame.png";
 import nextphoto from "./projects/nextphoto.png";
+import brainwave from "./projects/brainwave.png";
 import countriesapi from "./projects/countriesapi.png";
 import justscroll from "./projects/justscroll.png";
 import vietnamblog from "./projects/vietnamblog.png";
@@ -71,13 +73,15 @@ import threadportfolio from "./projects/threadportfolio.png";
 import wildoasis from "./projects/wildoasis.png";
 import techd from "./projects/techd.png";
 import web2004 from "./projects/web2004.png";
-import collaborative from './projects/collaborative.png'
+import imaginify from "./projects/imaginify.png";
+import collaborative from "./projects/collaborative.png";
 import piggame from "./projects/piggame.png";
 import defectrecord from "./projects/defectrecord.png";
 import nexter from "./projects/nexter.png";
 import aberwait from "./projects/aberwait.png";
 import bingosim from "./projects/bingosim.png";
 import nextnotes from "./projects/nextnotes.png";
+import yoom from "./projects/yoom.png";
 import filmpire from "./projects/filmpire.png";
 import eventgrids from "./projects/eventgrids.png";
 import nftmarketplace from "./projects/nftmarketplace.png";
@@ -101,8 +105,11 @@ export {
   menu,
   close,
   saaslanding,
+  imaginify,
   guessnumretro,
   // python,
+  apple,
+  yoom,
   trillo,
   nextnotes,
   // neon,
@@ -163,4 +170,5 @@ export {
   nftmarketplace,
   // angular,
   // express,
+  brainwave,
 };

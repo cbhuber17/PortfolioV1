@@ -74,6 +74,10 @@ import {
   // figma,
   // css,
   filmpire,
+  imaginify,
+  brainwave,
+  apple,
+  yoom,
 } from "../assets";
 
 import { full_stack, gnss, cloud, tutor } from "../assets/service_icons";
@@ -89,11 +93,11 @@ export const navLinks = [
     title: "Work",
     titlevn: "Dự án cá nhân",
   },
-  // {
-  //   id: "addendum",
-  //   title: "Addendum",
-  //   titlevn: "Phụ lục",
-  // },
+  {
+    id: "addendum",
+    title: "Addendum",
+    titlevn: "Phụ lục",
+  },
   {
     id: "contact",
     title: "Contact",
@@ -821,6 +825,37 @@ const projects = [
     index: index++,
   },
   {
+    name: "Video Collab",
+    description:
+      "A zoom-like clone enabling instant video calling, meeting scheduling, history and recordings.",
+    descriptionvn:
+      "Một bản sao giống như thu phóng cho phép gọi video tức thì, lên lịch cuộc họp, lịch sử và ghi âm.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stream",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: yoom,
+    project_link: "https://video-collab.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/video-collab",
+    date_created: new Date(2024, 2, 29),
+    under_construction: false,
+    index: index++,
+  },
+  {
     name: "Video Game Archive",
     description:
       "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
@@ -984,6 +1019,41 @@ const projects = [
     index: index++,
   },
   {
+    name: "Apple Landing Page",
+    description:
+      "Showcasing and modeling the iPhone 15 technology with videos and animations.",
+    descriptionvn:
+      "Trưng bày và mô hình hóa công nghệ iPhone 15 bằng video và ảnh động.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "red-text-gradient",
+      },
+    ],
+    image: apple,
+    project_link: "https://apple-landing-page-pink.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/apple-landing-page",
+    date_created: new Date(2024, 2, 16),
+    under_construction: false,
+    index: index++,
+  },
+  {
     name: "Evently",
     description: "NextJS MERN application similar to event brite, meetup etc.",
     descriptionvn:
@@ -1015,8 +1085,10 @@ const projects = [
   },
   {
     name: "Admin Dashboard",
-    description: "A sales team dashboard featuring charts, a Kanban board and the ability to add remove tasks/companies.",
-    descriptionvn: "Trang tổng quan của nhóm bán hàng bao gồm các biểu đồ, bảng Kanban và khả năng thêm các nhiệm vụ/công ty bị loại bỏ.",
+    description:
+      "A sales team dashboard featuring charts, a Kanban board and the ability to add remove tasks/companies.",
+    descriptionvn:
+      "Trang tổng quan của nhóm bán hàng bao gồm các biểu đồ, bảng Kanban và khả năng thêm các nhiệm vụ/công ty bị loại bỏ.",
     tags: [
       {
         name: "refine",
@@ -1039,17 +1111,19 @@ const projects = [
         color: "red-text-gradient",
       },
     ],
-  image: admindashboard,
-  project_link: "https://refine-project-tau.vercel.app/",
-  source_code_link: "https://github.com/cbhuber17/refine-project",
-  date_created: new Date(2024, 0, 21),
-  under_construction: false,
-  index: index++,
+    image: admindashboard,
+    project_link: "https://refine-project-tau.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/refine-project",
+    date_created: new Date(2024, 0, 21),
+    under_construction: false,
+    index: index++,
   },
   {
     name: "Collaborative Web App",
-    description: "A simple clone of Figma allowing multiple simultaneous users to construct and design web applications, using shapes, text and chat.",
-    descriptionvn: "Một bản sao đơn giản của Figma cho phép nhiều người dùng đồng thời xây dựng và thiết kế các ứng dụng web, sử dụng hình dạng, văn bản và trò chuyện.",
+    description:
+      "A simple clone of Figma allowing multiple simultaneous users to construct and design web applications, using shapes, text and chat.",
+    descriptionvn:
+      "Một bản sao đơn giản của Figma cho phép nhiều người dùng đồng thời xây dựng và thiết kế các ứng dụng web, sử dụng hình dạng, văn bản và trò chuyện.",
     tags: [
       {
         name: "liveblocks",
@@ -1072,12 +1146,12 @@ const projects = [
         color: "red-text-gradient",
       },
     ],
-  image: collaborative,
-  project_link: "https://collaborative-web-app.vercel.app/",
-  source_code_link: "https://github.com/cbhuber17/collaborative-web-app",
-  date_created: new Date(2024, 1, 2),
-  under_construction: false,
-  index: index++,
+    image: collaborative,
+    project_link: "https://collaborative-web-app.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/collaborative-web-app",
+    date_created: new Date(2024, 1, 2),
+    under_construction: false,
+    index: index++,
   },
   {
     name: "Tech Haven",
@@ -1165,6 +1239,33 @@ const projects = [
     source_code_link: "https://github.com/cbhuber17/medical-chat-app",
     date_created: new Date(2023, 11, 10),
     under_construction: true,
+    index: index++,
+  },
+  {
+    name: "Brainwave",
+    description:
+      "Company AI landing page, featuring AI models and upcoming technologies.",
+    descriptionvn:
+      "Trang đích AI của công ty, giới thiệu các mô hình AI và các công nghệ sắp ra mắt",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: brainwave,
+    project_link: "https://cbhuber17.github.io/brainwave/",
+    source_code_link: "https://github.com/cbhuber17/brainwave",
+    date_created: new Date(2024, 2, 1),
+    under_construction: false,
     index: index++,
   },
   {
@@ -1350,6 +1451,41 @@ const projects = [
     project_link: "https://nextjs-photo-album-three.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/nextjs-photo-album",
     date_created: new Date(2023, 7, 10),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Imaginify",
+    description:
+      "Edit your images using AI: Restoration, Generative Fill, Background/Object Removal & Recoloring.",
+    descriptionvn:
+      "Chỉnh sửa hình ảnh của bạn bằng AI: Khôi phục, Điền sáng tạo, Xóa nền/đối tượng & Đổi màu.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cloudinary",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "red-text-gradient",
+      },
+    ],
+    image: imaginify,
+    project_link: "https://ai-image-saas.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/ai-image-saas",
+    date_created: new Date(2024, 1, 16),
     under_construction: false,
     index: index++,
   },
