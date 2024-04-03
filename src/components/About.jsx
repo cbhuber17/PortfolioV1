@@ -46,12 +46,12 @@ const About = () => {
       >
         {isForeign
           ? "Chào mừng bạn đến với danh mục đầu tư của tôi, nơi sự đổi mới đáp ứng được độ chính xác trong lĩnh vực kỹ thuật số. Tôi là một Nhà phát triển web Full Stack có kinh nghiệm với niềm đam mê tạo ra các giải pháp liền mạch và có thể mở rộng để kết nối khoảng cách giữa trải nghiệm người dùng và chức năng mạnh mẽ."
-          : "Welcome to my portfolio, where innovation meets precision in the digital realm. I am an experienced Full Stack Web Developer with a passion for crafting seamless and scalable solutions that bridge the gap between user experience and robust functionality."}
+          : "Hi there! I am an experienced Full Stack Web Developer that enjoys developing solutions that enables a full user experience. I am dedicated to delivering high-quality, robust, end-to-end web solutions."}
         <br />
         <br />
         {isForeign
           ? "Tôi cũng tự tin trong lĩnh vực công nghệ GNSS, điều mà tôi cảm thấy quan trọng nhất trong lĩnh vực này đó là độ chính xác tuyệt đối. Tôi có con mắt tinh tường về chi tiết, đảm bảo rằng hệ thống định vị đáp ứng các tiêu chuẩn chất lượng nghiêm ngặt cho các ứng dụng quan trọng về an toàn. Cách tiếp cận tỉ mỉ này áp dụng cho công việc của tôi trong Giải pháp đám mây, đặc biệt là với AWS."
-          : "I also excel in GNSS technologies where precision and accuracy are paramount. I have a keen eye for detail, ensuring that navigation systems meet stringent quality standards for safety-critical applications. This meticulous approach extends to my work in Cloud Solutions, particularly with AWS."}
+          : "I also excel in GNSS technologies where accuracy, integrity and reliability are critical. My attention to detail spans my 15+ years as a Software Testing Professional, ensuring that navigation systems meet DO-178B quality standards for safety-critical applications. This approach extends to my work in Cloud Solutions, particularly with AWS."}
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 justify-center lg:justify-start">
         {services.map((service, index) => (
