@@ -44,8 +44,8 @@ const Certificates = () => {
             className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
             {isForeign
-              ? "Dưới đây bạn sẽ tìm thấy thông tin xác thực và chứng chỉ của tôi trong những năm qua."
-              : "Below you will find my credentials and certificates over the years."}
+              ? "Dưới đây bạn sẽ tìm thấy thông tin xác thực và chứng chỉ của tôi trong những năm qua. Tất cả các chứng chỉ đều yêu cầu bài kiểm tra viết với kết quả đậu."
+              : "Below you will find my credentials and certificates over the years. All certificates requires a written exam with passing results."}
           </p>
         ) : (
           <motion.p
@@ -53,8 +53,8 @@ const Certificates = () => {
             className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
             {isForeign
-              ? "Dưới đây bạn sẽ tìm thấy thông tin xác thực và chứng chỉ của tôi trong những năm qua."
-              : "Below you will find my credentials and certificates over the years."}
+              ? "Dưới đây bạn sẽ tìm thấy thông tin xác thực và chứng chỉ của tôi trong những năm qua. Tất cả các chứng chỉ đều yêu cầu bài kiểm tra viết với kết quả đậu."
+              : "Below you will find my credentials and certificates over the years. All certificates requires a written exam with passing results."}
           </motion.p>
         )}
       </div>

@@ -2033,6 +2033,54 @@ const projects = [
 ];
 
 const certificates = [
+  // {
+  //   img: "udacity.png",
+  //   credential: "Full-Stack Developer Nanodegree",
+  //   provider: "Udacity",
+  //   instructor: "Sebastian Thrun",
+  //   issued: new Date(2020, 11, 14),
+  //   summary:
+  //     "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
+  //   summaryvn:
+  //     "Udacity là một nền tảng học tập suốt đời, trực tuyến, toàn cầu, kết nối giáo dục với việc làm.",
+  //   link: "https://confirm.udacity.com/LNUKASGH",
+  // },
+  // {
+  //   img: "udacity.png",
+  //   credential: "Front-End Develpoer Nanodegree",
+  //   provider: "Udacity",
+  //   instructor: "Sebastian Thrun",
+  //   issued: new Date(2020, 10, 7),
+  //   summary:
+  //     "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
+  //   summaryvn:
+  //     "Udacity là một nền tảng học tập suốt đời, trực tuyến, toàn cầu, kết nối giáo dục với việc làm.",
+  //   link: "https://confirm.udacity.com/DZJTQCXD",
+  // },
+  {
+    img: "rustbc.png",
+    credential: "Rust Developer Bootcamp",
+    provider: "Let's Get Rusty",
+    instructor: "Bogdan P.",
+    issued: new Date(2024, 2, 29),
+    summary:
+      "A systems programming language emphasizing safety, concurrency, and performance, with a strong type system and memory management.",
+    summaryvn:
+      "Một ngôn ngữ lập trình hệ thống nhấn mạnh đến tính an toàn, tính đồng thời và hiệu suất, với hệ thống kiểu mạnh mẽ và quản lý bộ nhớ.",
+    link: "https://www.linkedin.com/in/cbhuber/overlay/1711721995462/single-media-viewer/?profileId=ACoAADKecXwB_876LXpxemq5v3ZF8dNaO5oZHgw",
+  },
+  {
+    img: "greenbelt.png",
+    credential: "Lean Six-Sigma Green Belt",
+    provider: "AIGPE",
+    instructor: "Rahul Iyer",
+    issued: new Date(2024, 1, 5),
+    summary:
+      "Methodology for process improvement, eliminating defects, and enhancing efficiency through data-driven analysis and problem-solving techniques.",
+    summaryvn:
+      "Phương pháp cải tiến quy trình, loại bỏ khiếm khuyết và nâng cao hiệu quả thông qua phân tích dựa trên dữ liệu và kỹ thuật giải quyết vấn đề.",
+    link: "https://www.credential.net/d8de8743-b40c-4856-959b-2fe3901e5f8e#gs.6te6nc",
+  },
   {
     img: "aws.png",
     credential: "Certified Cloud Practitioner",
@@ -2044,30 +2092,6 @@ const certificates = [
     summaryvn:
       "Amazon Web Services cung cấp một loạt các sản phẩm dựa trên đám mây toàn cầu.",
     link: "https://www.credly.com/badges/e8390a7a-b771-4ced-8b03-d120ee586d1c",
-  },
-  {
-    img: "udacity.png",
-    credential: "Full-Stack Developer Nanodegree",
-    provider: "Udacity",
-    instructor: "Sebastian Thrun",
-    issued: new Date(2020, 11, 14),
-    summary:
-      "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
-    summaryvn:
-      "Udacity là một nền tảng học tập suốt đời, trực tuyến, toàn cầu, kết nối giáo dục với việc làm.",
-    link: "https://confirm.udacity.com/LNUKASGH",
-  },
-  {
-    img: "udacity.png",
-    credential: "Front-End Develpoer Nanodegree",
-    provider: "Udacity",
-    instructor: "Sebastian Thrun",
-    issued: new Date(2020, 10, 7),
-    summary:
-      "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
-    summaryvn:
-      "Udacity là một nền tảng học tập suốt đời, trực tuyến, toàn cầu, kết nối giáo dục với việc làm.",
-    link: "https://confirm.udacity.com/DZJTQCXD",
   },
   {
     img: "istqb.png",
