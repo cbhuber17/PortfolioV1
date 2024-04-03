@@ -34,6 +34,8 @@ import external from "./external.png";
 // import postgre from "./tech/postgre.png";
 // import express from "./tech/express.png";
 // import angular from "./tech/angular.png";
+// import rust from "./tech/rust.png";
+// import playwright from "./tech/playwright.png";
 
 import hexagon from "./company/hexagon.png";
 import elections from "./company/elections.png";
