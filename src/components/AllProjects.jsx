@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
+import { Tag } from "primereact/tag";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 
@@ -6,6 +7,8 @@ import ParagraphHeader from "./ParagraphHeader";
 import ProjectCard from "./ProjectCard";
 import SortBy from "./SortBy";
 import { useLanguage } from "../contexts/LanguageContext";
+
+import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
 
 function getSortedProjects(sortBy) {
   // Default order is popularity (index number) in constants.js
@@ -63,6 +66,24 @@ function getDevProjects(showDevProjects, projects) {
   return projects;
 }
 
+function getSortedTags() {
+  const tags = projects
+    .map((project) => project.tags.map((tag) => tag.name))
+    .flat(1);
+
+  const counts = {};
+
+  tags.forEach((el) => {
+    counts[el] = counts[el] ? counts[el] + 1 : 1;
+  });
+
+  const tagsSorted = Object.keys(counts).sort(function (a, b) {
+    return counts[b] - counts[a];
+  });
+
+  return tagsSorted;
+}
+
 /* eslint react/prop-types: 0 */
 // eslint-disable-next-line react-refresh/only-export-components
 const AllProjects = () => {
@@ -76,6 +97,8 @@ const AllProjects = () => {
   const sortedProjects = getSortedProjects(sortBy);
   const devSortedProjects = getDevProjects(showDevProjects, sortedProjects);
   const uniqueProjects = getFilteredProjects(devSortedProjects, searchQuery);
+
+  const tagsSorted = getSortedTags();
 
   return (
     <>
@@ -97,6 +120,28 @@ const AllProjects = () => {
         {isForeign
           ? "Tất cả các dự án được hiển thị dưới đây."
           : "All projects are shown below."}
+      </p>
+
+      <p className="text-white">
+        Example Filters:&nbsp;&nbsp;&nbsp;
+        {tagsSorted.map((tag, index) => {
+          if (index < 13) {
+            return (
+              <Fragment key={tag}>
+                <Tag
+                  style={{
+                    background:
+                      "linear-gradient(-225deg,#AC32E4 0%,#7918F2 48%,#4801FF 100%)",
+                    padding: "5px",
+                  }}
+                  value={tag}
+                  severity="success"
+                />
+                &nbsp;&nbsp;
+              </Fragment>
+            );
+          }
+        })}
       </p>
 
       <input
