@@ -123,7 +123,8 @@ const AllProjects = () => {
       </p>
 
       <p className="text-white">
-        Example Filters:&nbsp;&nbsp;&nbsp;
+        {isForeign ? "Bộ lọc mẫu" : "Example Filters"}
+        :&nbsp;&nbsp;&nbsp;
         {tagsSorted.map((tag, index) => {
           if (index < 13) {
             return (
@@ -152,7 +153,7 @@ const AllProjects = () => {
       />
 
       <div className="flex w-60 justify-between">
-        <p className="text-white">Sort By:</p>
+        <p className="text-white">{isForeign ? "Sắp xếp theo" : "Sort By"}:</p>
         <SortBy
           options={[
             { value: "popular", label: isForeign ? "Phổ biến" : "Popular" },
