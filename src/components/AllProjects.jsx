@@ -8,7 +8,7 @@ import ProjectCard from "./ProjectCard";
 import SortBy from "./SortBy";
 import { useLanguage } from "../contexts/LanguageContext";
 
-import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
+import "primereact/resources/themes/lara-light-indigo/theme.css";
 
 function getSortedProjects(sortBy) {
   // Default order is popularity (index number) in constants.js
@@ -88,6 +88,7 @@ function getSortedTags() {
 // eslint-disable-next-line react-refresh/only-export-components
 const AllProjects = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [inputText, setInputText] = useState("");
   const { isForeign } = useLanguage();
 
   const [sortBy, setSortBy] = useState("popular");
@@ -99,6 +100,12 @@ const AllProjects = () => {
   const uniqueProjects = getFilteredProjects(devSortedProjects, searchQuery);
 
   const tagsSorted = getSortedTags();
+
+  function handleTagClick(tag) {
+    setSearchQuery("");
+    setSearchQuery(tag);
+    setInputText(tag);
+  }
 
   return (
     <>
@@ -134,9 +141,11 @@ const AllProjects = () => {
                     background:
                       "linear-gradient(-225deg,#AC32E4 0%,#7918F2 48%,#4801FF 100%)",
                     padding: "5px",
+                    cursor: "pointer",
                   }}
                   value={tag}
                   severity="success"
+                  onClick={() => handleTagClick(tag)}
                 />
                 &nbsp;&nbsp;
               </Fragment>
@@ -148,8 +157,12 @@ const AllProjects = () => {
       <input
         type="text"
         placeholder={isForeign ? "Lọc dự án..." : "Filter projects..."}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        className="my-5 px-2 py-2"
+        value={inputText}
+        onChange={(e) => {
+          setSearchQuery(e.target.value);
+          setInputText(e.target.value);
+        }}
+        className="my-5 px-2 py-2 text-white"
       />
 
       <div className="flex w-60 justify-between">
