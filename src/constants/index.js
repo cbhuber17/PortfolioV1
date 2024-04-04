@@ -687,7 +687,7 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "aws_amplify",
+        name: "aws",
         color: "red-text-gradient",
       },
     ],
@@ -813,7 +813,7 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "mongo",
+        name: "mongodb",
         color: "red-text-gradient",
       },
     ],
@@ -898,7 +898,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcscs",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
       {
@@ -995,7 +995,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongo",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
@@ -1064,7 +1064,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongo",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
@@ -1195,7 +1195,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "mongo",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
       {
@@ -1226,11 +1226,11 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "node",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "stream-chat",
+        name: "stream",
         color: "pink-text-gradient",
       },
     ],
@@ -1350,7 +1350,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcscs",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
       {
@@ -1591,11 +1591,11 @@ const projects = [
       "Lần thử đầu tiên của tôi với HMTL5/CSS3 (15 năm kể từ khi tôi sử dụng HTML4/CSS2) trong trận đại dịch năm 2020. Một blog nhỏ để tổ chức các chuyến du lịch đến đất nước yêu thích của tôi.",
     tags: [
       {
-        name: "html5",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "css3",
+        name: "css",
         color: "green-text-gradient",
       },
     ],
@@ -1639,15 +1639,15 @@ const projects = [
       "Bạn đang tìm cách tổ chức một hội nghị? Lưới sự kiện có thể kết nối bạn. Một trang web HTML/CSS/JS tiêu chuẩn hoàn chỉnh.",
     tags: [
       {
-        name: "HTML",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "CSS",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
@@ -1665,15 +1665,15 @@ const projects = [
       "Trang đích HTML/CSS đơn giản của các dịch vụ huấn luyện viên cá nhân.",
     tags: [
       {
-        name: "HTML",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "CSS",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
@@ -1692,15 +1692,15 @@ const projects = [
     descriptionvn: "Một đại diện hiệu quả của một nhiếp ảnh gia có uy tín.",
     tags: [
       {
-        name: "HTML",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "CSS",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
@@ -1719,7 +1719,7 @@ const projects = [
       "Ứng dụng React Single Page (SPA) để theo dõi các vật phẩm cần đóng gói cho chuyến đi tiếp theo của bạn!",
     tags: [
       {
-        name: "react18",
+        name: "react",
         color: "blue-text-gradient",
       },
     ],
@@ -1927,15 +1927,15 @@ const projects = [
       "Một trang đích đơn giản dưới dạng SaaS để tạo danh mục đầu tư.",
     tags: [
       {
-        name: "HTML",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "CSS",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
@@ -1953,15 +1953,15 @@ const projects = [
       "Trang đích của Cơ quan Công nghệ Sáng tạo về Giải pháp Công nghệ.",
     tags: [
       {
-        name: "HTML",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "CSS",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
@@ -1978,15 +1978,15 @@ const projects = [
     descriptionvn: "Trang đích SaaS đơn giản.",
     tags: [
       {
-        name: "HTML",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "CSS",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
