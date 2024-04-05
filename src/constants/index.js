@@ -1150,7 +1150,7 @@ const projects = [
     project_link: "https://collaborative-web-app.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/collaborative-web-app",
     date_created: new Date(2024, 1, 2),
-    under_construction: false,
+    under_construction: true,
     index: index++,
   },
   {
@@ -1300,7 +1300,7 @@ const projects = [
     project_link: "https://nft-marketplace-cbhuber17.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/nft-marketplace",
     date_created: new Date(2023, 11, 13),
-    under_construction: false,
+    under_construction: true,
     index: index++,
   },
   {
@@ -1486,7 +1486,7 @@ const projects = [
     project_link: "https://ai-image-saas.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/ai-image-saas",
     date_created: new Date(2024, 1, 16),
-    under_construction: false,
+    under_construction: true,
     index: index++,
   },
   {
