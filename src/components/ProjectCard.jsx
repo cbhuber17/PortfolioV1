@@ -14,6 +14,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   project_link,
+  under_construction,
   show_motion = true,
 }) => {
   const { isForeign } = useLanguage();
@@ -40,7 +41,7 @@ const ProjectCard = ({
               />
 
               <div className="absolute inset-0 flex justify-end space-x-1 m-3 card-img_hover">
-                {source_code_link && (
+                {source_code_link && !under_construction && (
                   <div
                     onClick={() => window.open(source_code_link, "_blank")}
                     className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -52,7 +53,7 @@ const ProjectCard = ({
                     />
                   </div>
                 )}
-                {project_link && (
+                {project_link && !under_construction && (
                   <div
                     onClick={() => window.open(project_link, "_blank")}
                     className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -97,7 +98,7 @@ const ProjectCard = ({
             />
 
             <div className="absolute inset-0 flex justify-end space-x-1 m-3 card-img_hover">
-              {source_code_link && (
+              {source_code_link && !under_construction && (
                 <div
                   onClick={() => window.open(source_code_link, "_blank")}
                   className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -110,7 +111,7 @@ const ProjectCard = ({
                 </div>
               )}
 
-              {project_link && (
+              {project_link && !under_construction && (
                 <div
                   onClick={() => window.open(project_link, "_blank")}
                   className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
