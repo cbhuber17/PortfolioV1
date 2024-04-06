@@ -699,41 +699,6 @@ const projects = [
     index: index++,
   },
   {
-    name: "The Wild Oasis",
-    description:
-      "Internal hotel/cabin rental portal to manage dashboard, users, cabins, bookings & settings. (Use the contact form below if you would like to try the app ✌️)",
-    descriptionvn:
-      "Cổng thông tin nội bộ cho thuê khách sạn/cabin để quản lý bảng điều khiển, người dùng, cabin, đặt chỗ và cài đặt. (Sử dụng biểu mẫu liên hệ bên dưới nếu bạn muốn dùng thử ứng dụng ✌️)",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "styledcomponents",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "recharts",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "red-text-gradient",
-      },
-    ],
-    image: wildoasis,
-    project_link: "https://cbhuber17.github.io/the-wild-oasis/",
-    source_code_link: "https://github.com/cbhuber17/the-wild-oasis",
-    date_created: new Date(2023, 6, 13),
-    under_construction: false,
-    index: index++,
-  },
-  {
     name: "Collatz Conjecture",
     description:
       "Visualization of the 3n+1 problem. Fully interactive with user inputs and performance settings. The result of the conjecture is displayed on a line graph, with the history of each setting preserved for reference. Please wait during the slow loading time.",
@@ -757,35 +722,6 @@ const projects = [
     project_link: "https://collatz-conjecture-1wmr.onrender.com/",
     source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
     date_created: new Date(2023, 1, 27),
-    under_construction: false,
-    index: index++,
-  },
-  {
-    name: "Filmpire",
-    description: "An AI-powered Movie Database.",
-    descriptionvn: "Cơ sở dữ liệu phim được hỗ trợ bởi AI.",
-    tags: [
-      {
-        name: "alan-ai",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mui",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: filmpire,
-    project_link: "https://cbhuber17.github.io/filmpire/",
-    source_code_link: "https://github.com/cbhuber17/filmpire",
-    date_created: new Date(2023, 11, 20),
     under_construction: false,
     index: index++,
   },
@@ -825,6 +761,97 @@ const projects = [
     index: index++,
   },
   {
+    name: "Video Game Archive",
+    description:
+      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
+    descriptionvn:
+      "Ứng dụng React đơn giản nhưng hoàn toàn hiện đại sử dụng API RAWG để truy xuất danh sách tất cả các trò chơi điện tử có sẵn.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: videogame,
+    project_link: "https://video-game-archive.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/VideoGameArchive",
+    date_created: new Date(2023, 5, 21),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Filmpire",
+    description: "An AI-powered Movie Database.",
+    descriptionvn: "Cơ sở dữ liệu phim được hỗ trợ bởi AI.",
+    tags: [
+      {
+        name: "alan-ai",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: filmpire,
+    project_link: "https://cbhuber17.github.io/filmpire/",
+    source_code_link: "https://github.com/cbhuber17/filmpire",
+    date_created: new Date(2023, 11, 20),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Apple Landing Page",
+    description:
+      "Showcasing and modeling the iPhone 15 technology with videos and animations.",
+    descriptionvn:
+      "Trưng bày và mô hình hóa công nghệ iPhone 15 bằng video và ảnh động.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "red-text-gradient",
+      },
+    ],
+    image: apple,
+    project_link: "https://apple-landing-page-pink.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/apple-landing-page",
+    date_created: new Date(2024, 2, 16),
+    under_construction: false,
+    index: index++,
+  },
+  {
     name: "Video Collab",
     description:
       "A zoom-like clone enabling instant video calling, meeting scheduling, history and recordings.",
@@ -856,29 +883,37 @@ const projects = [
     index: index++,
   },
   {
-    name: "Video Game Archive",
+    name: "The Wild Oasis",
     description:
-      "A simple yet fully modern React App that utilizes a RAWG API to retrieve a list of all available video games.",
+      "Internal hotel/cabin rental portal to manage dashboard, users, cabins, bookings & settings. (Use the contact form below if you would like to try the app ✌️)",
     descriptionvn:
-      "Ứng dụng React đơn giản nhưng hoàn toàn hiện đại sử dụng API RAWG để truy xuất danh sách tất cả các trò chơi điện tử có sẵn.",
+      "Cổng thông tin nội bộ cho thuê khách sạn/cabin để quản lý bảng điều khiển, người dùng, cabin, đặt chỗ và cài đặt. (Sử dụng biểu mẫu liên hệ bên dưới nếu bạn muốn dùng thử ứng dụng ✌️)",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "api",
+        name: "supabase",
         color: "green-text-gradient",
       },
       {
-        name: "typescript",
+        name: "styledcomponents",
         color: "pink-text-gradient",
       },
+      {
+        name: "recharts",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "red-text-gradient",
+      },
     ],
-    image: videogame,
-    project_link: "https://video-game-archive.vercel.app/",
-    source_code_link: "https://github.com/cbhuber17/VideoGameArchive",
-    date_created: new Date(2023, 5, 21),
+    image: wildoasis,
+    project_link: "https://cbhuber17.github.io/the-wild-oasis/",
+    source_code_link: "https://github.com/cbhuber17/the-wild-oasis",
+    date_created: new Date(2023, 6, 13),
     under_construction: false,
     index: index++,
   },
@@ -1019,37 +1054,29 @@ const projects = [
     index: index++,
   },
   {
-    name: "Apple Landing Page",
+    name: "Brainwave",
     description:
-      "Showcasing and modeling the iPhone 15 technology with videos and animations.",
+      "Company AI landing page, featuring AI models and upcoming technologies.",
     descriptionvn:
-      "Trưng bày và mô hình hóa công nghệ iPhone 15 bằng video và ảnh động.",
+      "Trang đích AI của công ty, giới thiệu các mô hình AI và các công nghệ sắp ra mắt",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "gsap",
+        name: "tailwindcss",
         color: "green-text-gradient",
       },
       {
-        name: "threejs",
+        name: "vite",
         color: "pink-text-gradient",
       },
-      {
-        name: "tailwindcss",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "red-text-gradient",
-      },
     ],
-    image: apple,
-    project_link: "https://apple-landing-page-pink.vercel.app/",
-    source_code_link: "https://github.com/cbhuber17/apple-landing-page",
-    date_created: new Date(2024, 2, 16),
+    image: brainwave,
+    project_link: "https://cbhuber17.github.io/brainwave/",
+    source_code_link: "https://github.com/cbhuber17/brainwave",
+    date_created: new Date(2024, 2, 1),
     under_construction: false,
     index: index++,
   },
@@ -1176,7 +1203,7 @@ const projects = [
     project_link: "https://tech-haven-8ac4070-jsm.payloadcms.app/",
     source_code_link: "https://github.com/cbhuber17/tech-haven",
     date_created: new Date(2023, 11, 2),
-    under_construction: false,
+    under_construction: true,
     index: index++,
   },
   {
@@ -1239,33 +1266,6 @@ const projects = [
     source_code_link: "https://github.com/cbhuber17/medical-chat-app",
     date_created: new Date(2023, 11, 10),
     under_construction: true,
-    index: index++,
-  },
-  {
-    name: "Brainwave",
-    description:
-      "Company AI landing page, featuring AI models and upcoming technologies.",
-    descriptionvn:
-      "Trang đích AI của công ty, giới thiệu các mô hình AI và các công nghệ sắp ra mắt",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: brainwave,
-    project_link: "https://cbhuber17.github.io/brainwave/",
-    source_code_link: "https://github.com/cbhuber17/brainwave",
-    date_created: new Date(2024, 2, 1),
-    under_construction: false,
     index: index++,
   },
   {
