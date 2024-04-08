@@ -132,8 +132,20 @@ const AllProjects = () => {
       <p className="text-white">
         {isForeign ? "Bộ lọc mẫu" : "Example Filters"}
         :&nbsp;&nbsp;&nbsp;
+        <Tag
+          style={{
+            background:
+              "linear-gradient(-225deg,#AC32E4 0%,#7918F2 48%,#4801FF 100%)",
+            padding: "5px",
+            cursor: "pointer",
+          }}
+          value="rust"
+          severity="success"
+          onClick={() => handleTagClick("rust")}
+        />
+        &nbsp;&nbsp;
         {tagsSorted.map((tag, index) => {
-          if (index < 13) {
+          if (index < 12) {
             return (
               <Fragment key={tag}>
                 <Tag
