@@ -58,6 +58,7 @@ import {
   rpgai,
   // swtest,
   fastpizza,
+  microservices,
   countriesapi,
   // nodejs,
   eventgrids,
@@ -886,8 +887,9 @@ const projects = [
   {
     name: "Rusty JIRA CLI",
     description:
-      "A JIRA CLI tool used to keep track of Epics and Stories, through page navigation, JSON data storage",
-    descriptionvn: "",
+      "A JIRA CLI tool used to keep track of Epics and Stories, through page navigation, JSON data storage, and dockerization.",
+    descriptionvn:
+      "Công cụ JIRA CLI được sử dụng để theo dõi Sử thi và Câu chuyện, thông qua điều hướng trang, lưu trữ dữ liệu JSON và dockerization.",
     tags: [
       {
         name: "rust",
@@ -906,6 +908,33 @@ const projects = [
     project_link: "",
     source_code_link: "https://github.com/cbhuber17/jira-cli",
     date_created: new Date(2024, 2, 16),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Authentication Microservices",
+    description:
+      "An asynchronous microservice runtime utilizing gRPC transmission consisting of 2 services: An authentication and a health check service each in their own docker container.",
+    descriptionvn:
+      "Thời gian chạy vi dịch vụ không đồng bộ sử dụng truyền gRPC bao gồm 2 dịch vụ: Dịch vụ xác thực và kiểm tra tình trạng, mỗi dịch vụ nằm trong vùng chứa docker riêng.",
+    tags: [
+      {
+        name: "rust",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cli",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: microservices,
+    project_link: "",
+    source_code_link: "https://github.com/cbhuber17/rusty-auth-microservice",
+    date_created: new Date(2024, 2, 26),
     under_construction: false,
     index: index++,
   },

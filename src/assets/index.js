@@ -51,6 +51,7 @@ import rpgai from "./projects/rpgai.png";
 import videogame from "./projects/videogame.png";
 import nextphoto from "./projects/nextphoto.png";
 import brainwave from "./projects/brainwave.png";
+import microservices from "./projects/microservices.png";
 import countriesapi from "./projects/countriesapi.png";
 import justscroll from "./projects/justscroll.png";
 import vietnamblog from "./projects/vietnamblog.png";
@@ -104,6 +105,7 @@ export {
   hexagon,
   external,
   github,
+  microservices,
   logo,
   menu,
   close,
