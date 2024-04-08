@@ -164,6 +164,16 @@ const AllProjects = () => {
             );
           }
         })}
+        <Tag
+          style={{
+            background: "grey",
+            padding: "5px",
+            cursor: "pointer",
+          }}
+          value="Clear Filter"
+          severity="success"
+          onClick={() => handleTagClick("")}
+        />
       </p>
 
       <input
