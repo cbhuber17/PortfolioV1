@@ -76,6 +76,7 @@ import {
   filmpire,
   imaginify,
   brainwave,
+  jiracli,
   apple,
   yoom,
 } from "../assets";
@@ -879,6 +880,32 @@ const projects = [
     project_link: "https://video-collab.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/video-collab",
     date_created: new Date(2024, 2, 29),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Rusty JIRA CLI",
+    description:
+      "A JIRA CLI tool used to keep track of Epics and Stories, through page navigation, JSON data storage",
+    descriptionvn: "",
+    tags: [
+      {
+        name: "rust",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cli",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jiracli,
+    project_link: "",
+    source_code_link: "https://github.com/cbhuber17/jira-cli",
+    date_created: new Date(2024, 2, 16),
     under_construction: false,
     index: index++,
   },

@@ -72,6 +72,7 @@ import saaslanding from "./projects/saaslanding.png";
 import guessnumretro from "./projects/guessnumretro.png";
 import usepopcorn from "./projects/usepopcorn.png";
 import threadportfolio from "./projects/threadportfolio.png";
+import jiracli from "./projects/jiracli.png";
 import wildoasis from "./projects/wildoasis.png";
 import techd from "./projects/techd.png";
 import web2004 from "./projects/web2004.png";
@@ -127,6 +128,7 @@ export {
   // reactquery,
   // nodejs,
   eventgrids,
+  jiracli,
   usepopcorn,
   aberwait,
   elections,
