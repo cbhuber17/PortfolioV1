@@ -393,7 +393,7 @@ const experiences = [
     company_name: "FLYHT Aerospace Solutions",
     icon: flyht,
     iconBg: "#C8BFE7",
-    date: "November 2023 - Present",
+    date: "November 2023 - August 2024",
     datevn: "Tháng 11 - Hiện Tại",
     points: [
       "Actively participated in the analysis, design, and development of new aviation applications.",
