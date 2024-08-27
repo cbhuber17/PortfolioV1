@@ -394,7 +394,7 @@ const experiences = [
     icon: flyht,
     iconBg: "#C8BFE7",
     date: "November 2023 - August 2024",
-    datevn: "Tháng 11 - Hiện Tại",
+    datevn: "Tháng 11, 2023 - Tháng 8, 2024",
     points: [
       "Actively participated in the analysis, design, and development of new aviation applications.",
       "Perform system maintenance, including staging and deployment of new code production.",
