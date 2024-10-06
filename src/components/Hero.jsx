@@ -33,7 +33,7 @@ const Hero = () => {
             <br className="sm:block hidden" />
             {isForeign
               ? "Hệ thống định vị GNSS. Nhà phát triển Web toàn diện. Tôi được cấp chứng chỉ chương trình điện toán đám mây của AWS."
-              : "Avid Software Tester, Certified Cloud Solutions"}
+              : "Principal Software Tester, Certified Cloud Architect"}
           </p>
         </div>
       </div>
