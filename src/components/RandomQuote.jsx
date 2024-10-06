@@ -3,7 +3,93 @@ import ParagraphHeader from "./ParagraphHeader";
 import { SectionWrapper } from "../hoc";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useOnScreen } from "../hooks/useOnScreen";
-import { useState } from "react";
+
+const quotes = [
+  {
+    quote:
+      "The only limit to our realization of tomorrow is our doubts of today.",
+    author: "Franklin D. Roosevelt",
+  },
+  {
+    quote:
+      "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    author: "Winston Churchill",
+  },
+  {
+    quote: "Injustice anywhere is a threat to justice everywhere.",
+    author: "Martin Luther King Jr.",
+  },
+  {
+    quote:
+      "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    author: "Nelson Mandela",
+  },
+  {
+    quote:
+      "The future belongs to those who believe in the beauty of their dreams.",
+    author: "Eleanor Roosevelt",
+  },
+  {
+    quote: "Your time is limited, don't waste it living someone else's life.",
+    author: "Steve Jobs",
+  },
+  {
+    quote:
+      "We cannot solve our problems with the same thinking we used when we created them.",
+    author: "Albert Einstein",
+  },
+  {
+    quote: "It always seems impossible until it’s done.",
+    author: "Nelson Mandela",
+  },
+  {
+    quote: "Believe you can and you're halfway there.",
+    author: "Theodore Roosevelt",
+  },
+  { quote: "The purpose of our lives is to be happy.", author: "Dalai Lama" },
+  {
+    quote:
+      "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    author: "Nelson Mandela",
+  },
+  {
+    quote:
+      "The only limit to our realization of tomorrow is our doubts of today.",
+    author: "Franklin D. Roosevelt",
+  },
+  {
+    quote:
+      "In the end, it's not the years in your life that count. It's the life in your years.",
+    author: "Abraham Lincoln",
+  },
+  {
+    quote:
+      "Your time is limited, so don't waste it living someone else's life.",
+    author: "Steve Jobs",
+  },
+  { quote: "The purpose of our lives is to be happy.", author: "Dalai Lama" },
+  {
+    quote: "Life is what happens when you're busy making other plans.",
+    author: "John Lennon",
+  },
+  {
+    quote:
+      "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    author: "Winston Churchill",
+  },
+  {
+    quote: "You miss 100% of the shots you don't take.",
+    author: "Wayne Gretzky",
+  },
+  {
+    quote: "The best way to predict the future is to invent it.",
+    author: "Alan Kay",
+  },
+  {
+    quote: "The only way to do great work is to love what you do.",
+    author: "Steve Jobs",
+  },
+];
 
 const vnQuotes = [
   {
@@ -54,18 +140,18 @@ const RandomQuote = () => {
   let textPosition = 0;
   let getNewQuote = true;
 
-  async function loadQuote() {
-    const url = "https://api.quotable.io/random";
+  // async function loadQuote() {
+  //   const url = "https://api.quotable.io/random";
 
-    await fetch(url)
-      .then((response) => {
-        if (response.ok) return response.json();
-      })
-      .then((data) => {
-        quote = data.content;
-        author = data.author;
-      });
-  }
+  //   await fetch(url)
+  //     .then((response) => {
+  //       if (response.ok) return response.json();
+  //     })
+  //     .then((data) => {
+  //       quote = data.content;
+  //       author = data.author;
+  //     });
+  // }
 
   const typewriter = useCallback(async () => {
     let destination = document.getElementById("randomquote");
@@ -76,7 +162,10 @@ const RandomQuote = () => {
         quote = randomVnQuote.quote;
         author = randomVnQuote.author;
       } else {
-        await loadQuote();
+        // await loadQuote();
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        quote = randomQuote.quote;
+        author = randomQuote.author;
       }
       quote += " ";
 
