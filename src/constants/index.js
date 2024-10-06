@@ -80,9 +80,12 @@ import {
   jiracli,
   apple,
   yoom,
+  podcastr,
+  carepulse,
+  doceditor,
 } from "../assets";
 
-import { full_stack, gnss, cloud, tutor } from "../assets/service_icons";
+import { full_stack, gnss, cloud, mentor } from "../assets/service_icons";
 
 export const navLinks = [
   {
@@ -109,7 +112,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Web Developer",
+    title: "Web Developer",
     titlevn: "Nhà Phát Triển Web Toàn Diện",
     icon: full_stack,
   },
@@ -124,9 +127,9 @@ const services = [
     icon: cloud,
   },
   {
-    title: "Tutoring",
-    titlevn: "Dạy Kèm",
-    icon: tutor,
+    title: "Mentoring",
+    titlevn: "Cố vấn",
+    icon: mentor,
   },
 ];
 
@@ -396,18 +399,18 @@ const experiences = [
     date: "November 2023 - August 2024",
     datevn: "Tháng 11, 2023 - Tháng 8, 2024",
     points: [
-      "Actively participated in the analysis, design, and development of new aviation applications.",
-      "Perform system maintenance, including staging and deployment of new code production.",
-      "Execute different levels of testing and various process support tools and practices.",
-      "Provide technical support to other functional groups.",
-      "Python, Rust, JavaScript, Nodejs, Playwright, Docker, Angular, AWS, Jenkins.",
+      "Designed applications to improve airlines' efficiency, cost, and networking, leveraging DO-178B.",
+      "Implement AWS architecture via CloudFormation & SAM for 20% cost savings.",
+      "Developed innovative lazy loading pagination with filtration: a GraphQL query fetching limited data based on UI navigation, reducing network calls by 30%.",
+      "Perform manual & automated V&V, raising 15+ defects prior to release.",
+      "Apply AWS services for data flow from aircraft hardware to cloud processing, storage, and Dynamo/RDS management.",
     ],
     pointsvn: [
-      "Tích cực tham gia vào việc phân tích, thiết kế và phát triển các ứng dụng hàng không mới.",
-      "Thực hiện bảo trì hệ thống, bao gồm dàn dựng và triển khai sản xuất mã mới.",
-      "Thực hiện các cấp độ thử nghiệm khác nhau cũng như các công cụ và thực tiễn hỗ trợ quy trình khác nhau.",
-      "Cung cấp hỗ trợ kỹ thuật cho các nhóm chức năng khác.",
-      "Python, Rust, JavaScript, Nodejs, Playwright, Docker, Angular, AWS, Jenkins.",
+      "Được thiết kế các ứng dụng để cải thiện hiệu quả, chi phí và kết nối mạng của các hãng hàng không, tận dụng DO-178B.",
+      "Triển khai kiến ​​trúc AWS thông qua CloudFormation & SAM để tiết kiệm 20% chi phí.",
+      "Đã phát triển tính năng phân trang lười tải cải tiến có tính năng lọc: truy vấn GraphQL tìm nạp dữ liệu hạn chế dựa trên điều hướng giao diện người dùng, giảm 30% số lần gọi mạng.",
+      "Thực hiện V&V thủ công và tự động, phát hiện hơn 15 lỗi trước khi phát hành.",
+      "Áp dụng các dịch vụ AWS cho luồng dữ liệu từ phần cứng máy bay đến xử lý, lưu trữ đám mây và quản lý Dynamo/RDS.",
     ],
   },
   {
@@ -701,29 +704,37 @@ const projects = [
     index: index++,
   },
   {
-    name: "Collatz Conjecture",
+    name: "Live Docs",
     description:
-      "Visualization of the 3n+1 problem. Fully interactive with user inputs and performance settings. The result of the conjecture is displayed on a line graph, with the history of each setting preserved for reference. Please wait during the slow loading time.",
+      "Built with Next.js to handle the user interface, Liveblocks for real-time features and styled with TailwindCSS, LiveDocs is a clone of Goole Docs. ",
     descriptionvn:
-      "Trực quan hóa bài toán 3n+1. Tương tác hoàn toàn với đầu vào của người dùng và cài đặt hiệu suất. Kết quả phỏng đoán được hiển thị trên biểu đồ đường, với lịch sử của từng cài đặt được lưu giữ để tham khảo. Vui lòng đợi trong thời gian tải chậm.",
+      "Được xây dựng bằng Next.js để xử lý giao diện người dùng, Liveblocks cho các tính năng thời gian thực và được tạo kiểu bằng TailwindCSS, LiveDocs là bản sao của Goole Docs.",
     tags: [
       {
-        name: "python",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "plotly",
+        name: "liveblocks",
         color: "green-text-gradient",
       },
       {
-        name: "dash",
+        name: "react",
         color: "pink-text-gradient",
       },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "red-text-gradient",
+      },
     ],
-    image: collatz,
-    project_link: "https://collatz-conjecture-1wmr.onrender.com/",
-    source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
-    date_created: new Date(2023, 1, 27),
+    image: doceditor,
+    project_link: "https://doc-editor-theta.vercel.app",
+    source_code_link: "https://github.com/cbhuber17/doc-editor",
+    date_created: new Date(2024, 6, 26),
     under_construction: false,
     index: index++,
   },
@@ -854,6 +865,33 @@ const projects = [
     index: index++,
   },
   {
+    name: "Collatz Conjecture",
+    description:
+      "Visualization of the 3n+1 problem. Fully interactive with user inputs and performance settings. The result of the conjecture is displayed on a line graph, with the history of each setting preserved for reference. Please wait during the slow loading time.",
+    descriptionvn:
+      "Trực quan hóa bài toán 3n+1. Tương tác hoàn toàn với đầu vào của người dùng và cài đặt hiệu suất. Kết quả phỏng đoán được hiển thị trên biểu đồ đường, với lịch sử của từng cài đặt được lưu giữ để tham khảo. Vui lòng đợi trong thời gian tải chậm.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "plotly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dash",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: collatz,
+    project_link: "https://collatz-conjecture-1wmr.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
+    date_created: new Date(2023, 1, 27),
+    under_construction: false,
+    index: index++,
+  },
+  {
     name: "Video Collab",
     description:
       "A zoom-like clone enabling instant video calling, meeting scheduling, history and recordings.",
@@ -881,7 +919,69 @@ const projects = [
     project_link: "https://video-collab.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/video-collab",
     date_created: new Date(2024, 2, 29),
-    under_construction: false,
+    under_construction: true,
+    index: index++,
+  },
+  {
+    name: "Podcastr",
+    description:
+      "A cutting-edge AI SaaS platform that enables users to create, discover, and enjoy podcasts with advanced features like text-to-audio conversion with multi-voice AI, podcast thumbnail Image generation and seamless playback.",
+    descriptionvn:
+      "Nền tảng AI SaaS tiên tiến cho phép người dùng tạo, khám phá và thưởng thức podcast với các tính năng nâng cao như chuyển đổi văn bản thành âm thanh với AI đa giọng nói, tạo hình thu nhỏ podcast và phát lại liền mạch.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "convex",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: podcastr,
+    project_link: "https://podcast-saas.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/podcast-saas",
+    date_created: new Date(2024, 5, 1),
+    under_construction: true,
+    index: index++,
+  },
+  {
+    name: "Care Pulse",
+    description:
+      "A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.",
+    descriptionvn:
+      "Ứng dụng quản lý bệnh nhân chăm sóc sức khỏe cho phép bệnh nhân dễ dàng đăng ký, đặt chỗ và quản lý các cuộc hẹn với bác sĩ, có các công cụ quản trị để lên lịch, xác nhận và hủy cuộc hẹn, cùng với thông báo SMS, tất cả đều được xây dựng bằng Next.js.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "twilo",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: carepulse,
+    project_link: "https://patient-mgmt.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/patient-mgmt",
+    date_created: new Date(2024, 6, 7),
+    under_construction: true,
     index: index++,
   },
   {
@@ -2089,30 +2189,18 @@ const projects = [
 ];
 
 const certificates = [
-  // {
-  //   img: "udacity.png",
-  //   credential: "Full-Stack Developer Nanodegree",
-  //   provider: "Udacity",
-  //   instructor: "Sebastian Thrun",
-  //   issued: new Date(2020, 11, 14),
-  //   summary:
-  //     "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
-  //   summaryvn:
-  //     "Udacity là một nền tảng học tập suốt đời, trực tuyến, toàn cầu, kết nối giáo dục với việc làm.",
-  //   link: "https://confirm.udacity.com/LNUKASGH",
-  // },
-  // {
-  //   img: "udacity.png",
-  //   credential: "Front-End Develpoer Nanodegree",
-  //   provider: "Udacity",
-  //   instructor: "Sebastian Thrun",
-  //   issued: new Date(2020, 10, 7),
-  //   summary:
-  //     "Udacity is a global, online, lifelong learning platform connecting education to jobs.",
-  //   summaryvn:
-  //     "Udacity là một nền tảng học tập suốt đời, trực tuyến, toàn cầu, kết nối giáo dục với việc làm.",
-  //   link: "https://confirm.udacity.com/DZJTQCXD",
-  // },
+  {
+    img: "awsarchitect.png",
+    credential: "Solutions Architect",
+    provider: "AWS",
+    instructor: "",
+    issued: new Date(2024, 9, 5),
+    summary:
+      "Amazon Web Services offers a broad set of global cloud-based products.",
+    summaryvn:
+      "Amazon Web Services cung cấp một loạt các sản phẩm dựa trên đám mây toàn cầu.",
+    link: "https://www.credly.com/badges/033af6c4-c3ff-47cc-addf-80fe9e7de3de",
+  },
   {
     img: "rustbc.png",
     credential: "Rust Developer Bootcamp",
@@ -2136,18 +2224,6 @@ const certificates = [
     summaryvn:
       "Phương pháp cải tiến quy trình, loại bỏ khiếm khuyết và nâng cao hiệu quả thông qua phân tích dựa trên dữ liệu và kỹ thuật giải quyết vấn đề.",
     link: "https://www.credential.net/d8de8743-b40c-4856-959b-2fe3901e5f8e#gs.6te6nc",
-  },
-  {
-    img: "aws.png",
-    credential: "Certified Cloud Practitioner",
-    provider: "AWS",
-    instructor: "",
-    issued: new Date(2023, 7, 9),
-    summary:
-      "Amazon Web Services offers a broad set of global cloud-based products.",
-    summaryvn:
-      "Amazon Web Services cung cấp một loạt các sản phẩm dựa trên đám mây toàn cầu.",
-    link: "https://www.credly.com/badges/e8390a7a-b771-4ced-8b03-d120ee586d1c",
   },
   {
     img: "istqb.png",
