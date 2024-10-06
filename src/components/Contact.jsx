@@ -85,16 +85,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_kahokve",
+        "template_nb2mjeb",
         {
           from_name: form.name,
-          to_name: import.meta.env.VITE_APP_TO_NAME,
+          to_name: "Colin Huber",
           from_email: form.email,
-          to_email: import.meta.env.VITE_APP_TO_EMAIL,
+          to_email: "cbhuber@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "UVMsk9pnDBkOsNHGS"
       )
       .then(
         () => {
@@ -175,7 +175,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder={
-                isForeign ? "Có chuyện gì thế bạn?" : "What's up my friend?"
+                isForeign ? "Có chuyện gì thế bạn?" : "Message to Colin..."
               }
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -192,6 +192,19 @@ const Contact = () => {
               : isForeign
               ? "Gửi"
               : "Send"}
+          </button>
+
+          <button
+            type="button"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-yellow-400 hover:text-black transition-all"
+            onClick={() => {
+              navigator.clipboard.writeText("cbhuber@gmail.com");
+              toast.success(isForeign ? "Đã sao chép email!" : "Copied Email!");
+            }}
+          >
+            {isForeign
+              ? "Sao chép email vào Clipboard"
+              : "Copy Email to Clipboard"}
           </button>
         </form>
       </motion.div>
