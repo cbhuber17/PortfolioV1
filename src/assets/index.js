@@ -46,6 +46,7 @@ import admindashboard from "./projects/admindashboard.png";
 import packtravel from "./projects/packtravel.png";
 import forkify from "./projects/forkify.png";
 import apple from "./projects/apple.png";
+import carepulse from "./projects/carepulse.png";
 import collatz from "./projects/collatz.png";
 import rpgai from "./projects/rpgai.png";
 import videogame from "./projects/videogame.png";
@@ -67,6 +68,7 @@ import devoverflow from "./projects/devoverflow.png";
 import fastpizza from "./projects/fastpizza.png";
 import trillo from "./projects/trillo.png";
 import evently from "./projects/evently.png";
+import doceditor from "./projects/doceditor.png";
 import techhaven from "./projects/techhaven.png";
 import vnlandingpage from "./projects/vnlandingpage.png";
 import saaslanding from "./projects/saaslanding.png";
@@ -79,6 +81,7 @@ import techd from "./projects/techd.png";
 import web2004 from "./projects/web2004.png";
 import imaginify from "./projects/imaginify.png";
 import collaborative from "./projects/collaborative.png";
+import podcastr from "./projects/podcastr.png";
 import piggame from "./projects/piggame.png";
 import defectrecord from "./projects/defectrecord.png";
 import nexter from "./projects/nexter.png";
@@ -103,6 +106,7 @@ export {
   collatz,
   vietnamblog,
   hexagon,
+  doceditor,
   external,
   github,
   microservices,
@@ -120,10 +124,12 @@ export {
   // neon,
   kanban,
   // docker,
+  podcastr,
   nodefarm,
   traveljournal,
   collaborative,
   wildoasis,
+  carepulse,
   vnlandingpage,
   natours,
   nexter,
