@@ -25,6 +25,7 @@ import {
   nextnotes,
   // cplusplus,
   collatz,
+  xora,
   // typescript,
   // pocketbase,
   videogame,
@@ -826,6 +827,33 @@ const projects = [
     project_link: "https://cbhuber17.github.io/filmpire/",
     source_code_link: "https://github.com/cbhuber17/filmpire",
     date_created: new Date(2023, 11, 20),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Xora Landing Page",
+    description:
+      "Showcasing an AI Video Editor with modern day technology and security.",
+    descriptionvn:
+      "Giới thiệu Trình chỉnh sửa video AI với công nghệ và bảo mật hiện đại.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "red-text-gradient",
+      },
+    ],
+    image: xora,
+    project_link: "https://cbhuber17.github.io/xora-landing-page/",
+    source_code_link: "https://github.com/cbhuber17/xora-landing-page",
+    date_created: new Date(2024, 8, 21),
     under_construction: false,
     index: index++,
   },

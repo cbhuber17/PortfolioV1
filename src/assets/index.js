@@ -88,6 +88,7 @@ import nexter from "./projects/nexter.png";
 import aberwait from "./projects/aberwait.png";
 import bingosim from "./projects/bingosim.png";
 import nextnotes from "./projects/nextnotes.png";
+import xora from "./projects/xora.png";
 import yoom from "./projects/yoom.png";
 import filmpire from "./projects/filmpire.png";
 import eventgrids from "./projects/eventgrids.png";
@@ -134,6 +135,7 @@ export {
   natours,
   nexter,
   // reactquery,
+  xora,
   // nodejs,
   eventgrids,
   jiracli,
