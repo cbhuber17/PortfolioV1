@@ -2218,6 +2218,18 @@ const projects = [
 
 const certificates = [
   {
+    img: "AWS_AI.png",
+    credential: "AI Practitioner",
+    provider: "AWS",
+    instructor: "",
+    issued: new Date(2024, 10, 29),
+    summary:
+      "Amazon Web Services offers a broad set of global cloud-based products.",
+    summaryvn:
+      "Amazon Web Services cung cấp một loạt các sản phẩm dựa trên đám mây toàn cầu.",
+    link: "https://www.credly.com/badges/9d5e81d1-06e9-4895-b355-9b4189f7a72d",
+  },
+  {
     img: "awsarchitect.png",
     credential: "Solutions Architect",
     provider: "AWS",
@@ -2228,18 +2240,6 @@ const certificates = [
     summaryvn:
       "Amazon Web Services cung cấp một loạt các sản phẩm dựa trên đám mây toàn cầu.",
     link: "https://www.credly.com/badges/033af6c4-c3ff-47cc-addf-80fe9e7de3de",
-  },
-  {
-    img: "rustbc.png",
-    credential: "Rust Developer Bootcamp",
-    provider: "Let's Get Rusty",
-    instructor: "Bogdan P.",
-    issued: new Date(2024, 2, 29),
-    summary:
-      "A systems programming language emphasizing safety, concurrency, and performance, with a strong type system and memory management.",
-    summaryvn:
-      "Một ngôn ngữ lập trình hệ thống nhấn mạnh đến tính an toàn, tính đồng thời và hiệu suất, với hệ thống kiểu mạnh mẽ và quản lý bộ nhớ.",
-    link: "https://www.linkedin.com/in/cbhuber/overlay/1711721995462/single-media-viewer/?profileId=ACoAADKecXwB_876LXpxemq5v3ZF8dNaO5oZHgw",
   },
   {
     img: "greenbelt.png",
