@@ -67,6 +67,7 @@ import medchat from "./projects/medchat.png";
 import devoverflow from "./projects/devoverflow.png";
 import fastpizza from "./projects/fastpizza.png";
 import trillo from "./projects/trillo.png";
+import careerchronicles from "./projects/careerchronicles.png";
 import evently from "./projects/evently.png";
 import doceditor from "./projects/doceditor.png";
 import techhaven from "./projects/techhaven.png";
@@ -84,6 +85,7 @@ import collaborative from "./projects/collaborative.png";
 import podcastr from "./projects/podcastr.png";
 import piggame from "./projects/piggame.png";
 import defectrecord from "./projects/defectrecord.png";
+import hoalinhlan from "./projects/hoalinhlan.png";
 import nexter from "./projects/nexter.png";
 import aberwait from "./projects/aberwait.png";
 import bingosim from "./projects/bingosim.png";
@@ -115,6 +117,7 @@ export {
   menu,
   close,
   saaslanding,
+  careerchronicles,
   imaginify,
   guessnumretro,
   // python,
@@ -182,6 +185,7 @@ export {
   // figma,
   // postgre,
   nftmarketplace,
+  hoalinhlan,
   // angular,
   // express,
   brainwave,

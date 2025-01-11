@@ -46,6 +46,7 @@ import {
   hexagon,
   piggame,
   gnssquiz,
+  careerchronicles,
   // angular,
   threadportfolio,
   kanban,
@@ -78,6 +79,7 @@ import {
   filmpire,
   imaginify,
   brainwave,
+  hoalinhlan,
   jiracli,
   apple,
   yoom,
@@ -705,18 +707,18 @@ const projects = [
     index: index++,
   },
   {
-    name: "Live Docs",
+    name: "My Career Chronicles",
     description:
-      "Built with Next.js to handle the user interface, Liveblocks for real-time features and styled with TailwindCSS, LiveDocs is a clone of Goole Docs. ",
+      "An inspired journal taking app to record and reflect workplace interactions and events, with image uploading support!",
     descriptionvn:
-      "Được xây dựng bằng Next.js để xử lý giao diện người dùng, Liveblocks cho các tính năng thời gian thực và được tạo kiểu bằng TailwindCSS, LiveDocs là bản sao của Goole Docs.",
+      "Một ứng dụng viết nhật ký đầy cảm hứng để ghi lại và phản ánh các tương tác và sự kiện tại nơi làm việc, có hỗ trợ tải lên hình ảnh!",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "liveblocks",
+        name: "supabase",
         color: "green-text-gradient",
       },
       {
@@ -728,14 +730,41 @@ const projects = [
         color: "orange-text-gradient",
       },
       {
-        name: "vite",
+        name: "typescript",
         color: "red-text-gradient",
       },
     ],
-    image: doceditor,
-    project_link: "https://doc-editor-theta.vercel.app",
-    source_code_link: "https://github.com/cbhuber17/doc-editor",
-    date_created: new Date(2024, 6, 26),
+    image: careerchronicles,
+    project_link: "https://my-career-chronicles.vercel.app/",
+    source_code_link: "https://github.com/cbhuber17/my-career-chronicles",
+    date_created: new Date(2024, 10, 21),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Hoa Linh Lan",
+    description:
+      "A dark theme flower shop landing page of unique and creative flower arrangements created for one of my friends in Vietnam!",
+    descriptionvn:
+      "Một landing page cửa hàng hoa theo chủ đề tối với cách cắm hoa độc đáo và sáng tạo được tạo cho một người bạn của tôi ở Việt Nam!",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: hoalinhlan,
+    project_link: "https://cbhuber17.github.io/hoa-linh-lan/",
+    source_code_link: "https://github.com/cbhuber17/hoa-linh-lan",
+    date_created: new Date(2025, 0, 4),
     under_construction: false,
     index: index++,
   },
@@ -798,6 +827,33 @@ const projects = [
     project_link: "https://video-game-archive.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/VideoGameArchive",
     date_created: new Date(2023, 5, 21),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Collatz Conjecture",
+    description:
+      "Visualization of the 3n+1 problem. Fully interactive with user inputs and performance settings. The result of the conjecture is displayed on a line graph, with the history of each setting preserved for reference. Please wait during the slow loading time.",
+    descriptionvn:
+      "Trực quan hóa bài toán 3n+1. Tương tác hoàn toàn với đầu vào của người dùng và cài đặt hiệu suất. Kết quả phỏng đoán được hiển thị trên biểu đồ đường, với lịch sử của từng cài đặt được lưu giữ để tham khảo. Vui lòng đợi trong thời gian tải chậm.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "plotly",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dash",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: collatz,
+    project_link: "https://collatz-conjecture-1wmr.onrender.com/",
+    source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
+    date_created: new Date(2023, 1, 27),
     under_construction: false,
     index: index++,
   },
@@ -893,33 +949,6 @@ const projects = [
     index: index++,
   },
   {
-    name: "Collatz Conjecture",
-    description:
-      "Visualization of the 3n+1 problem. Fully interactive with user inputs and performance settings. The result of the conjecture is displayed on a line graph, with the history of each setting preserved for reference. Please wait during the slow loading time.",
-    descriptionvn:
-      "Trực quan hóa bài toán 3n+1. Tương tác hoàn toàn với đầu vào của người dùng và cài đặt hiệu suất. Kết quả phỏng đoán được hiển thị trên biểu đồ đường, với lịch sử của từng cài đặt được lưu giữ để tham khảo. Vui lòng đợi trong thời gian tải chậm.",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "plotly",
-        color: "green-text-gradient",
-      },
-      {
-        name: "dash",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: collatz,
-    project_link: "https://collatz-conjecture-1wmr.onrender.com/",
-    source_code_link: "https://github.com/cbhuber17/CollatzConjecture",
-    date_created: new Date(2023, 1, 27),
-    under_construction: false,
-    index: index++,
-  },
-  {
     name: "Video Collab",
     description:
       "A zoom-like clone enabling instant video calling, meeting scheduling, history and recordings.",
@@ -979,6 +1008,41 @@ const projects = [
     source_code_link: "https://github.com/cbhuber17/podcast-saas",
     date_created: new Date(2024, 5, 1),
     under_construction: true,
+    index: index++,
+  },
+  {
+    name: "Live Docs",
+    description:
+      "Built with Next.js to handle the user interface, Liveblocks for real-time features and styled with TailwindCSS, LiveDocs is a clone of Goole Docs. ",
+    descriptionvn:
+      "Được xây dựng bằng Next.js để xử lý giao diện người dùng, Liveblocks cho các tính năng thời gian thực và được tạo kiểu bằng TailwindCSS, LiveDocs là bản sao của Goole Docs.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "liveblocks",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "red-text-gradient",
+      },
+    ],
+    image: doceditor,
+    project_link: "https://doc-editor-theta.vercel.app",
+    source_code_link: "https://github.com/cbhuber17/doc-editor",
+    date_created: new Date(2024, 6, 26),
+    under_construction: false,
     index: index++,
   },
   {
