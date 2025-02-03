@@ -11,7 +11,7 @@ import {
   // python,
   guessnumretro,
   web2004,
-  elections,
+  // elections,
   // supabase,
   natourslanding,
   forkify,
@@ -31,7 +31,9 @@ import {
   videogame,
   // docker,
   aberwait,
+  gnssinfo,
   flyht,
+  tdk,
   defectrecord,
   // postgre,
   saaslanding,
@@ -115,13 +117,13 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    titlevn: "Nhà Phát Triển Web Toàn Diện",
+    title: "Software Engineer",
+    titlevn: "Kỹ sư phần mềm",
     icon: full_stack,
   },
   {
-    title: "GNSS Software Testing",
-    titlevn: "Kiểm Tra Phần Mềm GNSS",
+    title: "GNSS & Positioning",
+    titlevn: "GNSS & Định vị",
     icon: gnss,
   },
   {
@@ -286,10 +288,10 @@ const technologies = [
     // theme: "",
   },
   {
-    short: "Ps",
-    name: "PostgreSQL",
-    link: "https://www.postgresql.org/",
-    // icon: postgre,
+    short: "Li",
+    name: "Linux",
+    link: "https://www.linux.org/",
+    // icon: linux,
     // theme: "",
   },
   {
@@ -342,17 +344,17 @@ const technologies = [
     // theme: "",
   },
   {
-    short: "Ex",
-    name: "Express",
-    link: "https://expressjs.com/",
+    short: "Sq",
+    name: "SQL",
+    link: "https://en.wikipedia.org/wiki/SQL/",
     // icon: express,
     // theme: "",
   },
   {
-    short: "Rq",
-    name: "ReactQuery",
-    link: "https://tanstack.com/query/v3/",
-    // icon: reactquery,
+    short: "Ai",
+    name: "AI & ML",
+    link: "https://en.wikipedia.org/wiki/Machine_learning",
+    // icon: ml,
     // theme: "",
   },
   {
@@ -394,6 +396,27 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Senior Staff Software Engineer",
+    titlevn: "Kỹ sư phần mềm nhân viên cấp cao",
+    company_name: "TDK Trusted Positioning",
+    icon: tdk,
+    iconBg: "#ADADAD",
+    date: "February 2025 - Present",
+    datevn: "Tháng 2, 2025 - Hiện tại",
+    points: [
+      "Develop and optimize integrated navigation solutions using multiple sensor inputs (GNSS, Wi-Fi, MEMS, magnets) through advanced state estimation techniques (KF, EKF, PF).",
+      "Lead implementation of positioning algorithms in C, ensuring robust code architecture through OOP principles and design patterns.",
+      "Introduce Rust as a modern programming language and integrate it in the software infrastructure ecosystem via processing tools.",
+      "Design and deploy machine learning models for improved location accuracy, focusing on neural networks for regression and classification tasks.",
+    ],
+    pointsvn: [
+      "Phát triển và tối ưu hóa các giải pháp điều hướng tích hợp sử dụng nhiều đầu vào cảm biến (GNSS, Wi-Fi, MEMS, nam châm) thông qua các kỹ thuật ước tính trạng thái nâng cao (KF, EKF, PF).",
+      "Dẫn đầu việc triển khai các thuật toán định vị trong C, đảm bảo kiến ​​trúc mã mạnh mẽ thông qua các nguyên tắc và mẫu thiết kế OOP.",
+      "Giới thiệu Rust là ngôn ngữ lập trình hiện đại và tích hợp nó vào hệ sinh thái cơ sở hạ tầng phần mềm thông qua các công cụ xử lý.",
+      "Thiết kế và triển khai các mô hình học máy để cải thiện độ chính xác của vị trí, tập trung vào mạng lưới thần kinh cho các nhiệm vụ hồi quy và phân loại.",
+    ],
+  },
+  {
     title: "Software Developer",
     titlevn: "Người Phát Triển Phần Mềm",
     company_name: "FLYHT Aerospace Solutions",
@@ -414,27 +437,6 @@ const experiences = [
       "Đã phát triển tính năng phân trang lười tải cải tiến có tính năng lọc: truy vấn GraphQL tìm nạp dữ liệu hạn chế dựa trên điều hướng giao diện người dùng, giảm 30% số lần gọi mạng.",
       "Thực hiện V&V thủ công và tự động, phát hiện hơn 15 lỗi trước khi phát hành.",
       "Áp dụng các dịch vụ AWS cho luồng dữ liệu từ phần cứng máy bay đến xử lý, lưu trữ đám mây và quản lý Dynamo/RDS.",
-    ],
-  },
-  {
-    title: "Information & Registration Officer and Record Clerk",
-    titlevn: "Cán bộ Thông tin & Đăng ký và Thư ký Hồ sơ",
-    company_name: "Elections Alberta",
-    icon: elections,
-    iconBg: "#F1B51F",
-    date: "May 2023",
-    datevn: "Tháng 5, 2023",
-    points: [
-      "Determines an elector's voting area, then directs electors to the appropriate voting or registration station.",
-      "Helps maintain flow of electors through the voting place.",
-      "Administers necessary declarations and oaths.",
-      "Sorts, tallys and documents all votes at the end of the day.",
-    ],
-    pointsvn: [
-      "Xác định khu vực bỏ phiếu của cử tri, sau đó hướng dẫn cử tri đến trạm bỏ phiếu hoặc đăng ký thích hợp.",
-      "Giúp duy trì luồng cử tri đi qua địa điểm bỏ phiếu.",
-      "Quản lý các tuyên bố và lời thề cần thiết.",
-      "Sắp xếp, kiểm phiếu và ghi chép tất cả các phiếu bầu vào cuối ngày.",
     ],
   },
   {
@@ -738,6 +740,41 @@ const projects = [
     project_link: "https://my-career-chronicles.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/my-career-chronicles",
     date_created: new Date(2024, 10, 21),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "GNSS Info API",
+    description:
+      "A backend SaaS built using Rust delivering information on GNSS satellites and corrections via REST or gRPC communication protocols. Please contact for a demo.",
+    descriptionvn:
+      "Một SaaS phụ trợ cung cấp thông tin về các vệ tinh GNSS và các thông tin hiệu chỉnh thông qua các giao thức truyền thông REST hoặc gRPC. Vui lòng liên hệ để demo.",
+    tags: [
+      {
+        name: "rust",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest",
+        color: "green-text-gradient",
+      },
+      {
+        name: "grpc",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "cache",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "cors",
+        color: "red-text-gradient",
+      },
+    ],
+    image: gnssinfo,
+    project_link: "",
+    source_code_link: "https://github.com/cbhuber17/gnss-info-api",
+    date_created: new Date(2025, 0, 11),
     under_construction: false,
     index: index++,
   },

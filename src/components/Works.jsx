@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ParagraphHeader from "./ParagraphHeader";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
@@ -81,14 +81,14 @@ const Works = () => {
           )
         )}
       </div>
-      {/* <p className="text-white mt-10">
+      <p className="text-white mt-10">
         {isForeign
           ? "Xem danh sách đầy đủ trên trang 👉"
           : "See complete list on the addendum page 👉"}
         <Link to="/addendum" className="text-blue-300">
           {isForeign ? "phụ lục" : "addendum"}.
         </Link>
-      </p> */}
+      </p>
     </>
   );
 };

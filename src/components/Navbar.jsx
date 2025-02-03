@@ -48,7 +48,9 @@ const Navbar = () => {
             Colin &nbsp;
             <span className="lg:block hidden">
               |&nbsp;{" "}
-              {isForeign ? "Kỹ sư địa tin học GNSS" : "Geomatics Engineer"}
+              {isForeign
+                ? "Kỹ sư địa tin học GNSS, P.Eng"
+                : "Geomatics Engineer, P.Eng"}
             </span>
           </p>
         </Link>

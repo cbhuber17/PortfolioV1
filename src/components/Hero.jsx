@@ -28,12 +28,10 @@ const Hero = () => {
               : null}
             <br className="sm:block hidden" />
             {isForeign
-              ? "Tôi học chuyên ngành kĩ sư trắc địa. Tôi có chuyên môn về:"
-              : "GNSS Expertise, Full Stack Web Developer, "}
+              ? "Kỹ sư phần mềm nhân viên cấp cao,"
+              : "Senior Staff Software Engineer,"}
             <br className="sm:block hidden" />
-            {isForeign
-              ? "Hệ thống định vị GNSS. Nhà phát triển Web toàn diện. Tôi được cấp chứng chỉ chương trình điện toán đám mây của AWS."
-              : "Principal Software Tester, Certified Cloud Architect"}
+            {isForeign ? "Định vị & Điều hướng" : "Positioning & Navigation"}
           </p>
         </div>
       </div>

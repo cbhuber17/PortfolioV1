@@ -40,6 +40,7 @@ import external from "./external.png";
 import hexagon from "./company/hexagon.png";
 import elections from "./company/elections.png";
 import flyht from "./company/flyht.png";
+import tdk from "./company/tdk.jpeg";
 
 import traveljournal from "./projects/traveljournal.png";
 import admindashboard from "./projects/admindashboard.png";
@@ -80,6 +81,7 @@ import jiracli from "./projects/jiracli.png";
 import wildoasis from "./projects/wildoasis.png";
 import techd from "./projects/techd.png";
 import web2004 from "./projects/web2004.png";
+import gnssinfo from "./projects/gnssinfo.png";
 import imaginify from "./projects/imaginify.png";
 import collaborative from "./projects/collaborative.png";
 import podcastr from "./projects/podcastr.png";
@@ -112,6 +114,7 @@ export {
   doceditor,
   external,
   github,
+  gnssinfo,
   microservices,
   logo,
   menu,
@@ -149,6 +152,7 @@ export {
   pportfolio,
   rpgai,
   flyht,
+  tdk,
   evently,
   natourslanding,
   // stripe,
