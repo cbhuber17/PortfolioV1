@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams, useLocation } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -12,6 +12,8 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 const Navbar = () => {
   // Language switch
   const { isForeign, dispatch } = useLanguage();
+  const location = useLocation();
+  console.log(location.pathname);
 
   const { width } = useWindowDimensions();
   let isMobile = false;
@@ -88,28 +90,37 @@ const Navbar = () => {
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
-                <li
-                  key={link.id}
-                  className={`${
-                    active === link.title || active === link.titlevn
-                      ? "text-white"
-                      : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(isForeign ? link.titlevn : link.title);
-                  }}
-                >
-                  <a
-                    href={link.id === "addendum" ? `${link.id}` : `#${link.id}`}
+            {location.pathname == "/" ? (
+              <ul className="list-none flex justify-end items-start flex-col gap-4">
+                <h2 className="text-white text-xl text-center">Jump to:</h2>
+                {navLinks.map((link) => (
+                  <li
+                    key={link.id}
+                    className={`${
+                      active === link.title || active === link.titlevn
+                        ? "text-white"
+                        : "text-secondary"
+                    } font-poppins font-medium cursor-pointer text-[16px]`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(isForeign ? link.titlevn : link.title);
+                    }}
                   >
-                    {isForeign ? link.titlevn : link.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
+                    <a
+                      href={
+                        link.id === "addendum" ? `${link.id}` : `#${link.id}`
+                      }
+                    >
+                      {isForeign ? link.titlevn : link.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <a className="text-secondary" href="/">
+                Home
+              </a>
+            )}
           </div>
         </div>
       </div>

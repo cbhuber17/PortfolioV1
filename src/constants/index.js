@@ -104,14 +104,14 @@ export const navLinks = [
     titlevn: "Dự án cá nhân",
   },
   {
-    id: "addendum",
-    title: "Addendum",
-    titlevn: "Phụ lục",
-  },
-  {
     id: "contact",
     title: "Contact",
     titlevn: "Liên hệ",
+  },
+  {
+    id: "addendum",
+    title: "Addendum",
+    titlevn: "Phụ lục",
   },
 ];
 
