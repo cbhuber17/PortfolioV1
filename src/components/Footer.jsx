@@ -29,11 +29,7 @@ const footerIcons = [
   { icon: <IconYoutube />, href: "https://www.youtube.com/@cbhuber" },
 ];
 
-let numIcons = footerIcons.length;
-
-if (window.innerWidth < 500) {
-  numIcons = 3;
-}
+let numIcons = window.innerWidth < 500 ? 3 : footerIcons.length;
 
 const Footer = () => {
   const { isForeign } = useLanguage();
