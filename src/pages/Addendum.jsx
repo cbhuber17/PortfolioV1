@@ -5,6 +5,7 @@ import ComputerCanvas from "../components/canvas/Computers";
 // import AllCertificates from "../components/AllCertificates";
 import { styles } from "../styles";
 import { useLanguage } from "../contexts/LanguageContext";
+import ScrollIcon from "../components/ScrollIcon";
 
 const Addendum = () => {
   const { isForeign } = useLanguage();
@@ -38,6 +39,15 @@ const Addendum = () => {
           </div>
         </div>
         <ComputerCanvas />
+        <ScrollIcon />
+
+        <div className="sm:hidden flex justify-center items-center w-full h-full">
+          <img
+            src="src/assets/service_icons/desktop.png"
+            alt="satellite"
+            className="mx-auto"
+          />
+        </div>
       </div>
       <AllProjects />
       <br />
