@@ -138,8 +138,6 @@ const AllProjects = () => {
               "linear-gradient(-225deg,#AC32E4 0%,#7918F2 48%,#4801FF 100%)",
             padding: "5px",
             cursor: "pointer",
-            marginTop: "10px",
-            marginBottom: "10px",
           }}
           value="rust"
           severity="success"
@@ -156,6 +154,8 @@ const AllProjects = () => {
                       "linear-gradient(-225deg,#AC32E4 0%,#7918F2 48%,#4801FF 100%)",
                     padding: "5px",
                     cursor: "pointer",
+                    marginTop: "5px",
+                    marginBottom: "5px",
                   }}
                   value={tag}
                   severity="success"
