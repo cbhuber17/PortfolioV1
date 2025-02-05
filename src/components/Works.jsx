@@ -81,7 +81,7 @@ const Works = () => {
           )
         )}
       </div>
-      <p className="text-white mt-10">
+      <p className="text-white mt-10 pb-10">
         {isForeign
           ? "Xem danh sách đầy đủ trên trang 👉"
           : "See complete list on the addendum page 👉"}

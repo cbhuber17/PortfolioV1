@@ -64,7 +64,7 @@ const Certificates = () => {
           <Certificate key={index} {...certificate} />
         ))}
       </div>
-      {/* <p className="mt-10">
+      {/* <p className="mt-10 pb-10">
         {isForeign
           ? "Xem danh sách đầy đủ trên trang 👉"
           : "See complete list on the addendum page 👉"}
