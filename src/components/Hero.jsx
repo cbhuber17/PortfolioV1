@@ -40,11 +40,7 @@ const Hero = () => {
       </div>
 
       <div className="sm:hidden flex justify-center items-center w-full h-full">
-        <img
-          src="src/assets/service_icons/satellite.png"
-          alt="satellite"
-          className="mx-auto"
-        />
+        <img src="/satellite.png" alt="satellite" className="mx-auto" />
       </div>
 
       <ScrollIcon />

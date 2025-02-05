@@ -42,11 +42,7 @@ const Addendum = () => {
         <ScrollIcon />
 
         <div className="lg:hidden flex justify-center items-center w-full h-full">
-          <img
-            src="src/assets/service_icons/desktop.png"
-            alt="satellite"
-            className="mx-auto mt-40"
-          />
+          <img src="/desktop.png" alt="satellite" className="mx-auto mt-40" />
         </div>
       </div>
       <AllProjects />
