@@ -57,7 +57,7 @@ const ComputerCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      className="max-sm:hidden"
+      className="max-lg:hidden"
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >

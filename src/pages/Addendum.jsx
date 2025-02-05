@@ -41,11 +41,11 @@ const Addendum = () => {
         <ComputerCanvas />
         <ScrollIcon />
 
-        <div className="sm:hidden flex justify-center items-center w-full h-full">
+        <div className="lg:hidden flex justify-center items-center w-full h-full">
           <img
             src="src/assets/service_icons/desktop.png"
             alt="satellite"
-            className="mx-auto"
+            className="mx-auto mt-40"
           />
         </div>
       </div>
