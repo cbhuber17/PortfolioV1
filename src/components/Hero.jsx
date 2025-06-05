@@ -27,8 +27,8 @@ const Hero = () => {
               : null}
             <br className="sm:block hidden" />
             {isForeign
-              ? "Kỹ sư phần mềm nhân viên cấp cao, "
-              : "Senior Staff Software Engineer, "}
+              ? "Chuyên viên phân tích QA cấp cao"
+              : "Senior QA Analyst"}
             <br className="sm:block hidden" />
             {isForeign ? "Định vị & Điều hướng" : "Positioning & Navigation"}
           </p>

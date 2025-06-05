@@ -41,6 +41,7 @@ import hexagon from "./company/hexagon.png";
 import elections from "./company/elections.png";
 import flyht from "./company/flyht.png";
 import tdk from "./company/tdk.jpeg";
+import amazon from "./company/amazon.png";
 
 import traveljournal from "./projects/traveljournal.png";
 import admindashboard from "./projects/admindashboard.png";
@@ -154,6 +155,7 @@ export {
   flyht,
   tdk,
   evently,
+  amazon,
   natourslanding,
   // stripe,
   justscroll,

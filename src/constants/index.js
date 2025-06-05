@@ -16,6 +16,7 @@ import {
   natourslanding,
   forkify,
   collaborative,
+  amazon,
   medchat,
   nextphoto,
   // mongodb,
@@ -396,13 +397,34 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Senior QA Analyst",
+    titlevn: "Chuyên viên phân tích QA cấp cao",
+    company_name: "Amazon Prime Air",
+    icon: amazon,
+    iconBg: "#CFCFCF",
+    date: "April 2025 - Present",
+    datevn: "Tháng 4, 2025 - Hiện tại",
+    points: [
+      "Perform rigorous verification efforts on the Amazon Air Airspace Management Orchestration System (AMOS) MK-30 delivery drone L2/L3 subsystems & UIs with a collaborative global team.",
+      "Apply DO-178B safety-critical software knowledge & ISTQB best practices to verification methodologies, ensuring compliance with aviation industry standards.",
+      "Maintain CI/CD automation pipelines to streamline development workflows and ensure continuous quality integration. Resolve all technical issues that arise in the pipeline.",
+      "Develop specialized tools using Python and Rust that adhere to DO-178B tool qualification standards, enhancing testing efficiency and capability.",
+    ],
+    pointsvn: [
+      "Thực hiện các nỗ lực xác minh nghiêm ngặt trên các hệ thống con L2/L3 và UI của Hệ thống điều phối quản lý không phận Amazon Air (AMOS) MK-30 dành cho máy bay không người lái giao hàng với một nhóm toàn cầu hợp tác.",
+      "Áp dụng kiến ​​thức phần mềm quan trọng về an toàn DO-178B và các biện pháp thực hành tốt nhất của ISTQB vào phương pháp xác minh, đảm bảo tuân thủ các tiêu chuẩn của ngành hàng không.",
+      "Duy trì các đường ống tự động hóa CI/CD để hợp lý hóa quy trình phát triển và đảm bảo tích hợp chất lượng liên tục. Giải quyết mọi vấn đề kỹ thuật phát sinh trong đường ống.",
+      "Phát triển các công cụ chuyên dụng bằng Python và Rust tuân thủ các tiêu chuẩn đánh giá công cụ DO-178B, nâng cao hiệu quả và khả năng thử nghiệm.",
+    ],
+  },
+  {
     title: "Senior Staff Software Engineer",
     titlevn: "Kỹ sư phần mềm nhân viên cấp cao",
     company_name: "TDK Trusted Positioning",
     icon: tdk,
     iconBg: "#ADADAD",
-    date: "February 2025 - Present",
-    datevn: "Tháng 2, 2025 - Hiện tại",
+    date: "February - April, 2025",
+    datevn: "Tháng 2-4, 2025",
     points: [
       "Develop and optimize integrated navigation solutions using multiple sensor inputs (GNSS, Wi-Fi, MEMS, magnets) through advanced state estimation techniques (KF, EKF, PF).",
       "Lead implementation of positioning algorithms in C, ensuring robust code architecture through OOP principles and design patterns.",

@@ -51,7 +51,7 @@ const About = () => {
         <br />
         {isForeign
           ? "Tôi cũng áp dụng các kỹ năng của mình với tư cách là Nhà phát triển phần mềm nhân viên cấp cao, cung cấp các giải pháp hệ thống nhúng cho cả sản phẩm định vị trong nhà và ngoài trời. Với tư cách là Kiến trúc sư giải pháp và nhà thực hành AI được chứng nhận AWS, tôi tận dụng các công nghệ Đám mây & AI để thiết kế và triển khai các ứng dụng hiện đại, có thể mở rộng, đáp ứng nhu cầu công nghệ ngày nay. Tôi có thể tạo bất kỳ trang web hoặc ứng dụng web nào, hãy xem danh mục đầu tư của tôi bên dưới!"
-          : "I also apply my skills as a Senior Staff Software Developer, providing embedded system solutions to both indoor & outdoor positioning products. As an AWS Certified Solutions Architect & AI Practitioner, I leverage Cloud & AI technologies to design and implement scalable, modern applications that meet today's technological demands. I can craft any website or web app, take a look at my portfolio below!"}
+          : "I also apply my skills as a Senior QA Analyst, providing robust verification efforts for Amazon's delivery drones. As an AWS Certified Solutions Architect & AI Practitioner, I leverage Cloud & AI technologies to design and implement scalable, modern applications that meet today's technological demands. I can craft any website or web app, take a look at my portfolio below!"}
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 justify-center lg:justify-start">
         {services.map((service, index) => (
