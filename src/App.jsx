@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Addendum from "./pages/Addendum";
 import PageNotFound from "./pages/PageNotFound";
@@ -6,7 +6,7 @@ import { ScrollTopWrapper } from "./hoc";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollTopWrapper>
         <Routes>
           <Route index element={<Homepage />} />
@@ -14,7 +14,7 @@ const App = () => {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </ScrollTopWrapper>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

@@ -13,7 +13,6 @@ const Navbar = () => {
   // Language switch
   const { isForeign, dispatch } = useLanguage();
   const location = useLocation();
-  console.log(location.pathname);
 
   const { width } = useWindowDimensions();
   let isMobile = false;
@@ -72,7 +71,19 @@ const Navbar = () => {
               } hover:text-white text-[18-px] font-medium cursor-pointer`}
               onClick={() => setActive(isForeign ? link.titlevn : link.title)}
             >
-              <a href={link.id === "addendum" ? `${link.id}` : `/#${link.id}`}>
+              <a
+                href={link.id === "addendum" ? "/PortfolioV1/#addendum" : "#"}
+                onClick={
+                  link.id === "addendum"
+                    ? {}
+                    : (e) => {
+                        e.preventDefault();
+                        document
+                          .getElementById(link.id)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }
+                }
+              >
                 {isForeign ? link.titlevn : link.title}
               </a>
             </li>
@@ -108,7 +119,9 @@ const Navbar = () => {
                   >
                     <a
                       href={
-                        link.id === "addendum" ? `${link.id}` : `#${link.id}`
+                        link.id === "addendum"
+                          ? `#${link.id}`
+                          : `/PortfolioV1/#${link.id}`
                       }
                     >
                       {isForeign ? link.titlevn : link.title}
