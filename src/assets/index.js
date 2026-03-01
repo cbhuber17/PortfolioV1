@@ -42,6 +42,7 @@ import elections from "./company/elections.png";
 import flyht from "./company/flyht.png";
 import tdk from "./company/tdk.jpeg";
 import amazon from "./company/amazon.png";
+import statcan from "./company/statcan.jpg";
 
 import traveljournal from "./projects/traveljournal.png";
 import admindashboard from "./projects/admindashboard.png";
@@ -98,6 +99,7 @@ import yoom from "./projects/yoom.png";
 import filmpire from "./projects/filmpire.png";
 import eventgrids from "./projects/eventgrids.png";
 import nftmarketplace from "./projects/nftmarketplace.png";
+import zentry from "./projects/zentry.png";
 
 export {
   // pocketbase,
@@ -136,6 +138,7 @@ export {
   nodefarm,
   traveljournal,
   collaborative,
+  statcan,
   wildoasis,
   carepulse,
   vnlandingpage,
@@ -195,4 +198,5 @@ export {
   // angular,
   // express,
   brainwave,
+  zentry,
 };

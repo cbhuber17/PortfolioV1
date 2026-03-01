@@ -26,11 +26,9 @@ const Hero = () => {
               ? "Hiện tại tôi đang sinh sống và làm việc tại Canada."
               : null}
             <br className="sm:block hidden" />
-            {isForeign
-              ? "Chuyên viên phân tích QA cấp cao"
-              : "Senior QA Analyst"}
+            {isForeign ? "Giám đốc khu vực" : "Regional Director"}
             <br className="sm:block hidden" />
-            {isForeign ? "Định vị & Điều hướng" : "Positioning & Navigation"}
+            {isForeign ? "Hoạt động hiện trường" : "Field Operations"}
           </p>
         </div>
       </div>

@@ -17,6 +17,7 @@ import {
   forkify,
   collaborative,
   amazon,
+  statcan,
   medchat,
   nextphoto,
   // mongodb,
@@ -34,7 +35,7 @@ import {
   aberwait,
   gnssinfo,
   flyht,
-  tdk,
+  // tdk,
   defectrecord,
   // postgre,
   saaslanding,
@@ -89,6 +90,7 @@ import {
   podcastr,
   carepulse,
   doceditor,
+  zentry,
 } from "../assets";
 
 import { full_stack, gnss, cloud, mentor } from "../assets/service_icons";
@@ -397,13 +399,34 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Regional Director",
+    titlevn: "Giám đốc khu vực",
+    company_name: "Statistics Canada",
+    icon: statcan,
+    iconBg: "#000000",
+    date: "March 2026 - Present",
+    datevn: "Tháng 3, 2026 - Hiện tại",
+    points: [
+      "Participates in the planning, organizing and supervision of census field operations for Calgary's NW quadrant.",
+      "Hired and trained 10 crew leaders and an assistant.  Supervises the crew leaders coordinates their activities and those of their enumerators.",
+      "Authorizes employees’ weekly payment, expenses and allowances.",
+      "Promotes respondent participation in the census and participates in the implementation of regional communication strategies.",
+    ],
+    pointsvn: [
+      "Tham gia vào việc lập kế hoạch, tổ chức và giám sát các hoạt động thực địa điều tra dân số cho khu vực Tây Bắc của Calgary.",
+      "Tuyển dụng và đào tạo 10 trưởng nhóm và một trợ lý. Giám sát các trưởng nhóm, điều phối hoạt động của họ và của các điều tra viên.",
+      "Phê duyệt việc trả lương hàng tuần, chi phí và phụ cấp cho nhân viên.",
+      "Thúc đẩy sự tham gia của người dân vào cuộc điều tra dân số và tham gia vào việc thực hiện các chiến lược truyền thông khu vực.",
+    ],
+  },
+  {
     title: "Senior QA Analyst",
     titlevn: "Chuyên viên phân tích QA cấp cao",
     company_name: "Amazon Prime Air",
     icon: amazon,
     iconBg: "#CFCFCF",
-    date: "April 2025 - Present",
-    datevn: "Tháng 4, 2025 - Hiện tại",
+    date: "April - June, 2025",
+    datevn: "Tháng 4-6, 2025",
     points: [
       "Perform rigorous verification efforts on the Amazon Air Airspace Management Orchestration System (AMOS) MK-30 delivery drone L2/L3 subsystems & UIs with a collaborative global team.",
       "Apply DO-178B safety-critical software knowledge & ISTQB best practices to verification methodologies, ensuring compliance with aviation industry standards.",
@@ -417,27 +440,27 @@ const experiences = [
       "Phát triển các công cụ chuyên dụng bằng Python và Rust tuân thủ các tiêu chuẩn đánh giá công cụ DO-178B, nâng cao hiệu quả và khả năng thử nghiệm.",
     ],
   },
-  {
-    title: "Senior Staff Software Engineer",
-    titlevn: "Kỹ sư phần mềm nhân viên cấp cao",
-    company_name: "TDK Trusted Positioning",
-    icon: tdk,
-    iconBg: "#ADADAD",
-    date: "February - April, 2025",
-    datevn: "Tháng 2-4, 2025",
-    points: [
-      "Develop and optimize integrated navigation solutions using multiple sensor inputs (GNSS, Wi-Fi, MEMS, magnets) through advanced state estimation techniques (KF, EKF, PF).",
-      "Lead implementation of positioning algorithms in C, ensuring robust code architecture through OOP principles and design patterns.",
-      "Introduce Rust as a modern programming language and integrate it in the software infrastructure ecosystem via processing tools.",
-      "Design and deploy machine learning models for improved location accuracy, focusing on neural networks for regression and classification tasks.",
-    ],
-    pointsvn: [
-      "Phát triển và tối ưu hóa các giải pháp điều hướng tích hợp sử dụng nhiều đầu vào cảm biến (GNSS, Wi-Fi, MEMS, nam châm) thông qua các kỹ thuật ước tính trạng thái nâng cao (KF, EKF, PF).",
-      "Dẫn đầu việc triển khai các thuật toán định vị trong C, đảm bảo kiến ​​trúc mã mạnh mẽ thông qua các nguyên tắc và mẫu thiết kế OOP.",
-      "Giới thiệu Rust là ngôn ngữ lập trình hiện đại và tích hợp nó vào hệ sinh thái cơ sở hạ tầng phần mềm thông qua các công cụ xử lý.",
-      "Thiết kế và triển khai các mô hình học máy để cải thiện độ chính xác của vị trí, tập trung vào mạng lưới thần kinh cho các nhiệm vụ hồi quy và phân loại.",
-    ],
-  },
+  // {
+  //   title: "Senior Staff Software Engineer",
+  //   titlevn: "Kỹ sư phần mềm nhân viên cấp cao",
+  //   company_name: "TDK Trusted Positioning",
+  //   icon: tdk,
+  //   iconBg: "#ADADAD",
+  //   date: "February - April, 2025",
+  //   datevn: "Tháng 2-4, 2025",
+  //   points: [
+  //     "Develop and optimize integrated navigation solutions using multiple sensor inputs (GNSS, Wi-Fi, MEMS, magnets) through advanced state estimation techniques (KF, EKF, PF).",
+  //     "Lead implementation of positioning algorithms in C, ensuring robust code architecture through OOP principles and design patterns.",
+  //     "Introduce Rust as a modern programming language and integrate it in the software infrastructure ecosystem via processing tools.",
+  //     "Design and deploy machine learning models for improved location accuracy, focusing on neural networks for regression and classification tasks.",
+  //   ],
+  //   pointsvn: [
+  //     "Phát triển và tối ưu hóa các giải pháp điều hướng tích hợp sử dụng nhiều đầu vào cảm biến (GNSS, Wi-Fi, MEMS, nam châm) thông qua các kỹ thuật ước tính trạng thái nâng cao (KF, EKF, PF).",
+  //     "Dẫn đầu việc triển khai các thuật toán định vị trong C, đảm bảo kiến trúc mã mạnh mẽ thông qua các nguyên tắc và mẫu thiết kế OOP.",
+  //     "Giới thiệu Rust là ngôn ngữ lập trình hiện đại và tích hợp nó vào hệ sinh thái cơ sở hạ tầng phần mềm thông qua các công cụ xử lý.",
+  //     "Thiết kế và triển khai các mô hình học máy để cải thiện độ chính xác của vị trí, tập trung vào mạng lưới thần kinh cho các nhiệm vụ hồi quy và phân loại.",
+  //   ],
+  // },
   {
     title: "Software Developer",
     titlevn: "Người Phát Triển Phần Mềm",
@@ -501,25 +524,25 @@ const experiences = [
       "Xây dựng mối quan hệ và giải quyết các thắc mắc của khách hàng một cách kịp thời.",
     ],
   },
-  {
-    title: "GPS Software Engineer",
-    titlevn: "Kỹ Sư Phần Mềm GPS",
-    company_name: "Hexagon",
-    icon: hexagon,
-    iconBg: "#383E56",
-    date: "September 2005 - June 2010",
-    datevn: "Tháng 9, 2005 - Tháng 6, 2010",
-    points: [
-      "Supported embedded development, requirements management, tracing and testing of ground reference receivers (WAAS, GUS) for the aviation industry.",
-      "UML modeling and requirements management to build product to customer specifications.",
-      "Developer testing utilizing unit testing harnesses and GNSS simulators.",
-    ],
-    pointsvn: [
-      "Hỗ trợ phát triển, quản lý yêu cầu, truy tìm và thử nghiệm máy thu tham chiếu mặt đất (WAAS, GUS) cho ngành hàng không",
-      "Quản lý yêu cầu và mô hình hóa UML để xây dựng sản phẩm theo thông số kỹ thuật của khách hàng",
-      "Thử nghiệm dành cho nhà phát triển sử dụng khai thác thử nghiệm đơn vị và trình mô phỏng GNSS.",
-    ],
-  },
+  // {
+  //   title: "GPS Software Engineer",
+  //   titlevn: "Kỹ Sư Phần Mềm GPS",
+  //   company_name: "Hexagon",
+  //   icon: hexagon,
+  //   iconBg: "#383E56",
+  //   date: "September 2005 - June 2010",
+  //   datevn: "Tháng 9, 2005 - Tháng 6, 2010",
+  //   points: [
+  //     "Supported embedded development, requirements management, tracing and testing of ground reference receivers (WAAS, GUS) for the aviation industry.",
+  //     "UML modeling and requirements management to build product to customer specifications.",
+  //     "Developer testing utilizing unit testing harnesses and GNSS simulators.",
+  //   ],
+  //   pointsvn: [
+  //     "Hỗ trợ phát triển, quản lý yêu cầu, truy tìm và thử nghiệm máy thu tham chiếu mặt đất (WAAS, GUS) cho ngành hàng không",
+  //     "Quản lý yêu cầu và mô hình hóa UML để xây dựng sản phẩm theo thông số kỹ thuật của khách hàng",
+  //     "Thử nghiệm dành cho nhà phát triển sử dụng khai thác thử nghiệm đơn vị và trình mô phỏng GNSS.",
+  //   ],
+  // },
 ];
 
 const titles = [
@@ -632,7 +655,7 @@ function randomElement(array) {
 async function createUser() {
   try {
     const data = await fetch("https://randomuser.me/api/").then((res) =>
-      res.json()
+      res.json(),
     );
 
     const user = {
@@ -886,6 +909,33 @@ const projects = [
     project_link: "https://video-game-archive.vercel.app/",
     source_code_link: "https://github.com/cbhuber17/VideoGameArchive",
     date_created: new Date(2023, 5, 21),
+    under_construction: false,
+    index: index++,
+  },
+  {
+    name: "Zentry",
+    description:
+      "Zentry unites every player from countless games and platforms, both digital and physical, into a unified Play Economy",
+    descriptionvn:
+      "Zentry kết nối mọi người chơi từ vô số trò chơi và nền tảng, cả kỹ thuật số và vật lý, vào một nền kinh tế trò chơi thống nhất.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: zentry,
+    project_link: "https://cbhuber17.github.io/zentry-website/",
+    source_code_link: "https://github.com/cbhuber17/zentry-website",
+    date_created: new Date(2024, 11, 1),
     under_construction: false,
     index: index++,
   },
@@ -2388,18 +2438,18 @@ const certificates = [
       "ISTQB® là chương trình chứng nhận toàn cầu hàng đầu trong lĩnh vực kiểm thử phần mềm.",
     link: "https://cstb.ca/certified-testers?certlevelid=1&search=huber",
   },
-  {
-    img: "apega.png",
-    credential: "P. Eng, Professional Engineer",
-    provider: "APEGA",
-    instructor: "",
-    issued: new Date(2010, 5, 12),
-    summary:
-      "APEGA regulates the practices of engineering and geoscience in Alberta.",
-    summaryvn:
-      "APEGA quy định các hoạt động kỹ thuật và khoa học địa chất ở Alberta.",
-    link: "https://www.apega.ca/",
-  },
+  // {
+  //   img: "apega.png",
+  //   credential: "P. Eng, Professional Engineer",
+  //   provider: "APEGA",
+  //   instructor: "",
+  //   issued: new Date(2010, 5, 12),
+  //   summary:
+  //     "APEGA regulates the practices of engineering and geoscience in Alberta.",
+  //   summaryvn:
+  //     "APEGA quy định các hoạt động kỹ thuật và khoa học địa chất ở Alberta.",
+  //   link: "https://www.apega.ca/",
+  // },
   {
     img: "ucalgary.png",
     credential: "BSc. Geomatics Engineering",
