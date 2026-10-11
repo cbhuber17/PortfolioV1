@@ -46,7 +46,12 @@ const About = () => {
       >
         {isForeign
           ? "Xin chào! Tôi áp dụng kiến ​​thức và kỹ năng của mình vào công nghệ Định vị & Điều hướng, nơi đáp ứng và vượt quá các tiêu chí về độ chính xác, tính toàn vẹn và độ tin cậy. Với hơn 15 năm làm Chuyên gia kiểm thử phần mềm, tôi đã đảm bảo rằng hệ thống định vị đáp ứng các tiêu chuẩn DO-178B cho các ứng dụng quan trọng về an toàn."
-          : "Greetings! I apply my knowledge and skills in Positioning & Navigation technologies, where accuracy, integrity, and reliability criterion are met and exceeded. With over 15 years as a Software Testing Professional, I have ensured that navigation systems meet DO-178B standards for safety-critical applications."}
+          : "Greetings!  I am a TEFL-certified English teacher with a passion for helping young learners develop their English communication skills in a fun, engaging, and supportive environment.  Skilled in lesson planning, classroom management, student engagement, and delivering interactive lessons that build confidence in speaking, listening, reading, and writing."}
+        <br />
+        <br />
+        {isForeign
+          ? "Tôi áp dụng kiến ​​thức và kỹ năng của mình vào công nghệ Định vị & Điều hướng, nơi đáp ứng và vượt quá các tiêu chí về độ chính xác, tính toàn vẹn và độ tin cậy. Với hơn 15 năm làm Chuyên gia kiểm thử phần mềm, tôi đã đảm bảo rằng hệ thống định vị đáp ứng các tiêu chuẩn DO-178B cho các ứng dụng quan trọng về an toàn."
+          : "I also apply my knowledge and skills in Positioning & Navigation technologies, where accuracy, integrity, and reliability criterion are met and exceeded. With over 15 years as a Software Testing Professional, I have ensured that navigation systems meet DO-178B standards for safety-critical applications."}
         <br />
         <br />
         {isForeign

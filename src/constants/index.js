@@ -18,6 +18,7 @@ import {
   collaborative,
   amazon,
   statcan,
+  ila,
   medchat,
   nextphoto,
   // mongodb,
@@ -135,8 +136,8 @@ const services = [
     icon: cloud,
   },
   {
-    title: "Mentoring",
-    titlevn: "Cố vấn",
+    title: "English Teaching",
+    titlevn: "Giảng dạy tiếng Anh",
     icon: mentor,
   },
 ];
@@ -399,24 +400,45 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Regional Director",
-    titlevn: "Giám đốc khu vực",
+    title: "English Teacher",
+    titlevn: "Giảng dạy tiếng Anh",
+    company_name: "ILA",
+    icon: ila,
+    iconBg: "#000000",
+    date: "November 2026 - Present",
+    datevn: "Tháng 11, 2026 - Hiện tại",
+    points: [
+      "Plan and deliver engaging, student-centred English language lessons to young learners, fostering communication, confidence, and language proficiency.",
+      "Apply communicative teaching methodologies, interactive activities, and differentiated instruction to accommodate diverse learning styles and abilities.",
+      "Assess student progress, provide constructive feedback, and maintain accurate records of learning outcomes and academic development.",
+      "Collaborate with teaching assistants, academic managers, and fellow educators while participating in ongoing professional development to continuously improve teaching effectiveness.",
+    ],
+    pointsvn: [
+      "Lên kế hoạch và giảng dạy các bài học tiếng Anh hấp dẫn, lấy học viên làm trung tâm dành cho học viên nhỏ tuổi, qua đó thúc đẩy khả năng giao tiếp, sự tự tin và năng lực ngôn ngữ.",
+      "Áp dụng các phương pháp giảng dạy chú trọng giao tiếp, các hoạt động tương tác và phương pháp giảng dạy phân hóa để đáp ứng các phong cách học tập và năng lực đa dạng.",
+      "Đánh giá sự tiến bộ của học sinh, đưa ra những phản hồi mang tính xây dựng, đồng thời lưu giữ hồ sơ chính xác về kết quả học tập và sự phát triển về mặt học thuật.",
+      "Phối hợp với các trợ giảng, quản lý chuyên môn và đồng nghiệp, đồng thời tham gia các hoạt động phát triển chuyên môn thường xuyên để không ngừng nâng cao hiệu quả giảng dạy.",
+    ],
+  },
+  {
+    title: "Field Operations Supervisor",
+    titlevn: "Giám sát viên Vận hành Hiện trường",
     company_name: "Statistics Canada",
     icon: statcan,
     iconBg: "#000000",
-    date: "March 2026 - Present",
-    datevn: "Tháng 3, 2026 - Hiện tại",
+    date: "March - August 2026",
+    datevn: "Tháng 3 - 8, 2026",
     points: [
-      "Participates in the planning, organizing and supervision of census field operations for Calgary's NW quadrant.",
+      "Participates in the planning, organizing and supervision of 2026 census field operations for an area over 850 square kilometers.",
       "Hired and trained 10 crew leaders and an assistant.  Supervises the crew leaders coordinates their activities and those of their enumerators.",
       "Authorizes employees’ weekly payment, expenses and allowances.",
-      "Promotes respondent participation in the census and participates in the implementation of regional communication strategies.",
+      "Promotes respondent participation in the census and participates in the implementation of regional communication strategies.  Had a 98.4% response rate.",
     ],
     pointsvn: [
-      "Tham gia vào việc lập kế hoạch, tổ chức và giám sát các hoạt động thực địa điều tra dân số cho khu vực Tây Bắc của Calgary.",
+      "Tham gia lập kế hoạch, tổ chức và giám sát công tác thực địa cho cuộc tổng điều tra năm 2026 tại khu vực có diện tích hơn 850 km².",
       "Tuyển dụng và đào tạo 10 trưởng nhóm và một trợ lý. Giám sát các trưởng nhóm, điều phối hoạt động của họ và của các điều tra viên.",
       "Phê duyệt việc trả lương hàng tuần, chi phí và phụ cấp cho nhân viên.",
-      "Thúc đẩy sự tham gia của người dân vào cuộc điều tra dân số và tham gia vào việc thực hiện các chiến lược truyền thông khu vực.",
+      "Thúc đẩy sự tham gia của người dân vào cuộc điều tra dân số và tham gia vào việc thực hiện các chiến lược truyền thông khu vực.  Đạt tỷ lệ phản hồi 98,4%.",
     ],
   },
   {
@@ -505,25 +527,25 @@ const experiences = [
       "Thiết kế các thiết lập thử nghiệm hiệu quả giúp giảm chi phí kỹ thuật cho dự án (lên tới 10%).",
     ],
   },
-  {
-    title: "Ground Reference Receivers Application Engineer",
-    titlevn: "Kỹ Sư Ứng Dụng Máy Thu Tham Chiếu Mặt đất",
-    company_name: "Hexagon",
-    icon: hexagon,
-    iconBg: "#383E56",
-    date: "June 2010 - January 2012",
-    datevn: "Tháng 6, 2010 - Tháng 1, 2012",
-    points: [
-      "Provided world-class customer support for reference GNSS systems worldwide.",
-      "Actively listened, gathered facts, and engaged the customer.",
-      "Built relationships and resolved customer inquiries in a timely manner.",
-    ],
-    pointsvn: [
-      "Hỗ trợ giới thiệu và cung cấp các hệ thống GNSS cho khách hàng trên toàn thế giới tham khảo.",
-      "Tích cực lắng nghe, thu thập thông tin thực tế và thu hút khách hàng.",
-      "Xây dựng mối quan hệ và giải quyết các thắc mắc của khách hàng một cách kịp thời.",
-    ],
-  },
+  // {
+  //   title: "Ground Reference Receivers Application Engineer",
+  //   titlevn: "Kỹ Sư Ứng Dụng Máy Thu Tham Chiếu Mặt đất",
+  //   company_name: "Hexagon",
+  //   icon: hexagon,
+  //   iconBg: "#383E56",
+  //   date: "June 2010 - January 2012",
+  //   datevn: "Tháng 6, 2010 - Tháng 1, 2012",
+  //   points: [
+  //     "Provided world-class customer support for reference GNSS systems worldwide.",
+  //     "Actively listened, gathered facts, and engaged the customer.",
+  //     "Built relationships and resolved customer inquiries in a timely manner.",
+  //   ],
+  //   pointsvn: [
+  //     "Hỗ trợ giới thiệu và cung cấp các hệ thống GNSS cho khách hàng trên toàn thế giới tham khảo.",
+  //     "Tích cực lắng nghe, thu thập thông tin thực tế và thu hút khách hàng.",
+  //     "Xây dựng mối quan hệ và giải quyết các thắc mắc của khách hàng một cách kịp thời.",
+  //   ],
+  // },
   // {
   //   title: "GPS Software Engineer",
   //   titlevn: "Kỹ Sư Phần Mềm GPS",
@@ -2390,6 +2412,18 @@ const projects = [
 ];
 
 const certificates = [
+  {
+    img: "tefl.png",
+    credential: "TEFL",
+    provider: "Ninja Teacher",
+    instructor: "Sadie Maddocks",
+    issued: new Date(2026, 9, 2),
+    summary:
+      "Ninja Teacher offers TEFL/TESOL certificates to English speakers worldwide.",
+    summaryvn:
+      "Ninja Teacher cung cấp chứng chỉ TEFL/TESOL cho người nói tiếng Anh trên toàn thế giới.",
+    link: "https://media.licdn.com/dms/image/v2/D562DAQFSVf52zVIZJQ/profile-treasury-image-shrink_1280_1280/B56aD7RcnEIQAY-/0/1790922050301?e=1792310400&v=beta&t=M0xPrb_244ByjmGxcAEN5GyrZzwKGJ6zn4vZjgUzCVc",
+  },
   {
     img: "AWS_AI.png",
     credential: "AI Practitioner",

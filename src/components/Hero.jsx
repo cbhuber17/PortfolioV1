@@ -22,13 +22,15 @@ const Hero = () => {
             <span className="text-[#000FCA]">Colin</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
-            {isForeign
+            {/* {isForeign
               ? "Hiện tại tôi đang sinh sống và làm việc tại Canada."
-              : null}
+              : null} */}
             <br className="sm:block hidden" />
-            {isForeign ? "Giám đốc khu vực" : "Regional Director"}
+            {isForeign ? "Kỹ sư Trắc địa - Bản đồ" : "Geomatics Engineer"}
             <br className="sm:block hidden" />
-            {isForeign ? "Hoạt động hiện trường" : "Field Operations"}
+            {isForeign
+              ? "Giáo viên Tiếng Anh tại Học viện Ngôn ngữ Quốc tế"
+              : "International Language Academy English Teacher"}
           </p>
         </div>
       </div>

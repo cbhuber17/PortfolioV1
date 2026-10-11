@@ -43,6 +43,7 @@ import flyht from "./company/flyht.png";
 import tdk from "./company/tdk.jpeg";
 import amazon from "./company/amazon.png";
 import statcan from "./company/statcan.jpg";
+import ila from "./company/ila.png";
 
 import traveljournal from "./projects/traveljournal.png";
 import admindashboard from "./projects/admindashboard.png";
@@ -158,6 +159,7 @@ export {
   flyht,
   tdk,
   evently,
+  ila,
   amazon,
   natourslanding,
   // stripe,
